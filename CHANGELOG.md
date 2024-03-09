@@ -1,5 +1,7 @@
 ##### 3.9.2024
 
+> Brands Logo updates
+> Testimonials text updates
 > text placeholders removal
 > Toronto Address addition
 > Non existing nav items removal

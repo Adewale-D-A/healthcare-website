@@ -26,20 +26,19 @@ export default function Home() {
         </div>
       </section>
       <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
-        <section className="grid grid-cols-2 gap-10 md:flex md:gap-5 bg-gray-50 items-center justify-between px-10 py-5 md:min-h-[5vh]">
+        <section className="grid grid-cols-2 gap-10 md:flex md:gap-5 items-center justify-between px-10 py-5 md:min-h-[5vh]">
           {[
-            { imageUrl: "/pfizer.svg" },
-            { imageUrl: "/pfizer.svg" },
-            { imageUrl: "/pfizer.svg" },
-            { imageUrl: "/pfizer.svg" },
-            { imageUrl: "/pfizer.svg" },
-            { imageUrl: "/pfizer.svg" },
+            { imageUrl: "/99apartment_logo.png" },
+            { imageUrl: "/logo-99k.png" },
+            { imageUrl: "/morgen-green-logo.png" },
+            { imageUrl: "/puclothing_logo.png" },
+            { imageUrl: "/trybz_logo.png" },
           ].map((item, index) => {
             return (
-              <div key={index} className="p-3 grayscale opacity-70">
+              <div key={index} className="p-3 grayscale opacity-50">
                 <Image
                   src={item.imageUrl}
-                  alt=""
+                  alt="supported by"
                   width={500}
                   height={500}
                   className="w-auto h-16"
@@ -304,7 +303,7 @@ export default function Home() {
       >
         <div className="w-full">
           <h2 className="text-gradient text-3xl md:text-5xl">
-            See how 7th Care can help you grow your healthcare business.
+            See how 7thCare can help you grow your healthcare business.
           </h2>
         </div>
         <div className="w-full">
@@ -323,39 +322,30 @@ export default function Home() {
             testimonials={[
               {
                 id: "1",
-                name: "DANIEL JHON",
-                position: "UI/UX DESIGNER",
+                name: "DR. GREGORY OYINLOYE",
+                position: "LEAH MEDICAL FOUNDATION",
                 title: "Greate Product!",
                 rating: 3,
                 comment:
-                  "Wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot",
+                  "7THCARE HMS IS ONE OF THE MOST ROBOST HOSPITAL AUTOMATION SOFTWARE OUT THERE",
               },
               {
                 id: "2",
-                name: "NORTH",
-                position: "DEVELOPER",
+                name: "DR. WALE AHMED",
+                position: "MEDICAL PRACTITIONER",
                 title: "Excellent Service",
                 rating: 2,
                 comment:
-                  "Noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence",
+                  "THE EFFICIENCY OF THEIR SOLUTION HAS HELPED US CUT DOWN COST AND BLOCK LEAKAGES.",
               },
               {
                 id: "3",
-                name: "HIBRUPATH",
-                position: "MARKETER",
-                title: "Beautiful UI",
+                name: "DR. PROSPER OHAYAGHA",
+                position: "COMMISIONER FOR HEALTH",
+                title: "Excellent Solution",
                 rating: 5,
                 comment:
-                  "Noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence",
-              },
-              {
-                id: "4",
-                name: "Ibis Chitri",
-                position: "PROMOTER",
-                title: "Wholesome",
-                rating: 4,
-                comment:
-                  "Noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence",
+                  "OUR HEALTH MINISTRY NOW HAVE APPRIOPRIATE DATA TO MAKE INFORMED DECISIONS",
               },
             ]}
             headerText=""
@@ -373,7 +363,7 @@ export default function Home() {
           <div className="w-full max-w-2xl flex flex-col gap-10 ">
             <b className=" text-primary-500">ARE YOU A MEDICAL CONSULTANT?</b>
             <h2 className="text-gradient text-5xl">
-              See how 7th Care can help you grow your healthcare business.
+              See how 7thCare can help you grow your healthcare business.
             </h2>
             {/* <p className=" text-shadow-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque

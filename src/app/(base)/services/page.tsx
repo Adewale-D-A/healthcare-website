@@ -113,14 +113,11 @@ export default function Services() {
               <h4 className=" text-2xl font-extrabold capitalize">
                 BESPOKE SERVICES
               </h4>
-              {/* <p className=" text-sm leading-9">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.consectetur adipiscing Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-                adipiscing Lorem ipsum dolor sit amet, adipiscing Lorem ipsum
-                dolor sit amet,{" "}
-              </p> */}
+              <p className=" text-sm leading-9">
+                Our flagship product is a world class hospital management system
+                designed to meet the hospital management system (HMS) and
+                operations needs of modern healthcare providers.
+              </p>
             </div>
           </div>
         </div>
