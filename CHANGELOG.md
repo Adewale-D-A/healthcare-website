@@ -1,5 +1,7 @@
 ##### 3.9.2024
 
+> Toronto Address addition
+> Non existing nav items removal
 > Product designer ui adjustments
 
 ##### 3.3.2024

@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className=" w-full h-full bg-[url('/support_bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50">
+        <div className="webkit-sticky top-0 left-0 z-50 overflow-x-hidden">
           <NavBar />
         </div>
         <div className="w-full my-10 md:my-24  flex justify-center items-center px-5 md:px-10 text-shadow">

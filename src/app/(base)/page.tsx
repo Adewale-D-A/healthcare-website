@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className=" w-full h-screen bg-[url('/home_bg_gif.gif')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50">
+        <div className="webkit-sticky top-0 left-0 z-50 overflow-x-hidden">
           <NavBar />
         </div>
         <div className="w-full calc-height flex justify-center items-center px-5 md:px-10 text-shadow">
