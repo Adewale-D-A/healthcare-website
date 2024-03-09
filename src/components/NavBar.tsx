@@ -27,9 +27,9 @@ const NavBar = () => {
   }, [pathname]);
 
   return (
-    <nav className=" flex justify-center w-screen text-white">
+    <nav className=" flex justify-center text-white w-full">
       {/* //desktop view  */}
-      <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center">
+      <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center ">
         <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5 shadow-lg">
           <Link href="/" className="">
             <Image

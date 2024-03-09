@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className=" w-full h-screen bg-[url('/home_bg_gif.gif')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50 overflow-x-hidden">
+        <div className="webkit-sticky top-0 left-0 z-50 w-full">
           <NavBar />
         </div>
         <div className="w-full calc-height flex justify-center items-center px-5 md:px-10 text-shadow">
@@ -49,7 +49,7 @@ export default function Home() {
           })}
         </section>
       </div>
-      <section className="flex w-full flex-col md:flex-row">
+      <section className="flex w-full flex-col md:flex-row ">
         {[
           {
             bg_url: "bg-[url('/nurse.jpg')]",
@@ -93,11 +93,11 @@ export default function Home() {
       </section>
 
       {/* services */}
-      <section className="w-full max-w-screen-xl flex text-center flex-col gap-3 justify-center items-center  px-5 md:px-10 my-24">
+      <section className="w-full max-w-screen-xl flex text-center flex-col gap-3 justify-center items-center  px-5 md:px-10 my-24 ">
         <h3 className=" text-4xl font-semibold">Services we Provide</h3>
-        <p className=" text-xl">
+        {/* <p className=" text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        </p> */}
         <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-10 mt-16">
           {[
             {
@@ -214,25 +214,25 @@ export default function Home() {
               <h5 className=" text-lg md:text-2xl font-semibold">
                 {item?.header_text}
               </h5>
-              <p className=" text-gray-500 text-sm md:text-md">
+              {/* <p className=" text-gray-500 text-sm md:text-md">
                 {item?.content}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>
       </section>
 
-      <div className="w-full flex items-center justify-center py-24 mb-10 gradient-bg">
+      <div className="w-full flex items-center justify-center py-24 mb-10 gradient-bg ">
         <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
           <div className=" text-center text-white flex flex-col jusitfy-center items-center gap-3">
             <h4 className=" text-4xl font-semibold  max-w-screen-lg">
               We are a leading Provider of optimal Healthcare Automation in
               Africa
             </h4>
-            <p className=" text-sm max-w-screen-sm">
+            {/* <p className=" text-sm max-w-screen-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               mattis, ligula et tincidunt venenatis, massa leo rhoncus nulla.
-            </p>
+            </p> */}
           </div>
           <div className="flex mt-16 items-center gap-4 gradient-blue rounded-2xl bg-[url('/leaf_sample.svg')] bg-contain bg-right bg-no-repeat text-white ">
             <div className="flex items-center gap-4 p-5">
@@ -300,7 +300,7 @@ export default function Home() {
       {/* contact */}
       <section
         id="#contact"
-        className="w-full max-w-screen-xl flex flex-col md:flex-row gap-10 items-center  px-5 md:px-10 my-24"
+        className="w-full max-w-screen-xl flex flex-col md:flex-row gap-10 items-center  px-5 md:px-10 my-24 "
       >
         <div className="w-full">
           <h2 className="text-gradient text-3xl md:text-5xl">
@@ -315,7 +315,7 @@ export default function Home() {
 
       <section
         id="#testimonials"
-        className="w-full flex items-center justify-center  bg-[url('/testimonials_bg.jpg')] bg-opacity-20 bg-black bg-cover bg-right bg-no-repeat"
+        className="w-full flex items-center justify-center  bg-[url('/testimonials_bg.jpg')]  bg-opacity-20 bg-black bg-cover bg-right bg-no-repeat"
       >
         <div className="w-full max-w-screen-xl flex flex-col md:flex-row gap-10 items-center  px-5 md:px-10 my-24">
           {" "}
@@ -367,7 +367,7 @@ export default function Home() {
       {/* Join */}
       <section
         id="#"
-        className="w-full flex items-center justify-center  bg-[url('/7thcare_bg.png')] bg-cover md:bg-contain bg-right bg-no-repeat py-24"
+        className="w-full  flex items-center justify-center  bg-[url('/7thcare_bg.png')] bg-cover md:bg-contain bg-right bg-no-repeat py-24"
       >
         <div className="w-full max-w-screen-xl px-5 md:px-10 backdrop-wide py-16 ">
           <div className="w-full max-w-2xl flex flex-col gap-10 ">
@@ -375,10 +375,10 @@ export default function Home() {
             <h2 className="text-gradient text-5xl">
               See how 7th Care can help you grow your healthcare business.
             </h2>
-            <p className=" text-shadow-md">
+            {/* <p className=" text-shadow-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               mattis, ligula et tincidunt venenatis, massa leo rhoncus nulla.
-            </p>
+            </p> */}
             <Link
               href="#"
               className="gradient-bg p-4 rounded-full text-white w-fit px-8 text-center"

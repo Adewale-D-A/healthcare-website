@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className=" w-full h-full bg-[url('/services_bg_2.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50 overflow-x-hidden">
+        <div className="webkit-sticky top-0 left-0 z-50 w-full">
           <NavBar />
         </div>
         <div className="w-full my-10 md:my-24  flex justify-center items-center px-5 md:px-10 text-shadow">
@@ -113,14 +113,14 @@ export default function Services() {
               <h4 className=" text-2xl font-extrabold capitalize">
                 BESPOKE SERVICES
               </h4>
-              <p className=" text-sm leading-9">
+              {/* <p className=" text-sm leading-9">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                 ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit.consectetur adipiscing Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
                 adipiscing Lorem ipsum dolor sit amet, adipiscing Lorem ipsum
                 dolor sit amet,{" "}
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

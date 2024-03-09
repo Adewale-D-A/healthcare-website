@@ -1,5 +1,6 @@
 ##### 3.9.2024
 
+> text placeholders removal
 > Toronto Address addition
 > Non existing nav items removal
 > Product designer ui adjustments
