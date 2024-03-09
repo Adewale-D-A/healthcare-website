@@ -28,6 +28,7 @@ export default function Home() {
       <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
         <section className="grid grid-cols-2 gap-10 md:flex md:gap-5 items-center justify-between px-10 py-5 md:min-h-[5vh]">
           {[
+            { imageUrl: "/mindwalks_logo.jpg" },
             { imageUrl: "/99apartment_logo.png" },
             { imageUrl: "/logo-99k.png" },
             { imageUrl: "/morgen-green-logo.png" },

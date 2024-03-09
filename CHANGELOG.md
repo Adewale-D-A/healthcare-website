@@ -1,5 +1,6 @@
 ##### 3.9.2024
 
+> mindwalks logo update
 > Brands Logo updates
 > Testimonials text updates
 > text placeholders removal
