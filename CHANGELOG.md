@@ -1,3 +1,7 @@
+##### 3.9.2024
+
+> Product designer ui adjustments
+
 ##### 3.3.2024
 
 > about us page screen developed and completed

@@ -90,7 +90,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className=" bg-primary-500 text-white w-full p-4 rounded-lg text-center"
+          className=" bg-primary-500 text-white w-full p-4 rounded-lg text-center hover:bg-primary-500/80 transition-all"
         >
           Submit
         </button>

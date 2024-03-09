@@ -29,98 +29,101 @@ const NavBar = () => {
   return (
     <nav className=" flex justify-center w-screen text-white">
       {/* //desktop view  */}
-      <div className="w-full hidden md:flex justify-between items-center max-w-screen-xl px-5 md:px-10 backdrop-bg-filter py-5 shadow-lg rounded-b-xl">
-        <Link href="/" className="">
-          <Image
-            height={500}
-            width={500}
-            src={"/logo.svg"}
-            alt="7thCare logo"
-            title="7thCare logo"
-            className="w-24 h-auto"
-          />
-        </Link>
-        <div className="flex items-center gap-6">
-          {navItems.map((menus) => {
-            return (
-              <div key={menus?.label} className="group z-50 relative flex ">
-                <Link href={menus?.url} className="">
-                  {menus?.label}
-                </Link>
-                {menus?.hasSubMenu && (
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6 group-hover:hidden block"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                      />
-                    </svg>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6 group-hover:block hidden"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                      />
-                    </svg>
+      <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center">
+        <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5 shadow-lg">
+          <Link href="/" className="">
+            <Image
+              height={500}
+              width={500}
+              src={"/logo.svg"}
+              alt="7thCare logo"
+              title="7thCare logo"
+              className="w-24 h-auto"
+            />
+          </Link>
+          <div className="flex items-center gap-6">
+            {navItems.map((menus) => {
+              return (
+                <div key={menus?.label} className="group z-50 relative flex ">
+                  <div className="flex items-center gap-1">
+                    <Link href={menus?.url} className=" text-sm">
+                      {menus?.label}
+                    </Link>
+                    {menus?.hasSubMenu && (
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-4 h-4 group-hover:hidden block"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-4 h-4 group-hover:block hidden"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                          />
+                        </svg>
+                      </div>
+                    )}
                   </div>
-                )}
-                {menus.hasSubMenu && (
-                  <div className="w-[300px] z-30 hidden absolute top-0 left-0 pt-10 group-hover:flex flex-col gap-3">
-                    <div className="w-full flex flex-col gap-1 bg-gray-200 rounded-r-lg rounded-b-lg text-gray-600 px-5 py-2">
-                      {menus?.subMenu?.map((subMenu) => {
-                        return (
-                          <Link
-                            key={subMenu?.label}
-                            className="w-full flex items-center border-b border-gray-300 gap-4 hover:bg-gray-400/40 transition-all py-2 px-2"
-                            href={subMenu?.url}
-                            id="icon-menu"
-                          >
-                            {subMenu?.iconUrl ? (
-                              <Image
-                                height={400}
-                                width={400}
-                                src={subMenu?.iconUrl}
-                                alt={subMenu?.label}
-                                title={subMenu?.label}
-                                className=" w-8 h-auto"
-                              />
-                            ) : (
-                              subMenu?.icon
-                            )}
-                            <span>{subMenu?.label}</span>{" "}
-                          </Link>
-                        );
-                      })}
+                  {menus.hasSubMenu && (
+                    <div className="w-[300px] z-30 hidden absolute top-0 left-0 pt-10 group-hover:flex flex-col gap-3">
+                      <div className="w-full flex flex-col gap-1 bg-gray-200 rounded-r-lg rounded-b-lg text-gray-600 px-5 py-2">
+                        {menus?.subMenu?.map((subMenu) => {
+                          return (
+                            <Link
+                              key={subMenu?.label}
+                              className="w-full flex items-center border-b border-gray-300 gap-4 hover:bg-gray-400/40 transition-all py-2 px-2"
+                              href={subMenu?.url}
+                              id="icon-menu"
+                            >
+                              {subMenu?.iconUrl ? (
+                                <Image
+                                  height={400}
+                                  width={400}
+                                  src={subMenu?.iconUrl}
+                                  alt={subMenu?.label}
+                                  title={subMenu?.label}
+                                  className=" w-8 h-auto"
+                                />
+                              ) : (
+                                subMenu?.icon
+                              )}
+                              <span>{subMenu?.label}</span>{" "}
+                            </Link>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
 
-        <Link
-          href={"#"}
-          className="bg-secondary-500 p-3 px-5 rounded-3xl w-fit text-white hover:bg-primary-500 transition-all cursor-pointer"
-        >
-          Request a Demo
-        </Link>
+          <Link
+            href={"#"}
+            className="bg-secondary-500 p-3 px-5 rounded-3xl w-fit text-white hover:bg-primary-500 transition-all cursor-pointer"
+          >
+            Request a Demo
+          </Link>
+        </div>
       </div>
 
       {/* mobile view  */}

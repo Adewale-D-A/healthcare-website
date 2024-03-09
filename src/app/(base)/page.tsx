@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
-        <section className="grid grid-cols-2 gap-10 md:flex md:gap-5 bg-gray-50 items-center justify-between px-10 py-5 md:min-h-[5vh] my-24">
+        <section className="grid grid-cols-2 gap-10 md:flex md:gap-5 bg-gray-50 items-center justify-between px-10 py-5 md:min-h-[5vh]">
           {[
             { imageUrl: "/pfizer.svg" },
             { imageUrl: "/pfizer.svg" },
@@ -36,7 +36,7 @@ export default function Home() {
             { imageUrl: "/pfizer.svg" },
           ].map((item, index) => {
             return (
-              <div key={index} className="p-3 shadow-md grayscale">
+              <div key={index} className="p-3 grayscale opacity-70">
                 <Image
                   src={item.imageUrl}
                   alt=""
@@ -83,7 +83,7 @@ export default function Home() {
               <p> {item?.sub_text} </p>
               <Link
                 href={item?.bg_url}
-                className=" rounded-full p-3 border border-white hover:border-primary-500 transition-all w-fit text-center"
+                className=" rounded-full px-8 py-4 border border-white hover:border-primary-500 transition-all w-fit text-center"
               >
                 {item?.btn_text}
               </Link>
@@ -315,7 +315,7 @@ export default function Home() {
 
       <section
         id="#testimonials"
-        className="w-full flex items-center justify-center  bg-[url('/testimonials_bg.jpg')] bg-cover bg-right bg-no-repeat"
+        className="w-full flex items-center justify-center  bg-[url('/testimonials_bg.jpg')] bg-opacity-20 bg-black bg-cover bg-right bg-no-repeat"
       >
         <div className="w-full max-w-screen-xl flex flex-col md:flex-row gap-10 items-center  px-5 md:px-10 my-24">
           {" "}
@@ -369,13 +369,13 @@ export default function Home() {
         id="#"
         className="w-full flex items-center justify-center  bg-[url('/7thcare_bg.png')] bg-cover md:bg-contain bg-right bg-no-repeat py-24"
       >
-        <div className="w-full max-w-screen-xl px-5 md:px-10 backdrop-wide py-5 ">
+        <div className="w-full max-w-screen-xl px-5 md:px-10 backdrop-wide py-16 ">
           <div className="w-full max-w-2xl flex flex-col gap-10 ">
             <b className=" text-primary-500">ARE YOU A MEDICAL CONSULTANT?</b>
             <h2 className="text-gradient text-5xl">
               See how 7th Care can help you grow your healthcare business.
             </h2>
-            <p>
+            <p className=" text-shadow-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               mattis, ligula et tincidunt venenatis, massa leo rhoncus nulla.
             </p>

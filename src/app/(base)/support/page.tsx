@@ -9,9 +9,9 @@ export default function Support() {
         <div className="webkit-sticky top-0 left-0 z-50">
           <NavBar />
         </div>
-        <div className="w-full my-10 md:mt-16  flex justify-center items-center px-5 md:px-10 text-shadow">
+        <div className="w-full my-10 md:mt-16  flex justify-center items-center px-5 md:px-10">
           <div className="w-full max-w-screen-xl flex flex-col md:flex-row gap-6 justify-between items-center">
-            <h1 className=" text-3xl md:text-6xl font-bold text-white text-center capitalize max-w-xl md:leading-tight">
+            <h1 className=" text-3xl md:text-6xl font-bold text-white capitalize max-w-xl md:leading-tight">
               TALK TO US ABOUT YOUR NEXT PROJECT OR QUESTIONS
             </h1>
             <div className="w-full rounded-2xl bg-white p-10">

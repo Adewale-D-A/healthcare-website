@@ -91,12 +91,12 @@ export default function Services() {
                   {item?.icon}
                 </div>
               </div>
-              <div className="bg-gray-100 border shadow-lg rounded-2xl flex flex-col gap-5 text-center mt-12 py-20 p-5">
-                <h6 className=" font-semibold">{item?.title}</h6>
+              <div className="bg-gray-100 border rounded-2xl flex flex-col gap-5 text-center mt-12 py-20 p-5">
+                <h6 className=" font-semibold text-2xl">{item?.title}</h6>
                 <p className=" text-gray-500">{item?.description}</p>
                 <Link
                   href={item?.url}
-                  className=" font-semibold text-primary-500 underline text-lg"
+                  className=" font-semibold text-primary-500 underline"
                 >
                   More Info
                 </Link>
@@ -108,7 +108,7 @@ export default function Services() {
 
       <section className="w-full gradient-service py-16">
         <div className="bg-[url('/services_img.png')] bg-contain bg-left bg-no-repeat min-h-[500px] flex flex-col items-center justify-center">
-          <div className=" w-full max-w-screen-xl flex justify-end items-center px-5 md:px-10 py-10 backdrop-wide">
+          <div className=" w-full max-w-screen-xl flex justify-end items-center px-5 md:px-10 py-10 backdrop-wide text-shadow-md ">
             <div className=" text-gray-800 md:text-gray-300 max-w-xl flex flex-col gap-4">
               <h4 className=" text-2xl font-extrabold capitalize">
                 BESPOKE SERVICES
