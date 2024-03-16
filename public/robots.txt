@@ -4,4 +4,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://7th-care.vercel.app/sitemap.xml
+Sitemap: https://www.7thcare.com/sitemap.xml
