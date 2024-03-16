@@ -27,7 +27,7 @@ export default function Slider({ dataset }: sliderProps) {
           >
             <div className="w-full border rounded-t-lg shadow-xl">
               <div className="flex flex-col items-center gap-10 justify-center w-full  py-16">
-                <div className=" text-white p-5 bg-primary-500 rounded-full">
+                <div className=" text-white p-5 bg-secondary-500 rounded-full">
                   {item?.icon}
                 </div>
                 <h6 className=" text-xl font-semibold">{item?.title}</h6>

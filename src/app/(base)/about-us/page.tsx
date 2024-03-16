@@ -130,7 +130,7 @@ export default function AboutUs() {
               }`}
             >
               <div
-                className={`w-full md:w-1/2 flex  py-10 items-center justify-between gap-4 border-[#008000] ${
+                className={`w-full md:w-1/2 flex  py-10 items-center justify-between gap-4 border-[#003B67] ${
                   index % 2 === 1
                     ? "border-l-4 md:border-l-0 md:border-r-4 md:flex-row-reverse"
                     : " border-l-4 mr-1"
@@ -139,8 +139,8 @@ export default function AboutUs() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  fill="#008000"
-                  className={`w-12 h-12 text-[#008000] ${
+                  fill="#003B67"
+                  className={`w-12 h-12 text-[#003B67] ${
                     index % 2 === 1 ? "flip" : ""
                   }`}
                 >
