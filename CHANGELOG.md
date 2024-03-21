@@ -1,3 +1,12 @@
+##### 3.16.2024
+
+> sitemaps url updates
+> UI Design color adjustments
+
+##### 3.10.2024
+
+> favicon update
+
 ##### 3.9.2024
 
 > mindwalks logo update

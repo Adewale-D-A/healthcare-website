@@ -54,4 +54,4 @@ This website is written in Typescript using Next.JS react library framework whic
     </tr>
 </table>
 
-> <a href="https://7th-care.vercel.app/" target="_blank">Visit</a>
+> <a href="https://www.7thcare.com/" target="_blank">Visit</a>

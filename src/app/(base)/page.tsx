@@ -109,7 +109,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-10 h-10 md:w-16 md:h-16 text-primary-500"
+                  className="w-10 h-10 md:w-16 md:h-16 text-secondary-500"
                 >
                   <path
                     strokeLinecap="round"
@@ -127,7 +127,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  className="w-10 h-10 md:w-16 md:h-16 text-primary-500"
+                  className="w-10 h-10 md:w-16 md:h-16 text-secondary-500"
                   viewBox="0 0 16 16"
                 >
                   <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z" />
@@ -145,7 +145,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-10 h-10 md:w-16 md:h-16 text-primary-500"
+                  className="w-10 h-10 md:w-16 md:h-16 text-secondary-500"
                 >
                   <path
                     fillRule="evenodd"
@@ -164,7 +164,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  className="w-10 h-10 md:w-16 md:h-16 text-primary-500"
+                  className="w-10 h-10 md:w-16 md:h-16 text-secondary-500"
                   viewBox="0 0 16 16"
                 >
                   <path d="M11.02 5.364a3 3 0 0 0-4.242-4.243L1.121 6.778a3 3 0 1 0 4.243 4.243l5.657-5.657Zm-6.413-.657 2.878-2.879a2 2 0 1 1 2.829 2.829L7.435 7.536zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8m-.5 1.042a3 3 0 0 0 0 5.917zm1 5.917a3 3 0 0 0 0-5.917z" />{" "}
@@ -180,7 +180,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  className="w-10 h-10 md:w-16 md:h-16 text-primary-500"
+                  className="w-10 h-10 md:w-16 md:h-16 text-secondary-500"
                   viewBox="0 0 16 16"
                 >
                   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
@@ -197,7 +197,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  className="w-10 h-10 md:w-16 md:h-16 text-primary-500"
+                  className="w-10 h-10 md:w-16 md:h-16 text-secondary-500"
                   viewBox="0 0 16 16"
                 >
                   <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707z" />

@@ -82,14 +82,14 @@ const Testimonials = ({
                   >
                     <Ratings rating={item?.rating} />
                     <div className=" flex flex-col gap-3">
-                      <h4 className=" text-3xl text-gray-800 font-semibold">
+                      <h4 className=" text-2xl text-gray-800 font-semibold">
                         {item?.title}
                       </h4>
-                      <p className="text-gray-700">{item?.comment}</p>
+                      <p className="text-gray-700 text-sm">{item?.comment}</p>
                     </div>
                     <div className="flex gap-3 items-center">
                       <div
-                        className={`w-16 h-16 aspect-square rounded-full transition-all overflow-hidden flex justify-center items-center`}
+                        className={`w-10 h-10 aspect-square rounded-full transition-all overflow-hidden flex justify-center items-center`}
                       >
                         <Image
                           src={"/leaf_sample.svg"}
@@ -100,8 +100,10 @@ const Testimonials = ({
                         />
                       </div>
                       <div>
-                        <h6 className="font-bold text-xl">{item?.name}</h6>
-                        <span className=" text-gray-500">{item?.position}</span>
+                        <h6 className="font-bold">{item?.name}</h6>
+                        <span className=" text-gray-500 text-xs">
+                          {item?.position}
+                        </span>
                       </div>
                     </div>
                   </div>

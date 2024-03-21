@@ -87,7 +87,7 @@ export default function Services() {
           return (
             <div className="w-full relative z-10" key={item?.id}>
               <div className="absolute top-0 left-0 z-0 flex items-center justify-center w-full">
-                <div className=" text-white p-5 bg-primary-500 rounded-2xl">
+                <div className=" text-white p-5 bg-secondary-500 rounded-2xl">
                   {item?.icon}
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Services() {
                 <p className=" text-gray-500">{item?.description}</p>
                 <Link
                   href={item?.url}
-                  className=" font-semibold text-primary-500 underline"
+                  className=" font-semibold text-secondary-500 underline"
                 >
                   More Info
                 </Link>
