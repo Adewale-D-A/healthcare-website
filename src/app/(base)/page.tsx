@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
-        <section className="grid grid-cols-2 gap-10 md:flex md:gap-5 items-center justify-between px-10 py-5 md:min-h-[5vh]">
+        <section className="grid grid-cols-2 gap-5 md:gap-10 md:flex items-center justify-center md:justify-between py-12 md:min-h-[5vh]">
           {[
             { imageUrl: "/mindwalks_logo.jpg" },
             { imageUrl: "/99apartment_logo.png" },
@@ -36,13 +36,16 @@ export default function Home() {
             { imageUrl: "/trybz_logo.png" },
           ].map((item, index) => {
             return (
-              <div key={index} className="p-3 grayscale opacity-50">
+              <div
+                key={index}
+                className="grayscale opacity-50 flex justify-center"
+              >
                 <Image
                   src={item.imageUrl}
                   alt="supported by"
                   width={500}
                   height={500}
-                  className="w-auto h-16"
+                  className="w-auto h-10 md:h-16"
                 />
               </div>
             );
