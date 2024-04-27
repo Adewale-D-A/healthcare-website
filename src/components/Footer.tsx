@@ -196,10 +196,10 @@ const FooterMenu = () => {
                   clipRule="evenodd"
                 />
               </svg>{" "}
-              <span>+234-901-160-444</span>
+              <span>+2349011604484 | +14373503453</span>
             </div>
             <Link
-              href="mailto:infor@7thcare.com"
+              href="mailto:info@7thcare.com"
               target="_blank"
               rel="noreferrer"
               className="w-full flex items-center gap-3 text-gray-300 border-b pb-3 border-green-800"
