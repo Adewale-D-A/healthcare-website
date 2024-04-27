@@ -1,3 +1,8 @@
+##### 3.23.2024
+
+> Sponsors section mobile responsiveness fix
+> Footer support email correction
+
 ##### 3.16.2024
 
 > sitemaps url updates
