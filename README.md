@@ -52,6 +52,10 @@ This website is written in Typescript using Next.JS react library framework whic
       <td>framer-motion</td>
       <td>page transition and div animation library</td>
     </tr>
+    <tr>
+      <td>@emailjs/browser/td>
+      <td>Support Form data collector</td>
+    </tr>
 </table>
 
 > <a href="https://www.7thcare.com/" target="_blank">Visit</a>
