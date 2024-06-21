@@ -9,6 +9,7 @@ interface Props {
   isRequired: boolean;
   id: string;
   placeholder: string;
+  name?: string;
 }
 
 const TextAreaInput: React.FC<Props> = ({
@@ -17,6 +18,7 @@ const TextAreaInput: React.FC<Props> = ({
   label,
   isRequired,
   id,
+  name,
   placeholder,
 }) => {
   const handleInput = (e: ChangeEvent<HTMLTextAreaElement>) => {
@@ -31,6 +33,7 @@ const TextAreaInput: React.FC<Props> = ({
       )}
       <textarea
         id={id}
+        name={name}
         placeholder={placeholder}
         required={isRequired}
         value={value}
