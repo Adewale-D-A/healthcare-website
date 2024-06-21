@@ -1,3 +1,7 @@
+##### 06.21.2024
+
+> Support form data collector using EmailJS
+
 ##### 3.23.2024
 
 > Sponsors section mobile responsiveness fix

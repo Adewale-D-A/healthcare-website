@@ -10,6 +10,7 @@ interface Props {
   isRequired: boolean;
   id: string;
   placeholder: string;
+  name?: string;
 }
 
 const TextInput: React.FC<Props> = ({
@@ -18,6 +19,7 @@ const TextInput: React.FC<Props> = ({
   inputType,
   label,
   isRequired,
+  name,
   id,
   placeholder,
 }) => {
@@ -31,6 +33,7 @@ const TextInput: React.FC<Props> = ({
       </label>
       <input
         id={id}
+        name={name}
         placeholder={placeholder}
         required={isRequired}
         value={value}
