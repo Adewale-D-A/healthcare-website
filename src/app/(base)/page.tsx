@@ -85,7 +85,7 @@ export default function Home() {
               <h3 className=" text-4xl font-semibold">{item?.header_text}</h3>
               <p> {item?.sub_text} </p>
               <Link
-                href={item?.bg_url}
+                href={"#"}
                 className=" rounded-full px-8 py-4 border border-white hover:border-primary-500 transition-all w-fit text-center"
               >
                 {item?.btn_text}

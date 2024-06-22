@@ -6,7 +6,7 @@ import TextAreaInput from "../textFields/textArea";
 import SuccessModal from "./successMessage";
 import emailjs from "@emailjs/browser";
 
-export default function ContactForm() {
+export default function ContactForm({ closeModal }: { closeModal?: Function }) {
   const form = useRef() as any;
 
   const service_id = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
@@ -174,7 +174,11 @@ export default function ContactForm() {
           )}
         </button>
       </form>
-      <SuccessModal openModal={openSuccess} setOpenModal={setOpenSuccess} />
+      <SuccessModal
+        openSuccessModal={openSuccess}
+        setOpenSuccessModal={setOpenSuccess}
+        closeMainModal={closeModal}
+      />
     </>
   );
 }
