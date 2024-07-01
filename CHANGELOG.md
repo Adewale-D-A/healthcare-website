@@ -1,3 +1,7 @@
+##### 06.30.2024
+
+> Navmenu logo highlights correction
+
 ##### 06.22.2024
 
 > Request a demo modal UI development

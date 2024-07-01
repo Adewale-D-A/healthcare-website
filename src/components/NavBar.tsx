@@ -35,10 +35,10 @@ const NavBar = () => {
         {/* //desktop view  */}
         <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center ">
           <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5 shadow-lg">
-            <Link href="/" className="">
+            <Link href="/" className=" bg-secondary-500 p-2 rounded-lg">
               <Image
-                height={500}
-                width={500}
+                height={1000}
+                width={1000}
                 src={"/logo.svg"}
                 alt="7thCare logo"
                 title="7thCare logo"
