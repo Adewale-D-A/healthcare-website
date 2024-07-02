@@ -35,14 +35,14 @@ const NavBar = () => {
         {/* //desktop view  */}
         <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center ">
           <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5 shadow-lg">
-            <Link href="/" className=" bg-secondary-500 p-2 rounded-lg">
+            <Link href="/" className="">
               <Image
                 height={1000}
                 width={1000}
-                src={"/logo.svg"}
+                src={"/logo.png"}
                 alt="7thCare logo"
                 title="7thCare logo"
-                className="w-24 h-auto"
+                className="w-36 h-auto"
               />
             </Link>
             <div className="flex items-center gap-6">
@@ -161,10 +161,10 @@ const NavBar = () => {
                 <Image
                   height={400}
                   width={400}
-                  src="/logo.svg"
+                  src="/logo.png"
                   alt="home"
                   title="home"
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
               </Link>
 

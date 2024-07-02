@@ -1,3 +1,7 @@
+##### 07.2.2024
+
+> Logo update
+
 ##### 06.30.2024
 
 > Navmenu logo highlights correction
