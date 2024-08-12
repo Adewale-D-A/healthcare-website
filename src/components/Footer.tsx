@@ -196,7 +196,7 @@ const FooterMenu = () => {
                   clipRule="evenodd"
                 />
               </svg>{" "}
-              <span>+2349011604484 | +14373503453</span>
+              <span>+14373503453</span>
             </div>
             <Link
               href="mailto:info@7thcare.com"
@@ -279,7 +279,7 @@ const FooterMenu = () => {
               </div>
               <div>
                 <h6 className=" text-xl text-gray-400">TALK TO US</h6>
-                <h5 className="text-2xl font-semibold">09011604484</h5>
+                <h5 className="text-2xl font-semibold">+14373503453</h5>
               </div>
             </div>
           </div>
