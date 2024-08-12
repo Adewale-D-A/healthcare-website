@@ -102,7 +102,7 @@ export default function AboutUs() {
               id: 2,
               title: "Development Journey",
               description:
-                "We started developing our core systems after the covid pandemic",
+                "Covid thought us the need for health automation and digitization",
             },
             {
               id: 3,
@@ -114,14 +114,14 @@ export default function AboutUs() {
               id: 4,
               title: "Incorporation",
               description:
-                "We became fully incorporated, ready to go into the market",
+                "We became fully incorporated, ready to find market-fit",
             },
-            {
-              id: 4,
-              title: "Market Entry",
-              description:
-                "We're currently in the market helping healthcare businesses",
-            },
+            // {
+            //   id: 4,
+            //   title: "Market Entry",
+            //   description:
+            //     "We're currently in the market helping healthcare businesses",
+            // },
           ].map((item, index) => (
             <div
               key={item?.id}

@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
+      {/* <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
         <section className="grid grid-cols-2 gap-5 md:gap-10 md:flex items-center justify-center md:justify-between py-12 md:min-h-[5vh]">
           {[
             { imageUrl: "/mindwalks_logo.jpg" },
@@ -51,7 +51,7 @@ export default function Home() {
             );
           })}
         </section>
-      </div>
+      </div> */}
       <section className="flex w-full flex-col md:flex-row ">
         {[
           {
@@ -270,19 +270,19 @@ export default function Home() {
           <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-10 justify-between mt-16">
             {[
               {
-                value: "32K+",
+                value: "12K+",
                 label: "ACTIVE PATIENTS",
               },
               {
-                value: "20K+",
+                value: "4+",
                 label: "MEDICAL CENTRES",
               },
               {
-                value: "25%",
+                value: "15%",
                 label: "MONTHLY INCREASE",
               },
               {
-                value: "28K",
+                value: "8K",
                 label: "EXCELLENT FEEDBACK",
               },
             ].map((item) => (
