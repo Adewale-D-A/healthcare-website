@@ -48,7 +48,7 @@ const FooterMenu = () => {
                 </svg>
               </Link>
               <Link
-                href="https://www.instagram.com/7thcares"
+                href="https://www.instagram.com/7thcare"
                 target="_blank"
                 rel="noreferrer"
               >
