@@ -10,33 +10,6 @@ This website is written in Typescript using Next.JS react library framework whic
 
  <table>
     <tr>
-      <th>Task</th>
-      <th>Docker command</th>
-    </tr>
-    <tr>
-      <td>Build a docker image using docker compose</td>
-      <td>docker-compose build</td>
-    </tr>
-    <tr>
-      <td>Run the image locally</td>
-      <td>docker run -d -p 8080:3000 --name care-website care-website:v1.1.3</td>
-    </tr>
-    <tr>
-      <td>Push Docker image to Dockerhub</td>
-      <td>docker tag care-website:v1.1.3 adewaleda/care-website:v1.1.3</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>docker push adewaleda/care-website:v1.1.3</td>
-    </tr>
-    <tr>
-      <td>Pull image from DockerHub</td>
-      <td>docker pull adewaleda/care-website:v1.1.3</td>
-    </tr>
-    </table>
-
- <table>
-    <tr>
       <th>Package Name</th>
       <th>Use In App</th>
     </tr>

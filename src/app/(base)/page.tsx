@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/contactForm";
 import Testimonials from "@/components/Testimonials";
 import NavBar from "@/components/NavBar";
+import SeventhSenseContent from "@/components/7thsense-content";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section className="w-full flex justify-center my-24 px-5 md:px-10">
+        <SeventhSenseContent />
       </section>
       {/* <div className="w-full max-w-screen-xl flex flex-col gap-3 justify-center items-center  px-5 md:px-10">
         <section className="grid grid-cols-2 gap-5 md:gap-10 md:flex items-center justify-center md:justify-between py-12 md:min-h-[5vh]">
