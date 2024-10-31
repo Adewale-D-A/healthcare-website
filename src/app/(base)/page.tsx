@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/contactForm";
 import Testimonials from "@/components/Testimonials";
 import NavBar from "@/components/NavBar";
+import SeventhSenseContent from "@/components/7thsense-content";
 
 export default function Home() {
   return (
@@ -93,6 +94,10 @@ export default function Home() {
             </div>
           </div>
         ))}
+      </section>
+
+      <section className="w-full flex justify-center mt-24 px-5 md:px-10">
+        <SeventhSenseContent />
       </section>
 
       {/* services */}

@@ -54,6 +54,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 5px;
 }
+
 .backdrop-wide {
   background-color: transparent;
   backdrop-filter: none;
@@ -61,6 +62,17 @@ body {
   border-radius: 0px;
 }
 
+/* scroll bar hide */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+/* scroll bar hide */
 .webkit-sticky {
   position: -webkit-sticky;
   position: sticky;
