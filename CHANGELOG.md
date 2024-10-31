@@ -1,3 +1,7 @@
+##### 10.31.2024
+
+> Google Tag addition
+
 ##### 10.30.2024
 
 > 7thSense content update
