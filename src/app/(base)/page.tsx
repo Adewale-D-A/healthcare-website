@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/contactForm";
 import Testimonials from "@/components/Testimonials";
 import NavBar from "@/components/NavBar";
-import SeventhSenseContent from "@/components/7thsense-content";
+import seventhSense from "@/assets/7thsense.json";
 
 export default function Home() {
   return (
@@ -95,9 +95,41 @@ export default function Home() {
           </div>
         ))}
       </section>
-
-      <section className="w-full flex justify-center mt-24 px-5 md:px-10">
-        <SeventhSenseContent />
+      {/* bg-[#252525]  #03253E*/}
+      <section className="w-full text-white bg-[#03253E] py-20 flex justify-center md:px-20 px-10 ">
+        <div className="max-w-screen-xl w-full ">
+          <div className=" text-center flex justify-center items-center flex-col w-full gap-4">
+            <Image
+              src={"/seventh-sense/logo-2.jpg"}
+              alt="7thSense logo"
+              height={300}
+              width={300}
+              className=" size-44 shadow-lg rounded-md"
+            />
+            <h5 className=" font-extrabold text-2xl md:text-4xl text-center max-w-screen-sm">
+              5 Things You Should Know About{" "}
+              <span className=" text-green-500">7thSense</span>
+            </h5>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+            {seventhSense.map((item, index) => {
+              return (
+                <div
+                  key={item?.id}
+                  className="w-full relative  flex justify-center flex-col rounded-lg shadow-lg p-6 pb-1"
+                >
+                  <span className=" z-[1] absolute top-0 left-0 text-[100px] font-extrabold opacity-5">
+                    {index + 1}
+                  </span>
+                  <div className={` z-[2]`}>
+                    <h5 className="font-semibold text-xl my-4">{item.title}</h5>
+                    <p className=" font-light">{item.content}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </section>
 
       {/* services */}
