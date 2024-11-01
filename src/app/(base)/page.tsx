@@ -104,7 +104,7 @@ export default function Home() {
               alt="7thSense logo"
               height={300}
               width={300}
-              className=" size-44 shadow-lg rounded-md"
+              className=" size-44 rounded-md"
             />
             <h5 className=" font-extrabold text-2xl md:text-4xl text-center max-w-screen-sm">
               5 Things You Should Know About{" "}
