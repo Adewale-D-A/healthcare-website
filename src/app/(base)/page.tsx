@@ -104,7 +104,7 @@ export default function Home() {
               alt="7thSense logo"
               height={300}
               width={300}
-              className=" size-44 shadow-lg rounded-md"
+              className=" size-44 rounded-md"
             />
             <h5 className=" font-extrabold text-2xl md:text-4xl text-center max-w-screen-sm">
               5 Things You Should Know About{" "}
@@ -116,7 +116,7 @@ export default function Home() {
               return (
                 <div
                   key={item?.id}
-                  className="w-full relative  flex justify-center flex-col rounded-lg shadow-lg p-6 pb-1"
+                  className="w-full relative  flex justify-center flex-col rounded-lg p-6 pb-1"
                 >
                   <span className=" z-[1] absolute top-0 left-0 text-[100px] font-extrabold opacity-5">
                     {index + 1}
