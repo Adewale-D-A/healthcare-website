@@ -116,7 +116,7 @@ export default function Home() {
               return (
                 <div
                   key={item?.id}
-                  className="w-full relative  flex justify-center flex-col rounded-lg shadow-lg p-6 pb-1"
+                  className="w-full relative  flex justify-center flex-col rounded-lg p-6 pb-1"
                 >
                   <span className=" z-[1] absolute top-0 left-0 text-[100px] font-extrabold opacity-5">
                     {index + 1}
