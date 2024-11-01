@@ -1,3 +1,7 @@
+##### 11.01.2024
+
+> 7thSense section update
+
 ##### 10.31.2024
 
 > Google Tag addition
