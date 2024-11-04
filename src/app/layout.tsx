@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Concert_One, Pacifico } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const concert = Concert_One({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-concert",
+});
+const pacifico = Pacifico({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pacifico",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +49,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} ${concert.variable} ${pacifico.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

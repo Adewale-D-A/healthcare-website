@@ -16,13 +16,12 @@ export default function PatientCount() {
         <div className="webkit-sticky top-0 left-0 z-50 w-full">
           <NavBar />
         </div>
-        <div className="flex items-center justify-center flex-col w-full h-full text-white">
-          <h5 className=" p-2 rounded-full px-5 bg-primary-500">
+        <div className="flex  items-center justify-center flex-col gap-3 w-full h-full text-white">
+          <h5 className="card p-3 text-xl font-extrabold font-pacifico count-text rounded-3xl text-primary-500">
             Patient Count
           </h5>
-
           <AnimatePresence>
-            <ul className=" list-none flex items-center gap-5 text-7xl md:text-[100px] lg:text-[150px] font-Comfortaa font-extrabold text-primary-500">
+            <ul className="glass-effect rounded-3xl px-10 p-4 list-none flex items-center gap-5 text-7xl md:text-[100px] lg:text-[150px] font-concert font-extrabold text-primary-500">
               {String(count)
                 ?.split("")
                 .map((item, index) => (
