@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Concert_One, Pacifico } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import FooterMenu from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const concert = Concert_One({
@@ -52,7 +54,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${concert.variable} ${pacifico.variable}`}
       >
+        <NavBar />
         {children}
+        <FooterMenu />
       </body>
     </html>
   );

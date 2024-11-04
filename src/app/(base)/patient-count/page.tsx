@@ -21,7 +21,7 @@ export default function PatientCount() {
             Patient Count
           </h5>
           <AnimatePresence>
-            <ul className="glass-effect rounded-3xl px-10 p-4 list-none flex items-center gap-5 text-6xl md:text-[100px] lg:text-[150px] font-concert font-extrabold text-primary-500">
+            <ul className="glass-effect rounded-3xl px-10 p-4 list-none flex items-center gap-3 md:gap-5 text-6xl md:text-[100px] lg:text-[150px] font-concert font-extrabold text-primary-500">
               {String(count)
                 ?.split("")
                 .map((item, index) => (

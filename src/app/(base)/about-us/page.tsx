@@ -1,13 +1,9 @@
-import NavBar from "@/components/NavBar";
 import Slider from "@/components/about-us-slider";
 
 export default function AboutUs() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
-      <section className=" w-full h-full bg-[url('/support_bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50 w-full">
-          <NavBar />
-        </div>
+      <section className=" w-full h-full bg-[url('/support_bg.jpg')]  pt-20 bg-cover bg-center bg-no-repeat">
         <div className="w-full my-10 md:my-24  flex justify-center items-center px-5 md:px-10 text-shadow">
           <div className="w-full max-w-screen-xl flex flex-col md:flex-row gap-6 justify-between items-center">
             <h1 className="w-full text-3xl md:text-6xl font-bold text-white text-center capitalize md:leading-tight">
