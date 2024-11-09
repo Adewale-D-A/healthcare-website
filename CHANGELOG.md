@@ -1,3 +1,7 @@
+##### 11.09.2024
+
+> Patient counter UI uplift (responsiveness not yet done)
+
 ##### 11.04.2024
 
 > "More life" to patient count page counter UI design

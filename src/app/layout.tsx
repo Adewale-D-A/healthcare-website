@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Concert_One, Pacifico } from "next/font/google";
+import { Inter, Jost, Albert_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import FooterMenu from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const concert = Concert_One({
-  weight: "400",
+
+const jost = Jost({
+  // weight: "400",
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-concert",
-});
-const pacifico = Pacifico({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-pacifico",
+  variable: "--font-jost",
 });
 
 export const metadata: Metadata = {
@@ -51,9 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} ${concert.variable} ${pacifico.variable}`}
-      >
+      <body className={`${inter.className} ${jost.variable}`}>
         <NavBar />
         {children}
         <FooterMenu />
