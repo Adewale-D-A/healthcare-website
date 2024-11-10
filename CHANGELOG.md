@@ -1,3 +1,8 @@
+##### 11.10.2024
+
+> Patient counter UI update
+> Glitch animation to be done once logic is figured out
+
 ##### 11.09.2024
 
 > Patient counter UI uplift (responsiveness not yet done)

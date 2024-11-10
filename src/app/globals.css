@@ -33,7 +33,7 @@ body {
     #2f80ed 48.79%,
     #2d9ee0 97.22%
   );
-  -webkit-background-clip: text;
+  -webkit-background-clip-path: text;
   -webkit-text-fill-color: transparent;
 }
 .calc-height {
@@ -126,3 +126,4 @@ ol li {
     transform: rotateY(0deg);
   }
 }
+

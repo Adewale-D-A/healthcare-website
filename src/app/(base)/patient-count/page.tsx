@@ -17,14 +17,13 @@ export default function PatientCount() {
           <NavBar />
         </div>
         <div className="flex items-center justify-center flex-col gap-3 w-full h-full text-white">
-          <div className="bg-[url('/counter_bg_2.jpg')] font-jost bg-cover bg-center bg-no-repeat w-fit h-fit transition-all flex shadow-lg">
-            <div className=" h-full w-28 bg-gray-900"></div>
-            <div className=" flex items-center justify-center flex-col w-full py-20 px-10">
-              <h5 className="p-3 text-7xl font-semibold uppercase">
+          <div className=" font-jost bg-cover bg-center bg-no-repeat w-fit h-fit transition-all flex ">
+            <div className=" flex items-center justify-center flex-col gap-2 md:gap-4 w-full py-20 px-5 md:px-10">
+              <h5 className="p-3 text-lg  md:text-3xl lg:text-7xl font-semibold uppercase text-primary-500">
                 #<span className=" font-light">Patient</span> Count
               </h5>
               <AnimatePresence>
-                <ul className="px-10 p-4 list-none flex items-center gap-3 md:gap-5 text-6xl md:text-[100px] lg:text-[150px] font-bold">
+                <ul className="list-none grid grid-cols-6 items-center gap-2 md:gap-5 text-4xl md:text-[100px] lg:text-[150px] font-bold">
                   {String(count)
                     ?.split("")
                     .map((item, index) => (
@@ -33,12 +32,28 @@ export default function PatientCount() {
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: 100, opacity: 1 }}
                         key={item + index}
-                        className=" p-5 bg-gray-900 rounded-2xl aspect-square px-10 relative z-[1]"
+                        className=" p-2 md:p-5 px-5 md:px-10 bg-green-900 rounded-md lg:rounded-2xl aspect-square relative z-[1] flex items-center justify-center"
                       >
-                        <div className=" -z-[1] w-full absolute top-0 left-0 h-1/2 bg-gray-800 rounded-t-2xl"></div>
-                        <span className="">
-                          {index === 2 ? `${item},` : item}
-                        </span>
+                        <div className=" -z-[1] w-full absolute top-0 left-0 h-1/2 bg-green-800 rounded-t-2xl"></div>
+                        <span className="">{item}</span>
+                      </motion.ol>
+                    ))}
+                </ul>
+              </AnimatePresence>
+              <AnimatePresence>
+                <ul className="list-none grid grid-cols-6 items-center gap-2 md:gap-5 text-4xl md:text-[100px] lg:text-[150px] font-bold opacity-15 -scale-y-100">
+                  {String(count)
+                    ?.split("")
+                    .map((item, index) => (
+                      <motion.ol
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: 100, opacity: 1 }}
+                        key={item + index}
+                        className=" p-2 md:p-5 px-5 md:px-10 bg-green-900 rounded-md lg:rounded-2xl aspect-square relative z-[1] flex items-center justify-center"
+                      >
+                        <div className=" -z-[1] w-full absolute top-0 left-0 h-1/2 bg-green-800 rounded-t-2xl"></div>
+                        <span className="">{item}</span>
                       </motion.ol>
                     ))}
                 </ul>
