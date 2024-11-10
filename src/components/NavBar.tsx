@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className=" flex justify-center text-white w-full">
+      <nav className=" flex justify-center text-white w-full absolute top-0 left-0 z-30">
         {/* //desktop view  */}
         <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center ">
           <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5 shadow-lg">
@@ -168,12 +168,13 @@ const NavBar = () => {
                 />
               </Link>
 
-              <Link
-                href={"#"}
+              <button
+                type="button"
+                onClick={() => setOpenContactModal(true)}
                 className="bg-secondary-500 p-3 px-5 rounded-3xl w-fit text-white hover:bg-primary-500 transition-all cursor-pointer"
               >
                 Request a Demo
-              </Link>
+              </button>
             </div>
           </div>
           <div

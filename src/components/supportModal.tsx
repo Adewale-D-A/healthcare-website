@@ -17,7 +17,7 @@ export default function SupportModal({
 
   return (
     <Transition appear show={openModal} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={() => handleClose()}>
+      <Dialog as="div" className="relative z-20" onClose={() => handleClose()}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -41,8 +41,8 @@ export default function SupportModal({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-screen-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                <div className="flex flex-col gap-6 justify-center items-center">
+              <Dialog.Panel className="w-full max-w-screen-sm transform overflow-hidden rounded-2xl mt-20 md:mt-10 bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <div className="flex flex-col gap-6 justify-center items-center ">
                   <div className="flex justify-end w-full">
                     <button
                       type="button"

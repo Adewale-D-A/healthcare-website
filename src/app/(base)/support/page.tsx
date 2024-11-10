@@ -1,14 +1,10 @@
-import NavBar from "@/components/NavBar";
 import ContactForm from "@/components/contactForm";
 import Link from "next/link";
 
 export default function Support() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
-      <section className=" w-full min-h-screen h-full bg-[url('/support_bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50 w-full">
-          <NavBar />
-        </div>
+      <section className=" w-full min-h-screen h-full bg-[url('/support_bg.jpg')] pt-20 bg-cover bg-center bg-no-repeat">
         <div className="w-full my-10 md:mt-16  flex justify-center items-center px-5 md:px-10">
           <div className="w-full max-w-screen-xl flex flex-col md:flex-row gap-6 justify-between items-center">
             <h1 className=" text-3xl md:text-6xl font-bold text-white capitalize max-w-xl md:leading-tight">

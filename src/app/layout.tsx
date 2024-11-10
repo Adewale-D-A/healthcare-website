@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Jost, Albert_Sans } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import FooterMenu from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const jost = Jost({
+  // weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jost",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +46,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${jost.variable}`}>
+        <NavBar />
+        {children}
+        <FooterMenu />
+      </body>
     </html>
   );
 }
