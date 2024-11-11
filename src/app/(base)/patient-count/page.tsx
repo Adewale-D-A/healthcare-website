@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function PatientCount() {
-  const [count, setCount] = useState(101000);
+  const [count, setCount] = useState(100000);
   //set countdown timer
   useEffect(() => {
-    var random = Math.floor(Math.random() * 3) + 1;
-    setTimeout(() => setCount((prev) => prev + random), 1000);
+    var random = Math.floor(Math.random() * 8) + 1;
+    setTimeout(() => setCount((prev) => prev + random), 700);
   });
   return (
     <main className="w-full flex flex-col justify-center items-center">

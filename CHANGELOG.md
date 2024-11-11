@@ -1,3 +1,7 @@
+##### 11.11.2024
+
+> Counter spead increment and counting sequence increament
+
 ##### 11.10.2024
 
 > Patient counter UI update
