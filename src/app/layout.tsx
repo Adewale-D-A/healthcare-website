@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Jost, Albert_Sans } from "next/font/google";
+import { Inter, Jost } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import FooterMenu from "@/components/Footer";

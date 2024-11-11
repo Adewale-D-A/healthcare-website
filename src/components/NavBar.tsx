@@ -34,11 +34,11 @@ const NavBar = () => {
       <nav className=" flex justify-center text-white w-full absolute top-0 left-0 z-30">
         {/* //desktop view  */}
         <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center ">
-          <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5 shadow-lg">
+          <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5">
             <Link href="/" className="">
               <Image
-                height={1000}
-                width={1000}
+                height={300}
+                width={300}
                 src={"/logo.png"}
                 alt="7thCare logo"
                 title="7thCare logo"
