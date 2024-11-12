@@ -1,3 +1,9 @@
+##### 12.11.2024
+
+> Counter package removal and custom logic implementation
+> Counter package installation
+> nav menu theme update
+
 ##### 11.11.2024
 
 > Counter spead increment and counting sequence increament
