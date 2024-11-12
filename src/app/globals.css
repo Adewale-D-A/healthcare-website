@@ -20,7 +20,7 @@ body {
 .gradient-service {
   background: linear-gradient(107.95deg, #007cd7 2.74%, #093d69 100.44%);
 }
-.text-gradient {
+/* .text-gradient {
   background: linear-gradient(
     97.29deg,
     #091e3a 0.36%,
@@ -35,7 +35,7 @@ body {
   );
   -webkit-background-clip-path: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 .calc-height {
   height: calc(100vh - 150px);
 }
@@ -126,4 +126,3 @@ ol li {
     transform: rotateY(0deg);
   }
 }
-
