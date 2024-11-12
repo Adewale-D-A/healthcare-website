@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const fastCountStartNumber = 0;
 const fastCountEndNumber = 149900;
 const fastCountStepMs = 33;
-const fastCountDurationMs = 4;
+const fastCountDurationMs = 3;
 
 const slowCountStartNumber = fastCountEndNumber;
 const slowCountEndNumber = 150000;

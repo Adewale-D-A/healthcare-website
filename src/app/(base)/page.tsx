@@ -9,9 +9,6 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className=" w-full h-screen bg-[url('/home_bg_gif.gif')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50 w-full">
-          <NavBar />
-        </div>
         <div className="w-full calc-height flex justify-center items-center px-5 md:px-10 text-shadow">
           <div className="w-full max-w-screen-xl flex flex-col gap-6 justify-center items-center">
             <h1 className=" text-3xl md:text-6xl font-bold text-white text-center capitalize max-w-5xl">
