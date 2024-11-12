@@ -33,7 +33,7 @@ const NavBar = () => {
     <>
       <nav className=" flex justify-center text-white w-full absolute top-0 left-0 z-30">
         {/* //desktop view  */}
-        <div className="w-full backdrop-bg-filter rounded-b-xl hidden md:flex justify-center ">
+        <div className="w-full bg-primary-500 hidden md:flex justify-center ">
           <div className="w-full flex justify-between items-center max-w-screen-xl px-5 md:px-10 py-5">
             <Link href="/" className="">
               <Image
@@ -132,7 +132,7 @@ const NavBar = () => {
         </div>
 
         {/* mobile view  */}
-        <div className="block md:hidden w-full py-5 backdrop-bg-filter rounded-b-xl">
+        <div className="block md:hidden w-full py-5 bg-primary-500">
           <div className="flex w-full items-center justify-between px-5 ">
             <button
               type="button"
