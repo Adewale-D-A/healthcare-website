@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         jost: ["var(--font-jost)"],
+        century: ['var(--font-century)']
       }, 
       colors: {
         primary: {
@@ -23,6 +24,15 @@ const config: Config = {
         secondary: {
           500: "#007CD7",
         },
+        theme_blue:{
+          DEFAULT: "#007CD7"
+        },
+        theme_green:{
+          DEFAULT: "#A4ED8E"
+        },
+        theme_black:{
+          DEFAULT: "#231F20"
+        }
       },
     },
   },

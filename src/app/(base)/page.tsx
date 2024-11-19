@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "@/components/contactForm";
 import Testimonials from "@/components/Testimonials";
-import NavBar from "@/components/NavBar";
 import seventhSense from "@/assets/7thsense.json";
 
 export default function Home() {
@@ -12,8 +11,9 @@ export default function Home() {
         <div className="w-full calc-height flex justify-center items-center px-5 md:px-10 text-shadow">
           <div className="w-full max-w-screen-xl flex flex-col gap-6 justify-center items-center">
             <h1 className=" text-3xl md:text-6xl font-bold text-white text-center capitalize max-w-5xl">
-              AUTOMATE YOUR <span className=" text-green-300">HEALTHCARE</span>{" "}
-              BUSINESS WITH OUR SOLUTIONS
+              AUTOMATE YOUR{" "}
+              <span className=" text-theme_green">HEALTHCARE</span> BUSINESS
+              WITH OUR SOLUTIONS
             </h1>
             <p className=" text-md md:text-xl text-white text-center max-w-3xl">
               Streamline operations, enhance patient care, and maximise

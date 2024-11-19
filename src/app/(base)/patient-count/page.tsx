@@ -1,5 +1,4 @@
 "use client";
-import NavBar from "@/components/NavBar";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -65,9 +64,6 @@ export default function PatientCount() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
       <section className=" w-full h-screen bg-[url('/medical_bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="webkit-sticky top-0 left-0 z-50 w-full">
-          <NavBar />
-        </div>
         <div className="flex items-center justify-center flex-col gap-3 w-full h-full text-white">
           <div className=" font-jost bg-cover bg-center bg-no-repeat w-fit h-fit transition-all flex ">
             <div className=" flex items-center justify-center flex-col gap-2 w-full py-20 px-5 md:px-10">

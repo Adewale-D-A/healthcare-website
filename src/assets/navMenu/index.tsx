@@ -2,8 +2,11 @@ import HourGlassIcon from "../icons/house-glass";
 
 const navItems = [
   {
-    label: "Services",
+    title: "Services",
+    isMobile: true,
     url: "/services",
+    subMenu: false,
+    subMenuContent: [],
     iconUrl: "",
     icon: (
       <svg
@@ -17,133 +20,97 @@ const navItems = [
         <path d="M5 19h10v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2ZM5 7a5.008 5.008 0 0 1 4-4.9 3.988 3.988 0 1 0-3.9 5.859A4.974 4.974 0 0 1 5 7Zm5 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm5-1h-.424a5.016 5.016 0 0 1-1.942 2.232A6.007 6.007 0 0 1 17 17h2a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5ZM5.424 9H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h2a6.007 6.007 0 0 1 4.366-5.768A5.016 5.016 0 0 1 5.424 9Z" />
       </svg>
     ),
-    hasSubMenu: false,
-    subMenu: [
-      {
-        label: "",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-    ],
   },
   {
-    label: "Patient Count",
+    title: "Patient Count",
+    isMobile: true,
     url: "/patient-count",
+    subMenu: false,
+    subMenuContent: [],
     iconUrl: "",
     icon: <HourGlassIcon />,
-    hasSubMenu: false,
-    subMenu: [
-      {
-        label: "",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-    ],
   },
-  // {
-  //   label: "Marketplace",
-  //   url: "#",
-  //   iconUrl: "",
-  //   icon: "",
-  //   hasSubMenu: true,
-  //   subMenu: [
-  //     {
-  //       label: "For Consultants",
-  //       url: "#",
-  //       iconUrl: "",
-  //       icon: "",
-  //     },
-  //     {
-  //       label: "For Pharmacies",
-  //       url: "#",
-  //       iconUrl: "",
-  //       icon: "",
-  //     },
-  //     {
-  //       label: "For Laboratories",
-  //       url: "#",
-  //       iconUrl: "",
-  //       icon: "",
-  //     },
-  //     {
-  //       label: "For Hospitals",
-  //       url: "#",
-  //       icon: "",
-  //       iconUrl: "",
-  //     },
-  //   ],
-  // },
   {
-    label: "For Health Providers",
+    title: "Products",
     url: "#",
+    isMobile: false,
+    subMenu: true,
     iconUrl: "",
     icon: "",
-    hasSubMenu: true,
-    subMenu: [
+    subMenuContent: [
       {
-        label: "HealthCare Automation System",
+        id: "1",
+        name: "For Health Providers",
         url: "#",
-        iconUrl: "",
-        icon: "",
+        subContentOne: [
+          {
+            id: "1",
+            name: "HealthCare Automation System",
+            url: "#",
+            description: "",
+          },
+          {
+            id: "2",
+            name: "Hospital Management System",
+            url: "#",
+            description: "",
+          },
+          {
+            id: "3",
+            name: "Laboratory Management System",
+            url: "#",
+            description: "",
+          },
+        ],
+        subContentTwo: [
+          {
+            id: "1",
+            name: "Pharmacy Management System",
+            url: "#",
+            description: "",
+          },
+          {
+            id: "2",
+            name: "Electronic Health Records",
+            url: "#",
+            description: "",
+          },
+          {
+            id: "3",
+            name: "Billing Automation System",
+            url: "#",
+            description: "",
+          },
+        ],
       },
       {
-        label: "Hospital Management System",
+        id: "2",
+        name: "For Patients",
         url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-      {
-        label: "Laboratory Management System",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-      {
-        label: "Pharmacy Management System",
-        url: "#",
-        icon: "",
-        iconUrl: "",
-      },
-      {
-        label: "Electronic Health Records",
-        url: "#",
-        icon: "",
-        iconUrl: "",
-      },
-      {
-        label: "Billing Automation System",
-        url: "#",
-        icon: "",
-        iconUrl: "",
+        subContentOne: [
+          {
+            id: "1",
+            name: "Telemedicine",
+            url: "#",
+            description: "",
+          },
+          {
+            id: "2",
+            name: "Patient Portal",
+            url: "#",
+            description: "",
+          },
+        ],
+        subContentTwo: [],
       },
     ],
   },
   {
-    label: "For Patients",
-    url: "#",
-    iconUrl: "",
-    icon: "",
-    hasSubMenu: true,
-    subMenu: [
-      {
-        label: "Telemedicine",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-      {
-        label: "Patient Portal",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-    ],
-  },
-  {
-    label: "About us",
+    title: "About us",
+    isMobile: true,
     url: "/about-us",
+    subMenu: false,
+    subMenuContent: [],
     iconUrl: "",
     icon: (
       <svg
@@ -157,19 +124,13 @@ const navItems = [
         <path d="M5 19h10v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2ZM5 7a5.008 5.008 0 0 1 4-4.9 3.988 3.988 0 1 0-3.9 5.859A4.974 4.974 0 0 1 5 7Zm5 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm5-1h-.424a5.016 5.016 0 0 1-1.942 2.232A6.007 6.007 0 0 1 17 17h2a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5ZM5.424 9H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h2a6.007 6.007 0 0 1 4.366-5.768A5.016 5.016 0 0 1 5.424 9Z" />
       </svg>
     ),
-    hasSubMenu: false,
-    subMenu: [
-      {
-        label: "",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-    ],
   },
   {
-    label: "Support",
+    title: "Support",
+    isMobile: true,
     url: "/support",
+    subMenu: false,
+    subMenuContent: [],
     iconUrl: "",
     icon: (
       <svg
@@ -188,15 +149,6 @@ const navItems = [
         />
       </svg>
     ),
-    hasSubMenu: false,
-    subMenu: [
-      {
-        label: "",
-        url: "#",
-        iconUrl: "",
-        icon: "",
-      },
-    ],
   },
 ];
 

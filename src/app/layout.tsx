@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
-import { Inter, Jost } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import FooterMenu from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "@/components/layout/nav-menu";
+import FooterMenu from "@/components/layout/footer";
+import localFont from "next/font/local";
 
 const jost = Jost({
-  // weight: "400",
   subsets: ["latin"],
   display: "swap",
   variable: "--font-jost",
 });
-
+const centuryGothic = localFont({
+  src: [
+    {
+      path: "../assets/font/CenturyGothic.ttf",
+      // weight: "400",
+    },
+  ],
+  variable: "--font-century",
+});
 export const metadata: Metadata = {
   title: {
     template: "%s | 7thCare",
@@ -46,7 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${jost.variable}`}>
+      <body
+        className={`${centuryGothic.variable} ${jost.variable} font-century`}
+      >
         <NavBar />
         {children}
         <FooterMenu />
