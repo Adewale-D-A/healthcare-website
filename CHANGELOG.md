@@ -1,3 +1,8 @@
+##### 19.11.2024
+
+> Mega menu UI development
+> Footer menu UI adjustments
+
 ##### 12.11.2024
 
 > Counter package removal and custom logic implementation

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
   color: #111827;
 }
@@ -49,10 +48,10 @@ body {
   transform: rotateY(180deg);
 }
 .backdrop-bg-filter {
-  background-color: rgb(54, 79, 0, 0.2);
+  /* background-color: rgb(54, 79, 0, 0.2); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .backdrop-wide {
