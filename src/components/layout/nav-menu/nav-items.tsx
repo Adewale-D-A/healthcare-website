@@ -7,10 +7,15 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import ChevronDownIcon from "@/assets/icons/chevron-down";
 import ChevronUpIcon from "@/assets/icons/chevron-up";
+import Image from "next/image";
 
 export default function NavItems() {
   const navRef = useRef() as any;
 
+  const [imgUrl, setImgUrl] = useState<{ id: string; url: string }>({
+    id: "0",
+    url: "",
+  });
   const pathname = usePathname();
   const [offset, setOffSet] = useState({ left: 0, top: 0, width: 0 });
 
@@ -21,12 +26,6 @@ export default function NavItems() {
       name: string;
       url: string;
       subContentOne: {
-        id: string;
-        name: string;
-        url: string;
-        description: string;
-      }[];
-      subContentTwo: {
         id: string;
         name: string;
         url: string;
@@ -57,7 +56,7 @@ export default function NavItems() {
   }, [navRef]);
 
   return (
-    <div className="flex gap-10 items-center" ref={navRef}>
+    <div className="flex gap-10 items-center " ref={navRef}>
       {navList.map((item) => {
         return (
           <div
@@ -85,16 +84,16 @@ export default function NavItems() {
               )}
             </Link>
             {item?.subMenu && openMegaMenu && hoverContent?.length > 0 && (
-              <div className=" absolute top-0 left-0 z-10 hidden group-hover:flex text-primary-500">
-                <div className="mt-24 flex justify-center items-stretch rounded-lg shadow-md z-10 w-[100vw]">
+              <div className=" absolute top-0 left-0 z-10 hidden group-hover:flex text-theme_black w-screen overflow-hidden">
+                <div className="mt-24 flex justify-start items-stretch shadow-md z-10 w-full">
                   <div
-                    style={{ width: offset?.left }}
-                    className=" w-full h-[calc(100vh-80px)] backdrop-bg-filter  border-gray-400"
+                    style={{ minWidth: offset?.left }}
+                    className="min-h-[calc(100vh-80px)] backdrop-bg-filter  border-gray-400"
                     onMouseEnter={() => setOpenMenu(false)}
                   ></div>
                   <div
                     // style={{ marginLeft: offset?.left }}
-                    className={`flex flex-col gap-4 px-3 font-semibold group-hover:flex bg-[#E6E6EF] w-[100vw] border-t border-gray-400`}
+                    className={`flex flex-col gap-4 px-10 font-semibold group-hover:flex bg-theme_green w-full calc border-t border-gray-400`}
                   >
                     {item?.subMenuContent.map((childOne, index) => {
                       return (
@@ -105,23 +104,31 @@ export default function NavItems() {
                             item?.subMenuContent[index + 1]?.name
                               ? "border-b-[1px] border-[#B0B0B4]/30"
                               : ""
-                          }  py-10 gap-16 text-wrap`}
+                          }  py-10 gap-8 text-wrap items-stretch`}
                         >
                           <Link
                             href={childOne?.url}
-                            className={`max-w-72 h-fit flex-[0.2] capitalize transition-all text-primary-500`}
+                            className={`max-w-52 text-lg h-fit flex-[0.2] capitalize transition-all`}
                           >
                             {childOne?.name}
                           </Link>
                           <div className=" flex flex-col gap-5 flex-[0.4]  max-w-72 ">
                             {childOne?.subContentOne.map((value) => {
                               return (
-                                <div key={value?.id}>
+                                <div
+                                  key={value?.id}
+                                  onMouseEnter={() =>
+                                    setImgUrl({
+                                      id: childOne?.id,
+                                      url: value?.img,
+                                    })
+                                  }
+                                >
                                   {value?.description ? (
                                     <div className="flex flex-col gap-4">
                                       <Link
                                         href={value?.url}
-                                        className=" w-full h-fit  transition-all underline capitalize "
+                                        className=" w-full h-fit  transition-all capitalize "
                                       >
                                         {value?.name}
                                       </Link>
@@ -135,7 +142,7 @@ export default function NavItems() {
                                   ) : (
                                     <Link
                                       href={value?.url}
-                                      className=" w-full h-fit  transition-all underline capitalize"
+                                      className=" w-full h-fit  transition-all capitalize hover:underline hover:text-theme_blue"
                                     >
                                       {value?.name}
                                     </Link>
@@ -144,36 +151,16 @@ export default function NavItems() {
                               );
                             })}
                           </div>
-                          <div className=" flex flex-col gap-4 flex-[0.4]  max-w-72 ">
-                            {childOne?.subContentTwo.map((value) => {
-                              return (
-                                <div key={value?.id}>
-                                  {value?.description ? (
-                                    <div className="flex flex-col gap-4">
-                                      <Link
-                                        href={value?.url}
-                                        className=" w-full h-fit  transition-all underline capitalize "
-                                      >
-                                        {value?.name}
-                                      </Link>
-                                      <Link
-                                        href={value?.url}
-                                        className=" w-full h-fit  transition-all font-normal  "
-                                      >
-                                        {value?.description}
-                                      </Link>
-                                    </div>
-                                  ) : (
-                                    <Link
-                                      href={value?.url}
-                                      className=" w-full h-fit  transition-all underline capitalize"
-                                    >
-                                      {value?.name}
-                                    </Link>
-                                  )}
-                                </div>
-                              );
-                            })}
+                          <div className=" flex flex-col gap-4 flex-[0.4] rounded-md overflow-hidden">
+                            {imgUrl?.url && imgUrl?.id === childOne?.id && (
+                              <Image
+                                src={imgUrl?.url}
+                                alt="image"
+                                width={300}
+                                height={300}
+                                className="  w-auto h-full items-center object-cover"
+                              />
+                            )}
                           </div>
                         </div>
                       );

@@ -1,5 +1,6 @@
 ##### 19.11.2024
 
+> Mega menu UI adjustments
 > Mega menu UI development
 > Footer menu UI adjustments
 
