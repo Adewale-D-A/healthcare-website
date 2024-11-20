@@ -1,3 +1,7 @@
+##### 20.11.2024
+
+> Mega menu adjustment
+
 ##### 19.11.2024
 
 > Mega menu UI adjustments
