@@ -8,10 +8,9 @@ import MapIcon from "@/assets/icons/map";
 
 const FooterMenu = () => {
   return (
-    <footer className=" w-full text-sm flex justify-center bg-primary-500 text-white py-10  md:bg-[url('/counter_bg_2.jpg')] bg-cover bg-center bg-no-repeat">
+    <footer className=" w-full text-sm flex justify-center bg-primary-500 text-white md:py-10">
       <div className="w-full max-w-screen-xl flex flex-col gap-1">
-        <Logo variant={2} />
-        <div className="w-full  backdrop-bg-filter rounded-2xl overflow-hidden">
+        <div className="w-full  backdrop-bg-filter md:rounded-2xl overflow-hidden bg-theme_black">
           <div className="w-full flex flex-col md:flex-row flex-wrap gap-10 justify-center md:justify-between md:gap-4 px-5 md:px-10 py-10">
             {[
               {
@@ -169,60 +168,61 @@ const FooterMenu = () => {
               </div>
             </div>
           </div>
-          <div className=" w-full bg-primary-500 p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
-            <div>
-              <div className=" flex items-center gap-4">
-                {[
-                  {
-                    id: 1,
-                    icon: <LinkedIn className="w-4 h-4" />,
-                    title: "LinkedIn",
-                    url: "https://www.linkedin.com/company/7thcare",
-                  },
-                  {
-                    id: 2,
-                    icon: <Twitter className="w-4 h-4" />,
-                    title: "X",
-                    url: "https://x.com/the7thcare",
-                  },
-                  {
-                    id: 3,
-                    icon: <Instagram className="w-4 h-4" />,
-                    title: "Instagram",
-                    url: "https://www.instagram.com/7thcare",
-                  },
-                ].map(({ id, icon, url, title }) => (
-                  <Link
-                    key={id}
-                    href={url}
-                    target="_blank"
-                    rel="noreferrer"
-                    title={title}
-                    className=" bg-theme_green/5 p-2 rounded-full hover:scale-125 transition-all text-theme_green"
-                  >
-                    {icon}
-                  </Link>
-                ))}
-              </div>
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                href={"mailto:info@7thcare.com"}
-                className=" font-bold text-theme_green"
-              >
-                info@7thcare.com
-              </Link>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className=" w-10 h-10 rounded-full bg-secondary-500 flex items-center justify-center">
-                <PhoneIcon className="w-5 h-5 text-theme_green" />
-              </div>
+          <div className=" w-full bg-theme_green text-theme_blue p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
+            <Logo />
+            <div className=" flex items-center gap-10">
               <div>
-                <h6 className=" text-gray-400">Talk to us</h6>
-                <h5 className="text-xl font-semibold text-theme_green">
-                  +2349116889215
-                </h5>
+                <div className=" flex items-center gap-4">
+                  {[
+                    {
+                      id: 1,
+                      icon: <LinkedIn className="w-4 h-4" />,
+                      title: "LinkedIn",
+                      url: "https://www.linkedin.com/company/7thcare",
+                    },
+                    {
+                      id: 2,
+                      icon: <Twitter className="w-4 h-4" />,
+                      title: "X",
+                      url: "https://x.com/the7thcare",
+                    },
+                    {
+                      id: 3,
+                      icon: <Instagram className="w-4 h-4" />,
+                      title: "Instagram",
+                      url: "https://www.instagram.com/7thcare",
+                    },
+                  ].map(({ id, icon, url, title }) => (
+                    <Link
+                      key={id}
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={title}
+                      className=" bg-theme_blue/5 p-2 rounded-full hover:scale-125 transition-all"
+                    >
+                      {icon}
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  target="_blank"
+                  rel="noreferrer"
+                  href={"mailto:info@7thcare.com"}
+                  className=" font-bold"
+                >
+                  info@7thcare.com
+                </Link>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className=" w-10 h-10 rounded-full bg-secondary-500 flex items-center justify-center">
+                  <PhoneIcon className="w-5 h-5 text-theme_green" />
+                </div>
+                <div>
+                  <h6 className=" text-gray-400">Talk to us</h6>
+                  <h5 className="text-xl font-semibold">+2349116889215</h5>
+                </div>
               </div>
             </div>
           </div>

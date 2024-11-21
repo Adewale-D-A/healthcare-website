@@ -1,21 +1,23 @@
 "use client";
 
 import Link from "next/link";
-
-import navList from "@/assets/navMenu/index";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import navList from "@/assets/navMenu/index";
 import ChevronDownIcon from "@/assets/icons/chevron-down";
 import ChevronUpIcon from "@/assets/icons/chevron-up";
-import Image from "next/image";
 
 export default function NavItems() {
   const navRef = useRef() as any;
 
-  const [imgUrl, setImgUrl] = useState<{ id: string; url: string }>({
-    id: "0",
-    url: "",
-  });
+  // const [imgUrl, setImgUrl] = useState(
+  //   navList.find((item) => item?.title?.toLowerCase() === "products")
+  //     ?.subMenuContent[0]?.subContentOne[0]?.img
+  // );
+  const [imgUrl, setImgUrl] = useState(
+    "/menu-img/automation-in-healthcare.jpeg"
+  );
   const pathname = usePathname();
   const [offset, setOffSet] = useState({ left: 0, top: 0, width: 0 });
 
@@ -105,25 +107,20 @@ export default function NavItems() {
                               item?.subMenuContent[index + 1]?.name
                                 ? "border-b-[1px] border-[#B0B0B4]/30"
                                 : ""
-                            }  py-10 gap-8 text-wrap items-stretch`}
+                            }  py-10 gap-3 text-wrap items-stretch`}
                           >
                             <Link
                               href={childOne?.url}
-                              className={`pl-[60px] px-5 text-lg h-fit flex-[0.3] capitalize transition-all`}
+                              className={`pl-[60px] tsxt-sm lg:text-lg h-fit flex-[0.4] capitalize transition-all`}
                             >
                               {childOne?.name}
                             </Link>
-                            <div className="flex flex-col gap-5 flex-[0.7]">
+                            <div className="flex flex-col gap-5 flex-[0.6]">
                               {childOne?.subContentOne.map((value) => {
                                 return (
                                   <div
                                     key={value?.id}
-                                    onMouseEnter={() =>
-                                      setImgUrl({
-                                        id: childOne?.id,
-                                        url: value?.img,
-                                      })
-                                    }
+                                    onMouseEnter={() => setImgUrl(value?.img)}
                                   >
                                     {value?.description ? (
                                       <div className="flex flex-col gap-4">
@@ -157,9 +154,9 @@ export default function NavItems() {
                       })}
                     </div>
                     <div className=" w-full h-full">
-                      {imgUrl?.url && (
+                      {imgUrl && (
                         <Image
-                          src={imgUrl?.url}
+                          src={imgUrl}
                           alt="image"
                           width={300}
                           height={300}

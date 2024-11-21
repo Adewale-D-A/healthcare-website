@@ -1,3 +1,7 @@
+##### 21.11.2024
+
+> Minor corrections
+
 ##### 20.11.2024
 
 > Mega menu adjustment

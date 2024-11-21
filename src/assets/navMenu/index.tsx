@@ -85,6 +85,13 @@ const navItems = [
             description: "",
             img: "/menu-img/billing-automation-system.png",
           },
+          {
+            id: "7",
+            name: "Speech To Text",
+            url: "#",
+            description: "",
+            img: "/menu-img/billing-automation-system.png",
+          },
         ],
       },
       {
