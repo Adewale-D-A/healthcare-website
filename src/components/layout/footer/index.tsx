@@ -6,11 +6,11 @@ import Logo from "../../business-styles/logo";
 import PhoneIcon from "@/assets/icons/phone";
 import MapIcon from "@/assets/icons/map";
 
-const FooterMenu = () => {
+export default function FooterMenu() {
   return (
-    <footer className=" w-full text-sm flex justify-center bg-primary-500 text-white md:py-10">
+    <footer className=" w-full text-sm flex justify-center bg-theme_black text-white py-10 ">
       <div className="w-full max-w-screen-xl flex flex-col gap-1">
-        <div className="w-full  backdrop-bg-filter md:rounded-2xl overflow-hidden bg-theme_black">
+        <div className="w-full  backdrop-bg-filter rounded-2xl overflow-hidden">
           <div className="w-full flex flex-col md:flex-row flex-wrap gap-10 justify-center md:justify-between md:gap-4 px-5 md:px-10 py-10">
             {[
               {
@@ -36,6 +36,48 @@ const FooterMenu = () => {
                   },
                 ],
               },
+            ].map((section) => (
+              <div key={section?.sectionLabel} className="flex flex-col gap-2">
+                <Link
+                  href={section?.sectionUrl}
+                  className=" font-semibold text-2xl text-theme_green"
+                >
+                  {section?.sectionLabel}
+                </Link>
+                <div className=" h-1 w-12 bg-theme_green mb-5"></div>
+                <div className=" flex items-start flex-wrap gap-16">
+                  {section?.sectionItems?.map((itemsData) => (
+                    <div key={itemsData?.section_header}>
+                      <div className="flex flex-col gap-4">
+                        <p className=" font-semibold text-white">
+                          {itemsData?.section_header}
+                        </p>
+                        {itemsData?.section_header && (
+                          <div className=" h-[1px] w-full bg-theme_green"></div>
+                        )}
+                        <div className="flex flex-col gap-4 text-gray-300">
+                          {itemsData?.desction_data?.map((items) => {
+                            return (
+                              <Link
+                                key={items?.label}
+                                href={items?.url}
+                                className=" max-w-72"
+                              >
+                                {items?.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className=" mt-6">
+                  <Logo />
+                </div>
+              </div>
+            ))}
+            {[
               {
                 sectionLabel: "Products",
                 sectionUrl: "#",
@@ -161,68 +203,67 @@ const FooterMenu = () => {
                     <div>
                       Unit 302, 2221 Yonge Street,
                       <br />
-                      Toronto ON, M4S 0B8.
+                      Toronto ON, M4S 0B8.
                     </div>
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div className=" w-full bg-theme_green text-theme_blue p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
-            <Logo />
-            <div className=" flex items-center gap-10">
-              <div>
-                <div className=" flex items-center gap-4">
-                  {[
-                    {
-                      id: 1,
-                      icon: <LinkedIn className="w-4 h-4" />,
-                      title: "LinkedIn",
-                      url: "https://www.linkedin.com/company/7thcare",
-                    },
-                    {
-                      id: 2,
-                      icon: <Twitter className="w-4 h-4" />,
-                      title: "X",
-                      url: "https://x.com/the7thcare",
-                    },
-                    {
-                      id: 3,
-                      icon: <Instagram className="w-4 h-4" />,
-                      title: "Instagram",
-                      url: "https://www.instagram.com/7thcare",
-                    },
-                  ].map(({ id, icon, url, title }) => (
-                    <Link
-                      key={id}
-                      href={url}
-                      target="_blank"
-                      rel="noreferrer"
-                      title={title}
-                      className=" bg-theme_blue/5 p-2 rounded-full hover:scale-125 transition-all"
-                    >
-                      {icon}
-                    </Link>
-                  ))}
-                </div>
-                <Link
-                  target="_blank"
-                  rel="noreferrer"
-                  href={"mailto:info@7thcare.com"}
-                  className=" font-bold"
-                >
-                  info@7thcare.com
-                </Link>
+          <div className=" w-full bg-primary-500 p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
+            <div>
+              <div className=" flex items-center gap-4">
+                {[
+                  {
+                    id: 1,
+                    icon: <LinkedIn className="w-4 h-4" />,
+                    title: "LinkedIn",
+                    url: "https://www.linkedin.com/company/7thcare",
+                  },
+                  {
+                    id: 2,
+                    icon: <Twitter className="w-4 h-4" />,
+                    title: "X",
+                    url: "https://x.com/the7thcare",
+                  },
+                  {
+                    id: 3,
+                    icon: <Instagram className="w-4 h-4" />,
+                    title: "Instagram",
+                    url: "https://www.instagram.com/7thcare",
+                  },
+                ].map(({ id, icon, url, title }) => (
+                  <Link
+                    key={id}
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    title={title}
+                    className=" bg-theme_green/5 p-2 rounded-full hover:scale-125 transition-all text-theme_green"
+                  >
+                    {icon}
+                  </Link>
+                ))}
               </div>
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href={"mailto:info@7thcare.com"}
+                className=" font-bold text-theme_green"
+              >
+                info@7thcare.com
+              </Link>
+            </div>
 
-              <div className="flex items-center gap-3">
-                <div className=" w-10 h-10 rounded-full bg-secondary-500 flex items-center justify-center">
-                  <PhoneIcon className="w-5 h-5 text-theme_green" />
-                </div>
-                <div>
-                  <h6 className=" text-gray-400">Talk to us</h6>
-                  <h5 className="text-xl font-semibold">+2349116889215</h5>
-                </div>
+            <div className="flex items-center gap-3">
+              <div className=" w-10 h-10 rounded-full bg-secondary-500 flex items-center justify-center">
+                <PhoneIcon className="w-5 h-5 text-theme_green" />
+              </div>
+              <div>
+                <h6 className=" text-gray-400">Talk to us</h6>
+                <h5 className="text-xl font-semibold text-theme_green">
+                  +2349116889215
+                </h5>
               </div>
             </div>
           </div>
@@ -230,6 +271,4 @@ const FooterMenu = () => {
       </div>
     </footer>
   );
-};
-
-export default FooterMenu;
+}
