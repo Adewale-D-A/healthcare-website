@@ -12,6 +12,9 @@ export default function FooterMenu() {
       <div className="w-full max-w-screen-xl flex flex-col gap-1">
         <div className="w-full  backdrop-bg-filter rounded-2xl overflow-hidden">
           <div className="w-full flex flex-col md:flex-row flex-wrap gap-10 justify-center md:justify-between md:gap-4 px-5 md:px-10 py-10">
+            <div className="block md:hidden">
+              <Logo />
+            </div>
             {[
               {
                 sectionLabel: "Services",
@@ -72,7 +75,7 @@ export default function FooterMenu() {
                     </div>
                   ))}
                 </div>
-                <div className=" mt-6">
+                <div className="hidden md:block mt-6">
                   <Logo />
                 </div>
               </div>
@@ -210,7 +213,7 @@ export default function FooterMenu() {
               </div>
             </div>
           </div>
-          <div className=" w-full bg-primary-500 p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
+          <div className=" w-full md:bg-primary-500 p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
             <div>
               <div className=" flex items-center gap-4">
                 {[
