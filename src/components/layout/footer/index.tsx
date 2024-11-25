@@ -6,13 +6,15 @@ import Logo from "../../business-styles/logo";
 import PhoneIcon from "@/assets/icons/phone";
 import MapIcon from "@/assets/icons/map";
 
-const FooterMenu = () => {
+export default function FooterMenu() {
   return (
-    <footer className=" w-full text-sm flex justify-center bg-primary-500 text-white py-10  md:bg-[url('/counter_bg_2.jpg')] bg-cover bg-center bg-no-repeat">
+    <footer className=" w-full text-sm flex justify-center bg-theme_black text-white py-10 ">
       <div className="w-full max-w-screen-xl flex flex-col gap-1">
-        <Logo variant={2} />
         <div className="w-full  backdrop-bg-filter rounded-2xl overflow-hidden">
           <div className="w-full flex flex-col md:flex-row flex-wrap gap-10 justify-center md:justify-between md:gap-4 px-5 md:px-10 py-10">
+            <div className="block md:hidden">
+              <Logo />
+            </div>
             {[
               {
                 sectionLabel: "Services",
@@ -37,6 +39,48 @@ const FooterMenu = () => {
                   },
                 ],
               },
+            ].map((section) => (
+              <div key={section?.sectionLabel} className="flex flex-col gap-2">
+                <Link
+                  href={section?.sectionUrl}
+                  className=" font-semibold text-2xl text-theme_green"
+                >
+                  {section?.sectionLabel}
+                </Link>
+                <div className=" h-1 w-12 bg-theme_green mb-5"></div>
+                <div className=" flex items-start flex-wrap gap-16">
+                  {section?.sectionItems?.map((itemsData) => (
+                    <div key={itemsData?.section_header}>
+                      <div className="flex flex-col gap-4">
+                        <p className=" font-semibold text-white">
+                          {itemsData?.section_header}
+                        </p>
+                        {itemsData?.section_header && (
+                          <div className=" h-[1px] w-full bg-theme_green"></div>
+                        )}
+                        <div className="flex flex-col gap-4 text-gray-300">
+                          {itemsData?.desction_data?.map((items) => {
+                            return (
+                              <Link
+                                key={items?.label}
+                                href={items?.url}
+                                className=" max-w-72"
+                              >
+                                {items?.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="hidden md:block mt-6">
+                  <Logo />
+                </div>
+              </div>
+            ))}
+            {[
               {
                 sectionLabel: "Products",
                 sectionUrl: "#",
@@ -162,14 +206,14 @@ const FooterMenu = () => {
                     <div>
                       Unit 302, 2221 Yonge Street,
                       <br />
-                      Toronto ON, M4S 0B8.
+                      Toronto ON, M4S 0B8.
                     </div>
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div className=" w-full bg-primary-500 p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
+          <div className=" w-full md:bg-primary-500 p-3 px-5 flex flex-col md:flex-row justify-between gap-10">
             <div>
               <div className=" flex items-center gap-4">
                 {[
@@ -230,6 +274,4 @@ const FooterMenu = () => {
       </div>
     </footer>
   );
-};
-
-export default FooterMenu;
+}

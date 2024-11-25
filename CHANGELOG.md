@@ -1,5 +1,18 @@
+##### 25.11.2024
+
+> Mega menu section image updates
+
+##### 21.11.2024
+
+> Minor corrections
+
+##### 20.11.2024
+
+> Mega menu adjustment
+
 ##### 19.11.2024
 
+> Mega menu UI adjustments
 > Mega menu UI development
 > Footer menu UI adjustments
 
