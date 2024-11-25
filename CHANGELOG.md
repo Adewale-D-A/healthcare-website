@@ -1,3 +1,7 @@
+##### 25.11.2024
+
+> Mega menu section image updates
+
 ##### 21.11.2024
 
 > Minor corrections

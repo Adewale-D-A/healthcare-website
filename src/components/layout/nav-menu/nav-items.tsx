@@ -15,9 +15,7 @@ export default function NavItems() {
   //   navList.find((item) => item?.title?.toLowerCase() === "products")
   //     ?.subMenuContent[0]?.subContentOne[0]?.img
   // );
-  const [imgUrl, setImgUrl] = useState(
-    "/menu-img/automation-in-healthcare.jpeg"
-  );
+  const [imgUrl, setImgUrl] = useState("/menu-img/healthcare_automated.jpg");
   const pathname = usePathname();
   const [offset, setOffSet] = useState({ left: 0, top: 0, width: 0 });
 
