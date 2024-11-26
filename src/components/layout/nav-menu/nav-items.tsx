@@ -156,8 +156,8 @@ export default function NavItems() {
                         <Image
                           src={imgUrl}
                           alt="image"
-                          width={300}
-                          height={300}
+                          width={1000}
+                          height={1000}
                           className="  w-auto h-full items-center object-cover"
                         />
                       )}
