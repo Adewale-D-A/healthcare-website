@@ -3,7 +3,13 @@
 import { useState } from "react";
 import SupportModal from "@/components/supportModal";
 
-export default function RequestADemoButton() {
+export default function RequestADemoButton({
+  label = "Request a Demo",
+  gradient = false,
+}: {
+  label?: string;
+  gradient?: boolean;
+}) {
   const [openContactModal, setOpenContactModal] = useState(false);
 
   return (
@@ -11,9 +17,11 @@ export default function RequestADemoButton() {
       <button
         type="button"
         onClick={() => setOpenContactModal(true)}
-        className="bg-secondary-500 p-3 px-5 rounded-3xl w-fit text-white hover:bg-primary-500 transition-all cursor-pointer whitespace-nowrap"
+        className={`${
+          gradient ? "gradient-bg p-4 px-6" : "bg-secondary-500 p-3 px-5"
+        }  rounded-3xl w-fit text-white hover:bg-primary-500 transition-all cursor-pointer whitespace-nowrap`}
       >
-        Request a Demo
+        {label}
       </button>
       <SupportModal
         openModal={openContactModal}
