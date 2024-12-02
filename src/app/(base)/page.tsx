@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/contactForm";
 import Testimonials from "@/components/Testimonials";
 import seventhSense from "@/assets/7thsense.json";
+import RequestADemoButton from "@/components/buttons/request-a-demo";
 
 export default function Home() {
   return (
@@ -407,12 +408,8 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               mattis, ligula et tincidunt venenatis, massa leo rhoncus nulla.
             </p> */}
-            <Link
-              href="#"
-              className="gradient-bg p-4 rounded-full text-white w-fit px-8 text-center"
-            >
-              Join Now
-            </Link>
+
+            <RequestADemoButton label="Join Now" gradient={true} />
           </div>
         </div>
       </section>
