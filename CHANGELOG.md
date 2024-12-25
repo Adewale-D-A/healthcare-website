@@ -1,3 +1,7 @@
+##### 25.12.2024
+
+> Christmas logo update
+
 ##### 02.12.2024
 
 > Request a Demo and support form updates
