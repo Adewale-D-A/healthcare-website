@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import RequestADemoButton from "@/components/buttons/request-a-demo";
 import CancelIcon from "@/assets/icons/cancel";
+import Link from "next/link";
 
 export default function MobileMenu({
   isMenuOpen,
@@ -41,7 +42,16 @@ export default function MobileMenu({
             </button>
           </div>
           <MobileNavItems />
-          <RequestADemoButton />
+          <div className=" flex flex-col items-center gap-3">
+            <RequestADemoButton />
+            <Link
+              href="https://www.anonymizecare.com/"
+              target="_blank"
+              className="bg-transparent border border-secondary-500 h-fit text-primary-500 rounded-full w-fit p-3 px-14 text-sm transition-all hover:scale-105"
+            >
+              AnonymizeCare
+            </Link>
+          </div>
         </div>
       </motion.div>
     );

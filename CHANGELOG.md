@@ -1,3 +1,7 @@
+##### 19.06.2024
+
+> Update: AnonymizeCare nav menu signature addition
+
 ##### 25.12.2024
 
 > Christmas logo update

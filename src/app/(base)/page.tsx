@@ -8,6 +8,20 @@ import RequestADemoButton from "@/components/buttons/request-a-demo";
 export default function Home() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
+      <section className="w-full flex items-center justify-center py-5 px-3 bg-styled-gradient">
+        <div className="  max-w-screen-xl w-full flex items-center justify-between px-3">
+          <h5 className=" text-md lg:text-2xl text-dark-ash-900 ">
+            <span className=" font-bold">CareChampions:</span> community
+            healthcare.. one door, one community at a time.
+          </h5>
+          <Link
+            href="#contact"
+            className=" bg-primary-500 h-fit text-white border-none border-primary rounded-full w-fit p-3 px-14 text-sm transition-all hover:scale-105"
+          >
+            Get Started
+          </Link>
+        </div>
+      </section>
       <section className=" w-full h-screen bg-[url('/home_bg_gif.gif')] bg-cover bg-center bg-no-repeat">
         <div className="w-full calc-height flex justify-center items-center px-5 md:px-10 text-shadow">
           <div className="w-full max-w-screen-xl flex flex-col gap-6 justify-center items-center">
@@ -337,7 +351,7 @@ export default function Home() {
 
       {/* contact */}
       <section
-        id="#contact"
+        id="contact"
         className="w-full max-w-screen-xl flex flex-col md:flex-row gap-10 items-center  px-5 md:px-10 my-24 "
       >
         <div className="w-full">
