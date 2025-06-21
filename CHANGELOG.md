@@ -1,3 +1,7 @@
+##### 21.06.2024
+
+> Update: Navbar buttons sizing issue fixed
+
 ##### 19.06.2024
 
 > Update: AnonymizeCare nav menu signature addition

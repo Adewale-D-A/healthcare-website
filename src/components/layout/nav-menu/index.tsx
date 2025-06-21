@@ -22,7 +22,7 @@ export default function NavMenu() {
             <Link
               href="https://www.anonymizecare.com/"
               target="_blank"
-              className="hidden lg:block bg-transparent border border-secondary-500 h-fit text-white rounded-full w-fit p-3 px-14 text-sm transition-all hover:scale-105"
+              className="hidden lg:block bg-transparent border border-secondary-500 h-fit text-white rounded-full w-fit p-3 px-10 text-sm transition-all hover:scale-105"
             >
               AnonymizeCare
             </Link>

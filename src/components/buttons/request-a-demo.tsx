@@ -18,8 +18,8 @@ export default function RequestADemoButton({
         type="button"
         onClick={() => setOpenContactModal(true)}
         className={`${
-          gradient ? "gradient-bg p-4 px-14" : "bg-secondary-500 p-3 px-14"
-        }  rounded-3xl w-fit text-white hover:bg-primary-500 transition-all cursor-pointer whitespace-nowrap`}
+          gradient ? "gradient-bg" : "bg-secondary-500"
+        }  rounded-3xl w-fit p-3 px-10 text-white transition-all text-sm cursor-pointer whitespace-nowrap hover:scale-105`}
       >
         {label}
       </button>

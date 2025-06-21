@@ -8,15 +8,15 @@ import RequestADemoButton from "@/components/buttons/request-a-demo";
 export default function Home() {
   return (
     <main className="w-full flex flex-col justify-center items-center">
-      <section className="w-full flex items-center justify-center py-5 px-3 bg-styled-gradient">
-        <div className="  max-w-screen-xl w-full flex items-center justify-between px-3">
+      <section className="w-full flex items-center justify-center py-5  bg-styled-gradient">
+        <div className="  max-w-screen-xl w-full flex items-center px-5 md:px-10 justify-between">
           <h5 className=" text-md lg:text-2xl text-dark-ash-900 ">
             <span className=" font-bold">CareChampions:</span> community
             healthcare.. one door, one community at a time.
           </h5>
           <Link
             href="#contact"
-            className=" bg-primary-500 h-fit text-white border-none border-primary rounded-full w-fit p-3 px-14 text-sm transition-all hover:scale-105"
+            className=" bg-primary-500 h-fit text-nowrap text-white border-none border-primary rounded-full w-fit p-3 px-8 lg:px-14 text-sm transition-all hover:scale-105"
           >
             Get Started
           </Link>
