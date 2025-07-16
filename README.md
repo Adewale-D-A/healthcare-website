@@ -31,4 +31,5 @@ This website is written in Typescript using Next.JS react library framework whic
     </tr>
 </table>
 
-> <a href="https://www.7thcare.com/" target="_blank">Visit</a>
+[Visit](https://www.7thcare.com/)
+[FIGMA DESIGN](https://www.figma.com/design/ADfE0IiNWVt5bXZYC8rXWM/7thCare--Copy-?node-id=5054-6642&t=rguAYPhx5RREe7mJ-0)

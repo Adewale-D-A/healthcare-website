@@ -1,3 +1,7 @@
+##### 16.07.2024
+
+> UPGRADE: VERSION II
+
 ##### 21.06.2024
 
 > Update: Navbar buttons sizing issue fixed
