@@ -55,7 +55,6 @@ export default function RootLayout({
       <body
         className={`${centuryGothic.variable} ${jost.variable} font-century`}
       >
-        <NavBar />
         {children}
         <FooterMenu />
       </body>

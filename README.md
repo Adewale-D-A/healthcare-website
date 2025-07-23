@@ -32,4 +32,4 @@ This website is written in Typescript using Next.JS react library framework whic
 </table>
 
 [Visit](https://www.7thcare.com/)
-[FIGMA DESIGN](https://www.figma.com/design/ADfE0IiNWVt5bXZYC8rXWM/7thCare--Copy-?node-id=5054-6642&t=rguAYPhx5RREe7mJ-0)
+[FIGMA DESIGN](https://www.figma.com/design/ADfE0IiNWVt5bXZYC8rXWM/7thCare--Copy-?node-id=5061-5935&t=7nCVVyhoEP3BqquT-0)

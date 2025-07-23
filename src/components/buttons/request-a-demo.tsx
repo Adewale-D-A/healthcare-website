@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SupportModal from "@/components/supportModal";
+import { Button } from "./button";
 
 export default function RequestADemoButton({
   label = "Request a Demo",
@@ -14,15 +15,9 @@ export default function RequestADemoButton({
 
   return (
     <>
-      <button
-        type="button"
-        onClick={() => setOpenContactModal(true)}
-        className={`${
-          gradient ? "gradient-bg" : "bg-secondary-500"
-        }  rounded-3xl w-fit p-3 px-10 text-white transition-all text-sm cursor-pointer whitespace-nowrap hover:scale-105`}
-      >
+      <Button type="button" onClick={() => setOpenContactModal(true)}>
         {label}
-      </button>
+      </Button>
       <SupportModal
         openModal={openContactModal}
         setOpenModal={setOpenContactModal}

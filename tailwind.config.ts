@@ -21,10 +21,10 @@ const config: Config = {
       },
       colors: {
         primary: {
-          500: "#003155",
+          DEFAULT: "#102A56",
         },
         secondary: {
-          500: "#007CD7",
+          DEFAULT: "#007CD7",
         },
         theme_blue: {
           DEFAULT: "#007CD7",

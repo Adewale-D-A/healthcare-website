@@ -1,3 +1,7 @@
+##### 23.07.2024
+
+> Feature: Buttons setup
+
 ##### 16.07.2024
 
 > UPGRADE: VERSION II
