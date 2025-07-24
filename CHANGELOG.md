@@ -1,3 +1,7 @@
+##### 24.07.2024
+
+> Feature: Home page hero section UI and animation partly setup
+
 ##### 23.07.2024
 
 > Feature: Buttons setup

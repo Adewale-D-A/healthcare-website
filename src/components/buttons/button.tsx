@@ -6,7 +6,7 @@ import { cn } from "@/utils/cn";
 import { Loader2 } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center gap-[6px] justify-center whitespace-nowrap rounded-md font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2  focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center text-sm gap-[6px] justify-center whitespace-nowrap rounded-lg font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2  focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -14,7 +14,7 @@ const buttonVariants = cva(
         outline: "border border-[#717680]",
       },
       size: {
-        default: "px-4 lg:px-6 py-3 md:py-4",
+        default: "px-4 lg:px-6 py-2 md:py-3",
       },
     },
     defaultVariants: {

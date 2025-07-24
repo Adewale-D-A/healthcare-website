@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "logo": "/assets/partners/oat.svg",
+    "name": "OAT"
+  },
+  {
+    "id": 3,
+    "logo": "/assets/partners/my_luxury.svg",
+    "name": "My Luxury"
+  },
+  {
+    "id": 4,
+    "logo": "/assets/partners/premium.svg",
+    "name": "Premium Souvenirs"
+  },
+  {
+    "id": 5,
+    "logo": "/assets/partners/krent.svg",
+    "name": "Krent"
+  },
+  {
+    "id": 7,
+    "logo": "/assets/partners/mercy_anna.svg",
+    "name": "Mercy Anna"
+  },
+  {
+    "id": 8,
+    "logo": "/assets/partners/7thGreen.svg",
+    "name": "7th Green"
+  },
+  {
+    "id": 9,
+    "logo": "/assets/partners/fiatexpress.svg",
+    "name": "Fiat Express"
+  },
+  {
+    "id": 10,
+    "logo": "/assets/partners/jamb.svg",
+    "name": "Jamb"
+  },
+  {
+    "id": 12,
+    "logo": "/assets/partners/socialiga.png",
+    "name": "Socialiga"
+  },
+  {
+    "id": 14,
+    "logo": "/assets/partners/uba.png",
+    "name": "UBA"
+  },
+  {
+    "id": 20,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "AnonymizeCare"
+  },
+  {
+    "id": 16,
+    "logo": "/assets/partners/trybz.svg",
+    "name": "Trybz"
+  },
+  {
+    "id": 17,
+    "logo": "/assets/partners/fireside_2.png",
+    "name": "Fireside"
+  }
+]

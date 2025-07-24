@@ -6,16 +6,20 @@ import { Button } from "./button";
 
 export default function RequestADemoButton({
   label = "Request a Demo",
-  gradient = false,
+  className,
 }: {
+  className?: string;
   label?: string;
-  gradient?: boolean;
 }) {
   const [openContactModal, setOpenContactModal] = useState(false);
 
   return (
     <>
-      <Button type="button" onClick={() => setOpenContactModal(true)}>
+      <Button
+        type="button"
+        className={className}
+        onClick={() => setOpenContactModal(true)}
+      >
         {label}
       </Button>
       <SupportModal

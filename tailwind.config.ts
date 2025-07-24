@@ -14,10 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "styled-gradient":
           "linear-gradient(to right, white 60%, #2E9511 80%, #007CD7 100%)",
+        "hero-gradient":
+          "linear-gradient(to bottom, white -800%, #102A56 100%)",
       },
       fontFamily: {
-        jost: ["var(--font-jost)"],
-        century: ["var(--font-century)"],
+        space: ["var(--font-space_grostesk)"],
       },
       colors: {
         primary: {
