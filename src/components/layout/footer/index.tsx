@@ -8,7 +8,7 @@ import MapIcon from "@/assets/icons/map";
 
 export default function FooterMenu() {
   return (
-    <footer className=" w-full text-sm flex justify-center bg-theme_black text-white py-10 ">
+    <footer className=" w-full text-sm flex justify-center bg-primary-dark text-white py-10 ">
       <div className="w-full max-w-screen-xl flex flex-col gap-1">
         <div className="w-full  backdrop-bg-filter rounded-2xl overflow-hidden">
           <div className="w-full flex flex-col md:flex-row flex-wrap gap-10 justify-center md:justify-between md:gap-4 px-5 md:px-10 py-10">

@@ -1,12 +1,28 @@
+import ChartIcon from "@/assets/icons/chart";
+import ClockIcon from "@/assets/icons/clock";
 import StarIcon from "@/assets/icons/star";
+import UserIcon from "@/assets/icons/user";
+import AutomotateStats from "@/components/animations/automate-stats";
 import BlurAndGradient from "@/components/animations/blur-and-gradient";
+import HowItWorks from "@/components/animations/how-it-works";
 import InfiniteScroll from "@/components/animations/image-infinite-scroll";
 import RequestADemoButton from "@/components/buttons/request-a-demo";
 import NavMenu from "@/components/layout/nav-menu";
+import EmbedYouTube from "@/components/youtube/embed";
+import { cn } from "@/utils/cn";
+import {
+  Banknote,
+  Building,
+  FlaskConical,
+  HandHeart,
+  StickyNote,
+  UserLock,
+} from "lucide-react";
 
 export default function Home() {
   return (
     <div className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
+      {/* HERO */}
       <section className="top-flare relative min-h-screen space-y-24 w-full flex flex-col items-center bg-primary ">
         <NavMenu variant={2} />
         <div className="w-full h-full max-w-screen-xl pb-28 px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
@@ -29,6 +45,160 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="w-full py-24 flex flex-col gap-5 bg-white justify-center items-center">
+        <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center">
+          <EmbedYouTube start={19} end={177} />
+          <div className=" space-y-8">
+            <h4 className=" text-4xl font-bold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+              We automate healthcare so you can focus on patients
+            </h4>
+            <p className=" text-gray-700 leading-relaxed">
+              African healthcare providers waste countless hours on manual
+              processes, paperwork, and disconnected systems. 7thCare eliminates
+              operational friction so you can deliver exceptional patient care
+            </p>
+            <div className=" flex items-center justify-between">
+              {[
+                {
+                  id: 1,
+                  value: "2.5hrs",
+                  label: "Saved daily",
+                  icon: <ClockIcon className=" size-7" />,
+                  textClassName: "text-[#00359E]",
+                  bgClassName: "bg-[#00359E]/10",
+                },
+                {
+                  id: 2,
+                  value: "40%",
+                  label: "Revenue Increase",
+                  icon: <ChartIcon className=" size-7" />,
+                  textClassName: "text-[#66C61C]",
+                  bgClassName: "bg-[#66C61C]/10",
+                },
+                {
+                  id: 3,
+                  value: "15k+",
+                  label: "Patients served",
+                  icon: <UserIcon className=" size-7" />,
+                  textClassName: "text-[#36BFFA]",
+                  bgClassName: "bg-[#36BFFA]/10",
+                },
+              ].map((item) => (
+                <div
+                  key={item?.id}
+                  className={cn(
+                    " flex flex-col items-center gap-3",
+                    item?.textClassName
+                  )}
+                >
+                  <div className={cn(" rounded-full p-3", item?.bgClassName)}>
+                    {item?.icon}
+                  </div>
+                  <span className=" font-bold text-2xl">{item?.value}</span>
+                  <p className=" text-gray-700">{item?.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS*/}
+      <section className="w-full bg-white py-24 flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
+        <HowItWorks />
+      </section>
+      {/* EVERYTHING HEALTH */}
+      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
+        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
+          <div className="w-full flex flex-col gap-4 max-w-screen-sm text-center items-center">
+            <h4 className=" text-4xl font-bold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+              Everything your healthcare facility needs
+            </h4>
+            <p className="">
+              From small clinics to large hospital networks, our modular
+              platform scales with your needs
+            </p>
+          </div>
+          <div className=" w-full grid grid-col-1 lg:grid-cols-3 gap-5">
+            {[
+              {
+                id: 1,
+                title: "Hospital Management System",
+                description:
+                  "Complete operational control with patient flow, staff scheduling, and resource optimization",
+                icon: <Building />,
+                textClassName: "text-[#36BFFA]",
+                bgClassName: "bg-[#36BFFA]/10",
+              },
+              {
+                id: 2,
+                title: "Pharmacy Management",
+                description:
+                  "Complete pharmacy operations with inventory control and prescription management",
+                icon: <HandHeart />,
+                textClassName: "text-[#66C61C]",
+                bgClassName: "bg-[#66C61C]/10",
+              },
+              {
+                id: 3,
+                title: "Electronic Medical Records",
+                description:
+                  "Secure, intelligent patient records with AI-powered insights and seamless sharing",
+                icon: <StickyNote />,
+                textClassName: "text-[#36BFFA]",
+                bgClassName: "bg-[#36BFFA]/10",
+              },
+              {
+                id: 4,
+                title: "Financial Management",
+                description:
+                  "Automated billing, insurance processing, and comprehensive financial analytics",
+                icon: <Banknote />,
+                textClassName: "text-[#66C61C]",
+                bgClassName: "bg-[#66C61C]/10",
+              },
+              {
+                id: 5,
+                title: "Laboratory Management",
+                description:
+                  "Streamlined lab operations with automated workflows and real-time result tracking",
+                icon: <FlaskConical />,
+                textClassName: "text-[#36BFFA]",
+                bgClassName: "bg-[#36BFFA]/10",
+              },
+              {
+                id: 6,
+                title: "Administrative Suite",
+                description:
+                  "Comprehensive admin tools for compliance, reporting, and operational excellence",
+                icon: <UserLock />,
+                textClassName: "text-[#66C61C]",
+                bgClassName: "bg-[#66C61C]/10",
+              },
+            ].map((item) => (
+              <div
+                key={item?.id}
+                className=" w-full rounded-lg border border-gray-100 p-7 space-y-5 hover:border-secondary hover:cursor-pointer"
+              >
+                <div
+                  className={cn(
+                    " rounded-full w-fit p-3",
+                    item?.bgClassName,
+                    item?.textClassName
+                  )}
+                >
+                  {item?.icon}
+                </div>
+                <h4 className=" font-bold text-lg">{item?.title}</h4>
+                <p className=" text-gray-700">{item?.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <AutomotateStats />
     </div>
   );
 }

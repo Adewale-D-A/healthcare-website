@@ -80,6 +80,15 @@
 }
 /* infinite logo scroll */
 
+/* hide scroll bar */
+.hide-scroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+.hide-scroll::-webkit-scrollbar { 
+    display: none;  /* Older Safari and Chromium */
+}
+/* gradient */
 
 /* Hero eclipse animate */
 @keyframes heroslide { 
@@ -99,6 +108,43 @@
 .hero-eclipse {  
   animation: heroslide 5s ease-in-out infinite;
   transform-origin: center center; /* Optional for smoother pivot */
+}
+
+/* Animation delay */
+
+@keyframes widthAnimate { 
+  from {
+    width: 100%;
+    padding-top: 256px;
+    padding-bottom: 256px;
+  }
+  to {
+    max-width: 1280px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+@keyframes fullWidthAnimate { 
+  from {
+    max-width: 1280px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  to {
+    max-width: 100%;
+    padding-top: 256px;
+    padding-bottom: 256px;
+  }
+}
+.animation-delay-3 {
+  animation: fullWidthAnimate 1s ease-in-out;
+    padding-top: 256px;
+    padding-bottom: 256px;  
+}
+.animation-delay {
+  animation: widthAnimate 1s ease-in-out;  
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 /* V-2 */
 

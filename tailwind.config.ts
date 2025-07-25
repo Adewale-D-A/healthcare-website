@@ -16,6 +16,10 @@ const config: Config = {
           "linear-gradient(to right, white 60%, #2E9511 80%, #007CD7 100%)",
         "hero-gradient":
           "linear-gradient(to bottom, white -800%, #102A56 100%)",
+        "sctn-two-text-gradient":
+          "linear-gradient(264.24deg, #007CD7 37.54%, #004171 99.35%)",
+        "how-it-works-gradient":
+          "linear-gradient(288.6deg, rgba(255, 255, 255, 1) 10.86%, rgba(0, 124, 215, 0.2) 88.94%)",
       },
       fontFamily: {
         space: ["var(--font-space_grostesk)"],
@@ -23,6 +27,7 @@ const config: Config = {
       colors: {
         primary: {
           DEFAULT: "#102A56",
+          dark: "#101323",
         },
         secondary: {
           DEFAULT: "#007CD7",

@@ -13,7 +13,7 @@ export default function InfiniteScroll() {
               alt={name}
               height={300}
               width={300}
-              className={`h-16`}
+              className={`h-16 grayscale`}
             />
           ))}
         </div>

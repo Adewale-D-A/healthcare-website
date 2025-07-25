@@ -1,3 +1,7 @@
+##### 25.07.2024
+
+> Update: Home page section developments and animations additions
+
 ##### 24.07.2024
 
 > Feature: Home page hero section UI and animation partly setup
