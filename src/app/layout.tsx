@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Caveat } from "next/font/google";
 import "./globals.css";
 import FooterMenu from "@/components/layout/footer";
 
@@ -8,6 +8,13 @@ const spaceGrostesk = Space_Grotesk({
   display: "swap",
   weight: ["400", "700"],
   variable: "--font-space_grostesk",
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"],
+  variable: "--font-caveat",
 });
 
 export const metadata: Metadata = {
@@ -44,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrostesk.className} font-space_grostesk text-sm leading-8`}
+        className={`${spaceGrostesk.className} ${caveat.variable} font-space_grostesk text-sm leading-7 text-gray_text-800`}
       >
         {children}
         <FooterMenu />

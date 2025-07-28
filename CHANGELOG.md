@@ -1,5 +1,7 @@
 ##### 28.07.2024
 
+> Update: Automate section animation fix
+> Feature: Contact us section development
 > Feature: Testimonials UI development
 
 ##### 25.07.2024

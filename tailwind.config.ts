@@ -23,6 +23,7 @@ const config: Config = {
       },
       fontFamily: {
         space: ["var(--font-space_grostesk)"],
+        caveat: ["var(--font-caveat)"],
       },
       colors: {
         primary: {
@@ -32,14 +33,11 @@ const config: Config = {
         secondary: {
           DEFAULT: "#007CD7",
         },
-        theme_blue: {
-          DEFAULT: "#007CD7",
-        },
-        theme_green: {
-          DEFAULT: "#A4ED8E",
-        },
-        theme_black: {
-          DEFAULT: "#231F20",
+        gray_text: {
+          400: "#A4A7AE",
+          500: "#717680",
+          700: "#414651",
+          800: "#252B37",
         },
       },
     },

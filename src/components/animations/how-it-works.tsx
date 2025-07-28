@@ -49,7 +49,7 @@ export default function HowItWorks() {
       className="w-full flex flex-col justify-center items-center gap-16"
     >
       <div className="w-full flex flex-col gap-4 items-center">
-        <h4 className=" text-4xl font-bold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+        <h4 className=" text-4xl font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
           How it Works
         </h4>
         <p>Get set up in less than a week</p>
@@ -63,9 +63,8 @@ export default function HowItWorks() {
             <button
               onClick={() => handleSelection(index)}
               className={cn(
-                "p-5 rounded-xl bg-primary/30 opacity-30  hover:scale-110  hover:-2xl transition-all cursor-pointer",
-                currentSelection?.id === item?.id &&
-                  "bg-secondary text-white opacity-100"
+                "p-5 rounded-xl bg-white text-gray_text-400 hover:bg-secondary hover:text-white  hover:scale-110 transition-all cursor-pointer",
+                currentSelection?.id === item?.id && "bg-secondary text-white"
               )}
             >
               {item?.id === "1" && <ClipboardIcon className=" size-10" />}
@@ -91,7 +90,7 @@ export default function HowItWorks() {
               onClick={() => handleSelection(index)}
               key={item.id}
               className={cn(
-                " rounded-xl bg-white min-w-full lg:min-w-[25rem] w-full pt-4 pb-12  flex flex-col  transition-all cursor-pointer opacity-30 hover:opacity-100",
+                " rounded-xl bg-white min-w-full lg:min-w-[30rem] w-full p-6  flex flex-col  transition-all cursor-pointer opacity-30 hover:opacity-100",
                 currentSelection?.id === item?.id && " bg-white opacity-100"
               )}
             >
@@ -105,16 +104,16 @@ export default function HowItWorks() {
                 />
               </div>
               <div className="w-full text-left  px-5 flex flex-col gap-3 ">
-                <h6 className=" text-xl lg:text-2xl font-bold">
+                <h6 className=" text-xl lg:text-2xl font-bold text-gray_text-700">
                   {item?.title}
                 </h6>
-                <p>{item?.content}</p>
+                <p className=" text-gray_text-500">{item?.content}</p>
               </div>
             </button>
           ))}
           <button
             className={cn(
-              "opacity-0 min-w-full lg:min-w-[36rem] w-full hidden lg:block"
+              "opacity-0 min-w-full lg:min-w-[30rem] w-full hidden lg:block"
             )}
           ></button>
         </div>

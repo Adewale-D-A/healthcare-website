@@ -115,36 +115,34 @@
 @keyframes widthAnimate { 
   from {
     width: 100%;
-    padding-top: 256px;
-    padding-bottom: 256px;
+    height: 100%;
   }
   to {
     max-width: 1280px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    height: 350px;
+    border-radius: 36px;
   }
 }
 @keyframes fullWidthAnimate { 
   from {
     max-width: 1280px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    height: 350px;
+    border-radius: 36px;
   }
   to {
     max-width: 100%;
-    padding-top: 256px;
-    padding-bottom: 256px;
+    height: 100%;
+    width: 100%;
   }
 }
 .animation-delay-3 {
   animation: fullWidthAnimate 1s ease-in-out;
-    padding-top: 256px;
-    padding-bottom: 256px;  
+    width: 100%;
+    height: 100%;
 }
 .animation-delay {
-  animation: widthAnimate 1s ease-in-out;  
-    padding-top: 64px;
-    padding-bottom: 64px;
+  animation: widthAnimate 1s ease-in-out;
+    height: 350px;
 }
 /* V-2 */
 

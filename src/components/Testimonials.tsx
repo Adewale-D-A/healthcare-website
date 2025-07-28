@@ -61,12 +61,10 @@ const Testimonials = ({
                   className={`w-full border border-gray-100  flex-1 flex gap-10 rounded-lg justify-center flex-col p-6 py-10`}
                 >
                   <Ratings rating={item?.rating} />
-                  <div className=" flex flex-col gap-3">
-                    <h4 className=" text-2xl text-gray-800 font-semibold">
-                      {item?.highlight}
-                    </h4>
-                    <p className="text-gray-700 text-sm">{item?.comment}</p>
-                  </div>
+                  <h4 className=" text-lg text-secondary bg-secondary/5 rounded-md font-semibold p-4">
+                    {item?.highlight}
+                  </h4>
+                  <p className="text-black text-sm">"{item?.comment}"</p>
                   <div className="flex gap-3 items-center">
                     <div
                       className={`w-10 h-10 aspect-square rounded-full transition-all overflow-hidden flex justify-center items-center`}
@@ -76,7 +74,7 @@ const Testimonials = ({
                         alt={item?.user?.name}
                         width={1000}
                         height={1000}
-                        className="w-full h-auto"
+                        className="w-full h-auto object-cover"
                       />
                     </div>
                     <div>
