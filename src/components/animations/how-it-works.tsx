@@ -108,7 +108,7 @@ export default function HowItWorks() {
                 <h6 className=" text-xl lg:text-2xl font-bold">
                   {item?.title}
                 </h6>
-                <p className=" text-lg">{item?.content}</p>
+                <p>{item?.content}</p>
               </div>
             </button>
           ))}

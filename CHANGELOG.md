@@ -1,3 +1,7 @@
+##### 28.07.2024
+
+> Feature: Testimonials UI development
+
 ##### 25.07.2024
 
 > Update: Home page section developments and animations additions

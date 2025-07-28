@@ -7,7 +7,9 @@ import BlurAndGradient from "@/components/animations/blur-and-gradient";
 import HowItWorks from "@/components/animations/how-it-works";
 import InfiniteScroll from "@/components/animations/image-infinite-scroll";
 import RequestADemoButton from "@/components/buttons/request-a-demo";
+import FacilitiesCard from "@/components/cards/facilities";
 import NavMenu from "@/components/layout/nav-menu";
+import Testimonials from "@/components/Testimonials";
 import EmbedYouTube from "@/components/youtube/embed";
 import { cn } from "@/utils/cn";
 import {
@@ -18,6 +20,7 @@ import {
   StickyNote,
   UserLock,
 } from "lucide-react";
+import TestimonialsDataset from "@/assets/testimonials.json";
 
 export default function Home() {
   return (
@@ -33,7 +36,7 @@ export default function Home() {
             <StarIcon className=" size-4" />
             Product updates - AnonymizedCare now available!
           </p>
-          <h1 className="z-10 text-white text-7xl leading-tight font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-7xl leading-normal font-bold text-center max-w-screen-md">
             Automate your Healthcare Business{" "}
           </h1>
           <RequestADemoButton className=" text-white" />
@@ -47,13 +50,14 @@ export default function Home() {
       </section>
 
       <section className="w-full py-24 flex flex-col gap-5 bg-white justify-center items-center">
-        <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center">
+        <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-8">
-            <h4 className=" text-4xl font-bold text-transparent bg-sctn-two-text-gradient bg-clip-text">
-              We automate healthcare so you can focus on patients
+            <h4 className=" text-4xl leading-normal font-bold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+              We automate healthcare so you can focus on what matters most –
+              your patients.
             </h4>
-            <p className=" text-gray-700 leading-relaxed">
+            <p className=" text-gray-700">
               African healthcare providers waste countless hours on manual
               processes, paperwork, and disconnected systems. 7thCare eliminates
               operational friction so you can deliver exceptional patient care
@@ -111,11 +115,11 @@ export default function Home() {
       {/* EVERYTHING HEALTH */}
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
-          <div className="w-full flex flex-col gap-4 max-w-screen-sm text-center items-center">
-            <h4 className=" text-4xl font-bold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
+            <h4 className="text-4xl font-bold leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Everything your healthcare facility needs
             </h4>
-            <p className="">
+            <p className=" text-gray-700">
               From small clinics to large hospital networks, our modular
               platform scales with your needs
             </p>
@@ -177,28 +181,25 @@ export default function Home() {
                 bgClassName: "bg-[#66C61C]/10",
               },
             ].map((item) => (
-              <div
-                key={item?.id}
-                className=" w-full rounded-lg border border-gray-100 p-7 space-y-5 hover:border-secondary hover:cursor-pointer"
-              >
-                <div
-                  className={cn(
-                    " rounded-full w-fit p-3",
-                    item?.bgClassName,
-                    item?.textClassName
-                  )}
-                >
-                  {item?.icon}
-                </div>
-                <h4 className=" font-bold text-lg">{item?.title}</h4>
-                <p className=" text-gray-700">{item?.description}</p>
-              </div>
+              <FacilitiesCard {...item} key={item?.id} />
             ))}
           </div>
         </div>
       </section>
-
       <AutomotateStats />
+
+      {/* Testimonials */}
+      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
+        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
+          <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
+            <h4 className=" text-4xl font-bold leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+              The all-in-one platform for modern clinics
+            </h4>
+            <p className=" text-gray-700">Real practitioners, real results</p>
+          </div>
+          <Testimonials testimonials={TestimonialsDataset} />
+        </div>
+      </section>
     </div>
   );
 }

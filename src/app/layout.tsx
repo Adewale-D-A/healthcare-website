@@ -43,7 +43,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrostesk.className} font- font-space_grostesk`}>
+      <body
+        className={`${spaceGrostesk.className} font-space_grostesk text-sm leading-8`}
+      >
         {children}
         <FooterMenu />
       </body>
