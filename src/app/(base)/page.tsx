@@ -24,6 +24,7 @@ import OurStats from "@/components/cards/our-stats";
 import ContactForm from "@/components/contactForm";
 import Image from "next/image";
 import { Button } from "@/components/buttons/button";
+import DesignedFor from "@/components/animations/designed-for";
 
 export default function Home() {
   return (
@@ -205,7 +206,7 @@ export default function Home() {
               height={150}
               width={150}
             />{" "}
-            Let's
+            Let&apos;s
           </span>{" "}
           <span className=" flex items-center gap-2">
             work{" "}
@@ -227,7 +228,7 @@ export default function Home() {
       </section>
 
       {/* Targeted Users */}
-      <section className="w-full bg-white bg-how-it-works-gradient py-24 flex flex-col gap-5 justify-center items-center">
+      <section className="w-full bg-white bg-how-it-works-gradient pt-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className=" text-4xl font-emibold leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
@@ -238,9 +239,9 @@ export default function Home() {
               Reclaim your time, your attention, and your care.
             </p>
           </div>
-          <div className=" flex justify-center items-center flex-col gap-2">
+          <div className="w-full flex justify-center items-center flex-col gap-2">
             <Button className=" w-fit">Request a Demo</Button>
-            <div className=" flex items-center ml-96">
+            <div className="w-full text-center lg:text-start flex items-center flex-col justify-center lg:flex-row ml-0 lg:ml-96">
               <svg
                 width="102"
                 height="63"
@@ -257,6 +258,9 @@ export default function Home() {
                 Join thousands of clinicians building smarter, faster care
                 systems.🚀
               </p>
+            </div>
+            <div className=" w-full overflow-x-hidden">
+              <DesignedFor />
             </div>
           </div>
         </div>

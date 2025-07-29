@@ -40,6 +40,25 @@ const config: Config = {
           800: "#252B37",
         },
       },
+      keyframes: {
+        moveUp: {
+          // "0%": { marginTop: "0px" },
+          // "100%": { marginTop: "80px" },
+        },
+        rotateClockwise: {
+          "0%": { rotate: "0deg", marginLeft: "-80px" },
+          "100%": { rotate: "10deg", marginLeft: "-50px" },
+        },
+        rotateAntiClockwise: {
+          "0%": { rotate: "0deg", marginRight: "-80px" },
+          "100%": { rotate: "-10deg", marginRight: "-50px" },
+        },
+      },
+      animation: {
+        moveUp: "moveUp 1s ease-in-out forwards",
+        rotateClockwise: "rotateClockwise 1s ease-in-out forwards",
+        rotateAntiClockwise: "rotateAntiClockwise 1s ease-in-out forwards",
+      },
     },
   },
   plugins: [],

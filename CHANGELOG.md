@@ -1,3 +1,8 @@
+##### 29.07.2024
+
+> Feature: 'Designed for' section UI development and animation transition setup (remain pop-out animation)
+> Feature: Footer rearrangements
+
 ##### 28.07.2024
 
 > Update: Automate section animation fix

@@ -64,7 +64,9 @@ const Testimonials = ({
                   <h4 className=" text-lg text-secondary bg-secondary/5 rounded-md font-semibold p-4">
                     {item?.highlight}
                   </h4>
-                  <p className="text-black text-sm">"{item?.comment}"</p>
+                  <p className="text-black text-sm">
+                    &quot;{item?.comment}&quot;
+                  </p>
                   <div className="flex gap-3 items-center">
                     <div
                       className={`w-10 h-10 aspect-square rounded-full transition-all overflow-hidden flex justify-center items-center`}
