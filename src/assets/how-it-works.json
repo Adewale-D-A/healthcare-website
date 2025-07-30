@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "Share Your Requirements",
+    "icon": "",
+    "content": "Tell us about your facility’s workflows, goals, and existing systems. We analyze your needs to craft the most effective solutions for your team and patients.",
+    "image": "/assets/how_it_works/how-it-works-1.png"
+  },
+  {
+    "id": "2",
+    "title": "Tailored Customization",
+    "icon": "",
+    "content": "Our tech experts customize the platform to fit seamlessly into your operations – from branding to module configurations – ensuring a perfect match for your processes.",
+    "image": "/assets/how_it_works/how-it-works-2.png"
+  },
+  {
+    "id": "3",
+    "title": "Swift Deployment",
+    "icon": "",
+    "content": "We handle the full installation and integration of both software and hardware, deploying your solution efficiently with minimal disruption to your services",
+    "image": "/assets/how_it_works/how-it-works-3.png"
+  },
+  {
+    "id": "4",
+    "title": "Training & Onboarding",
+    "icon": "",
+    "content": "We provide clear, hands-on training for your staff to maximize adoption and effectiveness, empowering your team to use the system confidently from day one.",
+    "image": "/assets/how_it_works/how-it-works-4.png"
+  }
+]

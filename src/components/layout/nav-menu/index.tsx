@@ -6,26 +6,26 @@ import Logo from "@/components/business-styles/logo";
 import MobileMenu from "./mobile";
 import NavItems from "./nav-items";
 import MenuIcon from "@/assets/icons/menu";
-import Link from "next/link";
+import LinkButton from "@/components/buttons/link-button";
 
-export default function NavMenu() {
+export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <nav className="w-full flex flex-col items-center justify-center bg-primary-500 text-white sticky top-0 left-0 border-b border-secondary-500 z-50">
+      <nav className="w-full backdrop-bg-filter flex flex-col items-center justify-center bg-primary-500 text-white sticky top-0 left-0 z-50">
         {/* show on desktop, hide on mobile */}
         <div className="w-full hidden md:flex justify-between items-center gap-4 max-w-screen-xl px-5 md:px-10 py-5">
-          <Logo />
+          <Logo variant={variant} />
           <NavItems />
 
-          <div className=" flex items-center gap-2">
-            <Link
+          <div className=" flex items-center gap-4">
+            <LinkButton
               href="https://www.anonymizecare.com/"
               target="_blank"
-              className="hidden lg:block bg-transparent border border-secondary-500 h-fit text-white rounded-full w-fit p-3 px-10 text-sm transition-all hover:scale-105"
+              variant={"outline"}
             >
               AnonymizeCare
-            </Link>
+            </LinkButton>
             <RequestADemoButton />
           </div>
 

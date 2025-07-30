@@ -1,3 +1,30 @@
+##### 29.07.2024
+
+> Feature: 'Designed for' section UI development and animation transition setup (remain pop-out animation)
+> Feature: Footer rearrangements
+
+##### 28.07.2024
+
+> Update: Automate section animation fix
+> Feature: Contact us section development
+> Feature: Testimonials UI development
+
+##### 25.07.2024
+
+> Update: Home page section developments and animations additions
+
+##### 24.07.2024
+
+> Feature: Home page hero section UI and animation partly setup
+
+##### 23.07.2024
+
+> Feature: Buttons setup
+
+##### 16.07.2024
+
+> UPGRADE: VERSION II
+
 ##### 21.06.2024
 
 > Update: Navbar buttons sizing issue fixed

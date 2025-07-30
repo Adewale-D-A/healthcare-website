@@ -1,24 +1,22 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Space_Grotesk, Caveat } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/layout/nav-menu";
 import FooterMenu from "@/components/layout/footer";
-import localFont from "next/font/local";
 
-const jost = Jost({
+const spaceGrostesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-jost",
+  weight: ["400", "700"],
+  variable: "--font-space_grostesk",
 });
-const centuryGothic = localFont({
-  src: [
-    {
-      path: "../assets/font/CenturyGothic.ttf",
-      // weight: "400",
-    },
-  ],
-  variable: "--font-century",
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"],
+  variable: "--font-caveat",
 });
+
 export const metadata: Metadata = {
   title: {
     template: "%s | 7thCare",
@@ -53,9 +51,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${centuryGothic.variable} ${jost.variable} font-century`}
+        className={`${spaceGrostesk.className} ${caveat.variable} font-space_grostesk text-sm leading-7 text-gray_text-800`}
       >
-        <NavBar />
         {children}
         <FooterMenu />
       </body>

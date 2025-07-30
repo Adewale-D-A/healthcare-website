@@ -5,6 +5,8 @@ import TextInput from "../textFields/input";
 import TextAreaInput from "../textFields/textArea";
 import SuccessModal from "./successMessage";
 import emailjs from "@emailjs/browser";
+import { Button } from "../buttons/button";
+import { MailWarning } from "lucide-react";
 
 export default function ContactForm({ closeModal }: { closeModal?: Function }) {
   const form = useRef() as any;
@@ -120,59 +122,26 @@ export default function ContactForm({ closeModal }: { closeModal?: Function }) {
             setValue={setMessage}
             isRequired={true}
             id="message"
-            label="Message"
+            label="How can we help?"
             placeholder="Type message here"
           />
         </div>
         {errorMessage && (
           <div className=" text-red-500 text-center flex items-center justify-center gap-4">
-            {" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
-              />
-            </svg>
+            <MailWarning />
             <p>{errorMessage}</p>
           </div>
         )}
-        <button
-          type="submit"
-          title="submit"
-          className=" bg-primary-500 text-white w-full p-4 rounded-lg text-center hover:bg-primary-500/80 transition-all"
-        >
-          {" "}
-          {isSubmitting ? (
-            <div className="w-full flex justify-center text-dark-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 animate-spin"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-                />
-              </svg>
-            </div>
-          ) : (
-            <span className="flex items-center justify-center gap-3 ">
-              Submit
-            </span>
-          )}
-        </button>
+        <div className=" w-full flex justify-end">
+          <Button
+            type="submit"
+            title="submit"
+            className=" w-fit"
+            isLoading={isSubmitting}
+          >
+            Submit message
+          </Button>
+        </div>
       </form>
       <SuccessModal
         openSuccessModal={openSuccess}

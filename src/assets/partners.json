@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "OAT"
+  },
+  {
+    "id": 3,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "My Luxury"
+  },
+  {
+    "id": 4,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Premium Souvenirs"
+  },
+  {
+    "id": 5,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Krent"
+  },
+  {
+    "id": 7,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Mercy Anna"
+  },
+  {
+    "id": 8,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "7th Green"
+  },
+  {
+    "id": 9,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Fiat Express"
+  },
+  {
+    "id": 10,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Jamb"
+  },
+  {
+    "id": 12,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Socialiga"
+  },
+  {
+    "id": 14,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "UBA"
+  },
+  {
+    "id": 20,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "AnonymizeCare"
+  },
+  {
+    "id": 16,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Trybz"
+  },
+  {
+    "id": 17,
+    "logo": "/assets/partners/anonymize_care.png",
+    "name": "Fireside"
+  }
+]

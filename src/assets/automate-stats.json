@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "value": "12K+",
+    "description": "Active Patients"
+  },
+  {
+    "id": 4,
+    "value": "6+",
+    "description": "partner clinics"
+  },
+  {
+    "id": 5,
+    "value": "25%",
+    "description": "monthly growth"
+  },
+  {
+    "id": 7,
+    "value": "8K+",
+    "description": "positive reviews"
+  }
+]

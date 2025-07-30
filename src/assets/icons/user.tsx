@@ -4,7 +4,7 @@ export default function UserIcon({ className }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className={className || " size-6"}
+      className={className || "size-6"}
     >
       <path
         fillRule="evenodd"

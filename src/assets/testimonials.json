@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "rating": 3,
+    "highlight": "60% percent faster patient processing",
+    "user": {
+      "image": "/logo192.png",
+      "name": "Dr. John Paul Adejoh",
+      "position": "General practitioner"
+    },
+    "comment": "With 7th Care our patient check-in process dropped from 15 minutes to under 2. now our staff focus on care, not admin."
+  },
+  {
+    "id": 2,
+    "rating": 5,
+    "highlight": "40% revenue increase",
+    "user": {
+      "image": "/logo192.png",
+      "name": "Dr. Emeka Umeh",
+      "position": "Family physician"
+    },
+    "comment": "The automated billing and lab-reporting modules eliminated errors and boosted revenue tracking. our financials have never been tighter."
+  },
+  {
+    "id": 3,
+    "rating": 4,
+    "highlight": "Real-time lab results",
+    "user": {
+      "image": "/logo192.png",
+      "name": "Dr. Chioma Nwankwo",
+      "position": "Surgeon"
+    },
+    "comment": "Onboarding was seamless and our team was up and running in days, not weeks. Support has been there every step of the way."
+  }
+]
