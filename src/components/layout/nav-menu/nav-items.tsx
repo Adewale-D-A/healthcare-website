@@ -7,6 +7,14 @@ import Image from "next/image";
 import navList from "@/assets/navMenu/index";
 import ChevronDownIcon from "@/assets/icons/chevron-down";
 import ChevronUpIcon from "@/assets/icons/chevron-up";
+import {
+  ChevronRight,
+  HandHeart,
+  HeartPulse,
+  LucideIcon,
+  ShoppingCart,
+  Stethoscope,
+} from "lucide-react";
 
 export default function NavItems() {
   const navRef = useRef() as any;
@@ -85,82 +93,105 @@ export default function NavItems() {
             </Link>
             {item?.subMenu && openMegaMenu && hoverContent?.length > 0 && (
               <div className=" absolute top-0 left-0 z-10 hidden group-hover:flex text-white w-screen overflow-hidden">
-                <div className="mt-24 flex justify-start items-stretch shadow-md z-10 w-full">
-                  <div
+                <div className="mt-24 bg-primary-light flex items-stretch rounded-b-3xl shadow-md z-10 w-full justify-center py-16">
+                  {/* <div
                     style={{ minWidth: offset?.left - 60 }}
                     className="min-h-[calc(100vh-80px)] backdrop-bg-filter  border-gray-400"
                     onMouseEnter={() => setOpenMenu(false)}
-                  ></div>
+                  ></div> */}
                   <div
                     // style={{ marginLeft: offset?.left }}
-                    className={`w-full flex gap-4  font-semibold group-hover:flex bg-primary-500 border-t border-gray-400`}
+                    className={`w-full max-w-screen-xl flex items-start gap-24  px-5 lg:px-10 `}
                   >
-                    <div className="w-full ">
-                      {item?.subMenuContent.map((childOne, index) => {
-                        return (
-                          <div
-                            style={{ maxWidth: `${offset.width + 100}px` }}
-                            key={childOne?.id}
-                            className={`w-full group/category flex ${
-                              item?.subMenuContent[index + 1]?.name
-                                ? "border-b-[1px] border-[#B0B0B4]/30"
-                                : ""
-                            }  py-10 gap-3 text-wrap items-stretch`}
-                          >
-                            <Link
-                              href={childOne?.url}
-                              className={`pl-[60px] tsxt-sm lg:text-lg h-fit flex-[0.4] capitalize transition-all`}
-                            >
-                              {childOne?.name}
-                            </Link>
-                            <div className="flex flex-col gap-5 flex-[0.6]">
-                              {childOne?.subContentOne.map((value) => {
-                                return (
-                                  <div
-                                    key={value?.id}
-                                    onMouseEnter={() => setImgUrl(value?.img)}
-                                  >
-                                    {value?.description ? (
-                                      <div className="flex flex-col gap-4">
-                                        <Link
-                                          href={value?.url}
-                                          className=" w-full h-fit  transition-all capitalize "
-                                        >
-                                          {value?.name}
-                                        </Link>
-                                        <Link
-                                          href={value?.url}
-                                          className=" w-full h-fit  transition-all font-normal  "
-                                        >
-                                          {value?.description}
-                                        </Link>
-                                      </div>
-                                    ) : (
-                                      <Link
-                                        href={value?.url}
-                                        className=" w-full h-fit  transition-all capitalize hover:underline hover:text-theme_blue"
-                                      >
-                                        {value?.name}
-                                      </Link>
-                                    )}
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          </div>
-                        );
-                      })}
+                    <div className="w-full space-y-10 max-w-72">
+                      <Image
+                        src={"/assets/menu/mega-menu-ai.jpg"}
+                        alt="ai"
+                        height={500}
+                        width={500}
+                        className=" w-full h-auto rounded-2xl"
+                      />
+                      <p className=" text-2xl w-full text-wrap">
+                        Introducing 7thSense, your personal AI assistant
+                      </p>
+                      <Link
+                        href={"#"}
+                        className=" flex items-center text-green_variant gap-2"
+                      >
+                        Learn more <ChevronRight className=" size-4" />
+                      </Link>
                     </div>
-                    <div className=" w-full h-full">
-                      {imgUrl && (
-                        <Image
-                          src={imgUrl}
-                          alt="image"
-                          width={1000}
-                          height={1000}
-                          className="  w-auto h-full items-center object-cover"
-                        />
-                      )}
+                    <div className=" w-full grid grid-cols-2 justify-between gap-5 gap-y-28">
+                      {[
+                        {
+                          id: 1,
+                          label: "Services",
+                          Icon: HandHeart,
+                          url: "#",
+                          subitems: [
+                            { id: 1, label: "Tech Advisory", url: "#" },
+                            { id: 2, label: "Process automation", url: "#" },
+                            { id: 3, label: "Software development", url: "#" },
+                          ],
+                        },
+                        {
+                          id: 2,
+                          label: "Telehealth Marketplace",
+                          Icon: ShoppingCart,
+                          url: "#",
+                          subitems: [
+                            { id: 1, label: "1-on-1 bookings", url: "#" },
+                            { id: 2, label: "Consultations", url: "#" },
+                            { id: 3, label: "Secured payments", url: "#" },
+                            { id: 4, label: "What we do", url: "#" },
+                          ],
+                        },
+                        {
+                          id: 3,
+                          label: "For Health Providers",
+                          Icon: Stethoscope,
+                          url: "#",
+                          subitems: [
+                            {
+                              id: 1,
+                              label: "HealthCare Automation System",
+                              url: "#",
+                            },
+                            {
+                              id: 2,
+                              label: "Hospital Management System",
+                              url: "#",
+                            },
+                            {
+                              id: 3,
+                              label: "Laboratory Management System",
+                              url: "#",
+                            },
+                            {
+                              id: 4,
+                              label: "Pharmacy Management System",
+                              url: "#",
+                            },
+                            {
+                              id: 5,
+                              label: "Billing Automation System",
+                              url: "#",
+                            },
+                          ],
+                        },
+                        {
+                          id: 4,
+                          label: "For Patients",
+                          Icon: HeartPulse,
+                          url: "#",
+                          subitems: [
+                            { id: 1, label: "Telemedicine", url: "#" },
+                            { id: 2, label: "Patient Portal", url: "#" },
+                          ],
+                        },
+                      ].map((item) => (
+                        <MenuItems key={item.id} {...item} />
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -169,6 +200,36 @@ export default function NavItems() {
           </div>
         );
       })}
+    </div>
+  );
+}
+
+function MenuItems({
+  id,
+  label,
+  Icon,
+  url,
+  subitems,
+}: {
+  id: number;
+  label: string;
+  Icon: LucideIcon;
+  url: string;
+  subitems: { id: number; label: string; url: string }[];
+}) {
+  return (
+    <div className=" w-full flex items-start gap-5">
+      {<Icon className="text-green_variant" />}{" "}
+      <div className=" space-y-4">
+        <h6 className=" font-bold text-lg">{label}</h6>
+        <div className=" flex flex-col gap-4">
+          {subitems.map((item) => (
+            <Link key={item.id} href={"#"}>
+              {item?.label}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

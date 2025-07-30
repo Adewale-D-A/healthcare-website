@@ -29,9 +29,13 @@ const config: Config = {
         primary: {
           DEFAULT: "#102A56",
           dark: "#101323",
+          light: "#194185",
         },
         secondary: {
           DEFAULT: "#007CD7",
+        },
+        green_variant: {
+          DEFAULT: "#A4ED8E",
         },
         gray_text: {
           400: "#A4A7AE",

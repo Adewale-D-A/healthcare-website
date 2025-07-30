@@ -30,9 +30,9 @@ export default function MobileMenu({
         transition={{ duration: 0.2 }}
         className=" fixed top-0 right-0 z-50 h-screen w-full flex"
       >
-        <div className="h-screen bg-white p-4 w-full flex flex-col gap-16 px-10">
+        <div className="h-screen bg-primary-light text-white p-4 w-full flex flex-col gap-16 px-10">
           <div className="flex justify-between gap-5">
-            <Logo />
+            <Logo variant={2} />
             <button
               type="button"
               title="close menu"

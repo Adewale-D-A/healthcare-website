@@ -1,5 +1,6 @@
 ##### 30.07.2024
 
+> Feature: Mega menu development
 > Feature: 'Designed for' UI Animation completion
 
 ##### 29.07.2024
