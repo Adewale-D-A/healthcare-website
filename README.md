@@ -1,6 +1,6 @@
 # Next_JS_Website
 
-This is the Next_js application for 7th Care.
+This is the Next_js application for 7thCare.
 
 ## Maintenance
 
