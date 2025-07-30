@@ -1,3 +1,7 @@
+##### 30.07.2024
+
+> Feature: 'Designed for' UI Animation completion
+
 ##### 29.07.2024
 
 > Feature: 'Designed for' section UI development and animation transition setup (remain pop-out animation)

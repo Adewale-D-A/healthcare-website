@@ -19,11 +19,11 @@ export default function AutomotateStats() {
             : "rounded-[36px] animation-delay"
         )}
       ></div>
-      <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl">
-        <h2 className=" lg:text-[42px] font-bold">
+      <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl p-5">
+        <h2 className="text-3xl lg:text-[40px] font-bold">
           We automate healthcare across Africa
         </h2>
-        <div className="w-full flex items-center justify-between text-center">
+        <div className="w-full grid grid-cols-2 gap-3 lg:flex  items-center justify-between text-center">
           {automateStats.map((item) => (
             <div
               key={item?.id}

@@ -42,8 +42,8 @@ const config: Config = {
       },
       keyframes: {
         moveUp: {
-          // "0%": { marginTop: "0px" },
-          // "100%": { marginTop: "80px" },
+          "0%": { marginTop: "200px" },
+          "100%": { marginTop: "40px" },
         },
         rotateClockwise: {
           "0%": { rotate: "0deg", marginLeft: "-80px" },
