@@ -1,3 +1,7 @@
+##### 31.07.2024
+
+> Feature: Infinite scroll updates
+
 ##### 30.07.2024
 
 > Feature: Mega menu development

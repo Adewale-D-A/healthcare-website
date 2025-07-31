@@ -45,6 +45,9 @@ const config: Config = {
         },
       },
       keyframes: {
+        infiniteScroll: {
+          to: { left: "-200px" },
+        },
         moveUp: {
           "0%": { marginTop: "200px" },
           "100%": { marginTop: "40px" },
@@ -62,6 +65,7 @@ const config: Config = {
         moveUp: "moveUp 1s ease-in-out forwards",
         rotateClockwise: "rotateClockwise 1s ease-in-out forwards",
         rotateAntiClockwise: "rotateAntiClockwise 1s ease-in-out forwards",
+        infiniteScroll: "infiniteScroll 30s linear infinite",
       },
     },
   },

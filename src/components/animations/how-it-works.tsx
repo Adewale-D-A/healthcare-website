@@ -54,7 +54,7 @@ export default function HowItWorks() {
         </h4>
         <p>Get set up in less than a week</p>
       </div>
-      <div className=" grid grid-cols-4 gap-5 lg:gap-10">
+      <div className=" grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
         {whyUs.map((item, index) => (
           <div
             key={item.id}
