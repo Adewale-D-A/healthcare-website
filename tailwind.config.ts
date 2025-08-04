@@ -20,6 +20,8 @@ const config: Config = {
           "linear-gradient(264.24deg, #007CD7 37.54%, #004171 99.35%)",
         "how-it-works-gradient":
           "linear-gradient(288.6deg, rgba(255, 255, 255, 1) 10.86%, rgba(0, 124, 215, 0.2) 88.94%)",
+        "hero-service-card-gradient":
+          "linear-gradient(264.24deg, rgba(9, 25, 61, 0.8) 37.54%, rgba(9, 25, 61, 0.8) 99.35%)",
       },
       fontFamily: {
         space: ["var(--font-space_grostesk)"],
@@ -38,6 +40,7 @@ const config: Config = {
           DEFAULT: "#A4ED8E",
         },
         gray_text: {
+          200: "#FDFDFD",
           400: "#A4A7AE",
           500: "#717680",
           700: "#414651",

@@ -1,3 +1,7 @@
+##### 04.08.2024
+
+> Feature: Services page UI completion
+
 ##### 31.07.2024
 
 > Feature: Infinite scroll updates
