@@ -1,5 +1,6 @@
 ##### 04.08.2024
 
+> Feature: Patient counter UI developed
 > Feature: Services page UI completion
 
 ##### 31.07.2024

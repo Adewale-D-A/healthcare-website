@@ -1,6 +1,11 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import BlurAndGradient from "@/components/animations/blur-and-gradient";
+import NavMenu from "@/components/layout/nav-menu";
+import reachStats from "@/assets/reach-stats.json";
+import { User2Icon } from "@/assets/icons/user";
+import RequestADemoButton from "@/components/buttons/request-a-demo";
 
 const fastCountStartNumber = 0;
 const fastCountEndNumber = 149900;
@@ -62,71 +67,92 @@ export default function PatientCount() {
   }, [doneWithFastCount]);
 
   return (
-    <main className="w-full flex flex-col justify-center items-center">
-      <section className=" w-full h-screen bg-[url('/medical_bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="flex items-center justify-center flex-col gap-3 w-full h-full text-white">
-          <div className=" font-jost bg-cover bg-center bg-no-repeat w-fit h-fit transition-all flex ">
-            <div className=" flex items-center justify-center flex-col gap-2 w-full py-20 px-5 md:px-10">
-              <h5 className="p-3 text-lg  md:text-3xl lg:text-7xl font-semibold uppercase text-primary-500">
-                #<span className=" font-light">Patient</span> Count
-              </h5>
-              <AnimatePresence>
-                <motion.ul
-                  initial={{ x: -100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: 100, opacity: 1 }}
-                  className="list-none flex items-center justify-center gap-2 md:gap-5 text-4xl md:text-[100px] lg:text-[150px] font-bold transition-all"
-                >
-                  {String(count)
-                    ?.split("")
-                    .map((item, index) =>
-                      doneWithFastCount ? (
-                        <motion.ol
-                          key={item + index}
-                          initial={{ x: -100, opacity: 0 }}
-                          animate={{ x: 0, opacity: 1 }}
-                          exit={{ x: 100, opacity: 1 }}
-                          className=" size-12 md:size-28 lg:size-48 overflow-hidden p-2 md:p-5 px-5 md:px-10 bg-green-900 rounded-md lg:rounded-2xl aspect-square relative z-[1] flex items-center justify-center"
-                        >
-                          <div className=" -z-[1] w-full absolute top-0 left-0 h-1/2 bg-green-800 rounded-t-2xl"></div>
-                          <span className="">{item}</span>
-                        </motion.ol>
-                      ) : (
-                        <ol
-                          key={item + index}
-                          className=" size-12 md:size-28 lg:size-48 overflow-hidden p-2 md:p-5 px-5 md:px-10 bg-green-900 rounded-md lg:rounded-2xl aspect-square relative z-[1] flex items-center justify-center"
-                        >
-                          <div className=" -z-[1] w-full absolute top-0 left-0 h-1/2 bg-green-800 rounded-t-2xl"></div>
-                          <span className="">{item}</span>
-                        </ol>
-                      )
-                    )}
-                </motion.ul>
-              </AnimatePresence>
-              <AnimatePresence>
-                <motion.ul
-                  initial={{ x: -100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: 100, opacity: 1 }}
-                  className="list-none flex justify-center items-center gap-2 md:gap-5 text-4xl md:text-[100px] lg:text-[150px] font-bold transition-all"
-                >
-                  {String(count)
-                    ?.split("")
-                    .map((item, index) => (
-                      <ol
-                        key={item + index}
-                        className="  size-12 md:size-28 lg:size-48 overflow-hidden p-2 md:p-5 px-5 md:px-10 bg-green-900 rounded-md lg:rounded-2xl aspect-square relative z-[1] flex items-center justify-center opacity-15 -scale-y-100"
-                      >
-                        <div className=" -z-[1] w-full absolute top-0 left-0 h-1/2 bg-green-800 rounded-t-2xl"></div>
-                        <span className="">{item}</span>
-                      </ol>
-                    ))}
-                </motion.ul>
-              </AnimatePresence>
-            </div>
+    <div className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
+      {/* HERO */}
+      <section className="top-flare relative space-y-24 pb-28 w-full flex flex-col items-center bg-primary ">
+        <NavMenu variant={2} />
+        <div className="w-full h-full max-w-screen-xl pb-28 px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
+          <div className="w-full  overflow-hidden absolute bottom-[-150px] z-[-5] left-0  flex justify-center">
+            <BlurAndGradient />
+          </div>
+          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
+            <User2Icon className=" size-4" />
+            Patient count
+          </p>
+          <h1 className="z-10 text-white text-6xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+            Live patient count
+          </h1>
+          <AnimatePresence>
+            <motion.ul
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 100, opacity: 1 }}
+              className="list-none mt-28 flex items-center justify-center gap-2 md:gap-5 font-bold transition-all"
+            >
+              {String(count)
+                ?.split("")
+                .map((item, index) =>
+                  doneWithFastCount ? (
+                    <motion.ol
+                      key={item + index}
+                      initial={{ x: -100, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      exit={{ x: 100, opacity: 1 }}
+                      className="text-center flex items-center justify-center shadow-2xl text-white pt-3 rounded-full bg-primary border-4  border-secondary  text-4xl md:text-5xl lg:text-7xl size-9 md:size-12 lg:size-28 p-5 aspect-square"
+                    >
+                      {item}
+                    </motion.ol>
+                  ) : (
+                    <ol
+                      key={item + index}
+                      className="text-center flex items-center justify-center shadow-2xl text-white pt-3 rounded-full bg-primary border-4  border-secondary  text-4xl md:text-5xl lg:text-7xl size-9 md:size-12 lg:size-28 p-5 aspect-square"
+                    >
+                      {item}
+                    </ol>
+                  )
+                )}
+            </motion.ul>
+          </AnimatePresence>
+        </div>
+      </section>
+      <section className="w-full  relative flex flex-col overflow-hidden justify-center items-center gap-16 bg-white text-secondary py-28">
+        <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl p-5">
+          <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
+            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+              Our Reach
+            </h4>
+            <p className=" text-gray_text-800">
+              Together, we are redefining healthcare accessibility.
+            </p>
+          </div>
+          <div className="w-full grid grid-cols-2 gap-3 lg:flex  items-center justify-between text-center">
+            {reachStats.map((item) => (
+              <div
+                key={item?.id}
+                className={" flex flex-col items-center gap-3"}
+              >
+                <span className=" font-bold text-6xl">{item?.value}</span>
+                <p className=" uppercase text-xs text-black font-bold">
+                  {item?.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-    </main>
+
+      <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
+        <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+          <h4 className="text-4xl text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            Partner with Us Today
+          </h4>
+          <p className=" text-gray-200">
+            Join the fast-growing network of providers leveraging innovative
+            health tech to save lives and improve care delivery.
+          </p>
+          <RequestADemoButton className=" bg-white text-secondary" />
+        </div>
+      </section>
+    </div>
   );
 }
