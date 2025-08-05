@@ -1,0 +1,74 @@
+[
+  {
+    "id": "6",
+    "name": "Folaranmi Faridat",
+    "position": "Human Resources",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/faridat.png"
+  },
+  {
+    "id": "2",
+    "name": "Temiloluwa Onaleye",
+    "position": "Engineer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/temiloluwa.png"
+  },
+  {
+    "id": "3",
+    "name": "Adewale Azeez",
+    "position": "Developer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/adewale.png"
+  },
+  {
+    "id": "1",
+    "name": "Ola Ojuko",
+    "position": "Founder & CTO",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/ola.png"
+  },
+  {
+    "id": "4",
+    "name": "Toluwalope Jinadu",
+    "position": "Designer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/toluwalope.png"
+  },
+  {
+    "id": "5",
+    "name": "Adebayo Stephen",
+    "position": "Engineer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/stephen.png"
+  },
+  {
+    "id": "7",
+    "name": "Tobi",
+    "position": "Engineer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/tobi.png"
+  },
+  {
+    "id": "9",
+    "name": "Ivor",
+    "position": "Engineer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/ivor.png"
+  }
+]

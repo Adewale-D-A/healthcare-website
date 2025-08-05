@@ -1,3 +1,7 @@
+##### 05.08.2024
+
+> Feature: About-us page development (in-progress)
+
 ##### 04.08.2024
 
 > Feature: Patient counter UI developed
