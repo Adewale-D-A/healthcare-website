@@ -1,3 +1,17 @@
+##### 04.08.2024
+
+> Feature: Patient counter UI developed
+> Feature: Services page UI completion
+
+##### 31.07.2024
+
+> Feature: Infinite scroll updates
+
+##### 30.07.2024
+
+> Feature: Mega menu development
+> Feature: 'Designed for' UI Animation completion
+
 ##### 29.07.2024
 
 > Feature: 'Designed for' section UI development and animation transition setup (remain pop-out animation)

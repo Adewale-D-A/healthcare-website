@@ -2,19 +2,40 @@ import Image from "next/image";
 import partners from "@/assets/partners.json";
 
 export default function InfiniteScroll() {
+  const width = 150;
   return (
     <div className="w-full flex justify-center items-center">
       <div className="w-full logos py-3 whitespace-nowrap max-w-screen-xl overflow-hidden relative before:absolute before:top-0 before:w-20 before:contents-[''] before:z-[2] before:h-full before:left-0 after:absolute after:top-0 after:w-20 after:contents-[''] after:z-[2]  after:h-full after:right-0">
-        <div className="logos-slide flex gap-10">
-          {partners.map(({ id, logo, name }) => (
-            <Image
+        <div
+          style={{ height: width }}
+          className={`w-full h-[${width}px]  wrapper whitespace-nowrap max-w-screen-xl relative overflow-hidden`}
+        >
+          {" "}
+          {partners.map(({ id, logo, name }, index) => (
+            <div
+              className={` animate-infiniteScroll item${index + 1} absolute`}
               key={id}
-              src={logo}
-              alt={name}
-              height={300}
-              width={300}
-              className={`h-16 grayscale`}
-            />
+              style={
+                {
+                  animationDelay: `calc(30s / ${partners?.length} * (${
+                    partners?.length
+                  } - ${index + 1}) * -1)`,
+                  left: `max(calc(${width * 1.5}px * ${
+                    partners?.length
+                  }), 100%)`,
+                  width: `${width}px`,
+                } as any
+              }
+            >
+              <Image
+                key={id}
+                src={logo}
+                alt={name}
+                height={300}
+                width={300}
+                className={`w-full h-auto aspect-square object-contain grayscale`}
+              />
+            </div>
           ))}
         </div>
       </div>

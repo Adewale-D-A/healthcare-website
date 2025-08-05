@@ -46,7 +46,7 @@ export default function HowItWorks() {
   return (
     <div
       ref={ref}
-      className="w-full flex flex-col justify-center items-center gap-16"
+      className="w-full flex flex-col justify-center items-center gap-16 px-5 md:px-10"
     >
       <div className="w-full flex flex-col gap-4 items-center">
         <h4 className=" text-4xl font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
@@ -54,7 +54,7 @@ export default function HowItWorks() {
         </h4>
         <p>Get set up in less than a week</p>
       </div>
-      <div className=" grid grid-cols-4 gap-5 lg:gap-10">
+      <div className=" grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
         {whyUs.map((item, index) => (
           <div
             key={item.id}
@@ -63,14 +63,20 @@ export default function HowItWorks() {
             <button
               onClick={() => handleSelection(index)}
               className={cn(
-                "p-5 rounded-xl bg-white text-gray_text-400 hover:bg-secondary hover:text-white  hover:scale-110 transition-all cursor-pointer",
+                "p-3 lg:p-5 rounded-xl bg-white text-gray_text-400 hover:bg-secondary hover:text-white  hover:scale-110 transition-all cursor-pointer",
                 currentSelection?.id === item?.id && "bg-secondary text-white"
               )}
             >
-              {item?.id === "1" && <ClipboardIcon className=" size-10" />}
-              {item?.id === "2" && <SettingIcon className=" size-10" />}
-              {item?.id === "3" && <DeployIcon className=" size-10" />}
-              {item?.id === "4" && <PresentationIcon className=" size-10" />}
+              {item?.id === "1" && (
+                <ClipboardIcon className="size-7 lg:size-10" />
+              )}
+              {item?.id === "2" && (
+                <SettingIcon className="size-7 lg:size-10" />
+              )}
+              {item?.id === "3" && <DeployIcon className="size-7 lg:size-10" />}
+              {item?.id === "4" && (
+                <PresentationIcon className="size-7 lg:size-10" />
+              )}
             </button>
             <span className=" font-bold">{item?.id}.</span>
             <p>{item?.title}</p>

@@ -6,11 +6,14 @@ import Image from "next/image";
 export default function DesignedFor() {
   const [ref, isInView] = useInView();
   return (
-    <div ref={ref} className=" w-full mt-9 flex justify-center object-center">
+    <div
+      ref={ref}
+      className=" w-full mt-9 flex justify-center object-center h-96"
+    >
       <div
         className={cn(
-          " flex items-start w-full overflow-x-visible px-16 h-48 overflow-y-hidden "
-          //   isInView && "animate-moveUp"
+          " flex items-start w-full overflow-x-visible px-16 overflow-y-hidden",
+          isInView && "animate-moveUp"
         )}
       >
         <div
@@ -43,8 +46,8 @@ export default function DesignedFor() {
         </div>
         <div
           className={cn(
-            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-80 h-96  top-0 left-0 z-[5]",
-            isInView && "animate-moveUp"
+            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-80 h-96 z-[5]"
+            // isInView && "animate-moveUp"
           )}
         >
           <Image

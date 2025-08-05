@@ -36,11 +36,11 @@ export default function Home() {
           <div className="w-full  overflow-hidden absolute top-[80px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <p className="border border-white/50  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
+          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
             <StarIcon className=" size-4" />
             Product updates - AnonymizedCare now available!
           </p>
-          <h1 className="z-10 text-white text-7xl leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-6xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
             Automate your Healthcare Business{" "}
           </h1>
           <RequestADemoButton className=" text-white" />
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-6">
-            <h4 className=" text-4xl leading-normal font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl leading-tight lg:leading-normal font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
               We automate healthcare so you can focus on what matters most –
               your patients.
             </h4>
@@ -108,9 +108,9 @@ export default function Home() {
       </section>
       {/* EVERYTHING HEALTH */}
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
-        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
+        <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Everything your healthcare facility needs
             </h4>
             <p className=" text-gray-700">
@@ -184,9 +184,9 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
-        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
+        <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform for modern clinics
             </h4>
             <p>Real practitioners, real results</p>
@@ -197,7 +197,7 @@ export default function Home() {
 
       {/* Contact */}
       <section className="w-full flex flex-col lg:flex-row items-stretch justify-center bg-white py-16 gap-10">
-        <div className=" w-full text-7xl font-semibold flex flex-col items-end p-16 justify-center gap-3 text-white rounded-none bg-right bg-no-repeat bg-cover bg-secondary bg-[url('/assets/pattern.png')] rounded-r-[36px]">
+        <div className=" w-full text-7xl font-semibold flex flex-col items-center lg:items-end px-5 py-24 lg:p-16 justify-center gap-3 text-white rounded-none bg-right bg-no-repeat bg-cover bg-secondary bg-[url('/assets/pattern.png')] rounded-r-[36px]">
           <span className=" flex items-center gap-2">
             <Image
               src={"/assets/contact/heart_hand.jpg"}
@@ -231,7 +231,7 @@ export default function Home() {
       <section className="w-full bg-white bg-how-it-works-gradient pt-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Designed for clinicians, by clinicians.
             </h4>
             <p>

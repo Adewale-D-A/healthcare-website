@@ -20,6 +20,8 @@ const config: Config = {
           "linear-gradient(264.24deg, #007CD7 37.54%, #004171 99.35%)",
         "how-it-works-gradient":
           "linear-gradient(288.6deg, rgba(255, 255, 255, 1) 10.86%, rgba(0, 124, 215, 0.2) 88.94%)",
+        "hero-service-card-gradient":
+          "linear-gradient(264.24deg, rgba(9, 25, 61, 0.8) 37.54%, rgba(9, 25, 61, 0.8) 99.35%)",
       },
       fontFamily: {
         space: ["var(--font-space_grostesk)"],
@@ -29,11 +31,16 @@ const config: Config = {
         primary: {
           DEFAULT: "#102A56",
           dark: "#101323",
+          light: "#194185",
         },
         secondary: {
           DEFAULT: "#007CD7",
         },
+        green_variant: {
+          DEFAULT: "#A4ED8E",
+        },
         gray_text: {
+          200: "#FDFDFD",
           400: "#A4A7AE",
           500: "#717680",
           700: "#414651",
@@ -41,9 +48,12 @@ const config: Config = {
         },
       },
       keyframes: {
+        infiniteScroll: {
+          to: { left: "-200px" },
+        },
         moveUp: {
-          // "0%": { marginTop: "0px" },
-          // "100%": { marginTop: "80px" },
+          "0%": { marginTop: "200px" },
+          "100%": { marginTop: "40px" },
         },
         rotateClockwise: {
           "0%": { rotate: "0deg", marginLeft: "-80px" },
@@ -58,6 +68,7 @@ const config: Config = {
         moveUp: "moveUp 1s ease-in-out forwards",
         rotateClockwise: "rotateClockwise 1s ease-in-out forwards",
         rotateAntiClockwise: "rotateAntiClockwise 1s ease-in-out forwards",
+        infiniteScroll: "infiniteScroll 30s linear infinite",
       },
     },
   },
