@@ -9,7 +9,7 @@ import {
 
 export default function OurJourneyAnimation() {
   return (
-    <div className=" w-full h-full overflow-hidden p-10 space-y-8 space-x-6 relative">
+    <div className=" w-full h-full space-y-8 lg:space-x-6 relative transition-all">
       {[
         {
           key: 1,
@@ -36,13 +36,13 @@ export default function OurJourneyAnimation() {
           key={item?.key}
           className={cn(
             "w-full flex",
-            index % 2 === 0 ? "justify-start pr-10" : "justify-end pl-10"
+            index % 2 === 0 ? "justify-start lg:pr-10" : "justify-end lg:pl-10"
           )}
         >
-          <div className=" w-1/2">{item?.element}</div>
+          <div className="w-full lg:w-1/2">{item?.element}</div>
         </div>
       ))}
-      <div className="w-full flex justify-center items-center absolute left-0 top-0">
+      <div className="w-full hidden lg:flex justify-center items-center absolute left-0 top-0">
         <svg
           viewBox="0 0 9 833"
           fill="none"
@@ -63,7 +63,7 @@ export default function OurJourneyAnimation() {
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#007CD7" stopOpacity="0.57" />
-              <stop offset="1" stop-color="#004171" stopOpacity="0" />
+              <stop offset="1" stopColor="#004171" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

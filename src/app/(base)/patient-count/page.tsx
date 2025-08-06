@@ -79,7 +79,7 @@ export default function PatientCount() {
             <User2Icon className=" size-4" />
             Patient count
           </p>
-          <h1 className="z-10 text-white text-6xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
             Live patient count
           </h1>
           <AnimatePresence>
@@ -87,7 +87,7 @@ export default function PatientCount() {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 100, opacity: 1 }}
-              className="list-none mt-28 flex items-center justify-center gap-2 md:gap-5 font-bold transition-all"
+              className="list-none mt-16 lg:mt-28 flex items-center justify-center gap-2 md:gap-5 font-bold transition-all"
             >
               {String(count)
                 ?.split("")
@@ -98,14 +98,14 @@ export default function PatientCount() {
                       initial={{ x: -100, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       exit={{ x: 100, opacity: 1 }}
-                      className="text-center flex items-center justify-center shadow-2xl text-white pt-3 rounded-full bg-primary border-4  border-secondary  text-4xl md:text-5xl lg:text-7xl size-9 md:size-12 lg:size-28 p-5 aspect-square"
+                      className="text-center flex items-center justify-center shadow-2xl text-white pt-3 rounded-full bg-primary border-2 lg:border-4  border-secondary  text-4xl md:text-5xl lg:text-7xl size-14 md:size-24 lg:size-28 p-5 aspect-square"
                     >
                       {item}
                     </motion.ol>
                   ) : (
                     <ol
                       key={item + index}
-                      className="text-center flex items-center justify-center shadow-2xl text-white pt-3 rounded-full bg-primary border-4  border-secondary  text-4xl md:text-5xl lg:text-7xl size-9 md:size-12 lg:size-28 p-5 aspect-square"
+                      className="text-center flex items-center justify-center shadow-2xl text-white pt-3 rounded-full bg-primary border-2 lg:border-4  border-secondary  text-4xl md:text-5xl lg:text-7xl size-14 md:size-24 lg:size-28 p-5 aspect-square"
                     >
                       {item}
                     </ol>
@@ -125,14 +125,16 @@ export default function PatientCount() {
               Together, we are redefining healthcare accessibility.
             </p>
           </div>
-          <div className="w-full grid grid-cols-2 gap-3 lg:flex  items-center justify-between text-center">
+          <div className="w-full flex  items-center justify-center lg:justify-between text-center flex-wrap gap-5">
             {reachStats.map((item) => (
               <div
                 key={item?.id}
                 className={" flex flex-col items-center gap-3"}
               >
-                <span className=" font-bold text-6xl">{item?.value}</span>
-                <p className=" uppercase text-xs text-black font-bold">
+                <span className=" font-bold text-4xl lg:text-6xl">
+                  {item?.value}
+                </span>
+                <p className=" uppercase text-xs text-black font-semibold lg:font-bold">
                   {item?.description}
                 </p>
               </div>
@@ -143,7 +145,7 @@ export default function PatientCount() {
 
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Partner with Us Today
           </h4>
           <p className=" text-gray-200">

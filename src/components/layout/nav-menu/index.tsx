@@ -47,7 +47,7 @@ export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
         </div>
         {/* show on mobile, hide on desktop */}
         <div className=" w-full md:hidden flex justify-between  px-5 md:px-10 py-5">
-          <Logo variant={2} />
+          <Logo variant={variant} />
           <button
             title="hamburger drawer"
             type="button"

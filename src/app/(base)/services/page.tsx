@@ -17,7 +17,7 @@ export default function Services() {
       <section className="w-full bg-white flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
         <NavMenu variant={1} />
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-secondary px-5">
+          <p className="border text-center  flex text-sm items-center gap-2 p-2 rounded-lg text-secondary bg-[#91D9FF14] px-5">
             <StarIcon className=" size-4" />
             Our services
           </p>
@@ -56,7 +56,7 @@ export default function Services() {
                 <ServicesHeroCards key={item?.title} {...item} />
               ))}
             </div>
-            <div className=" w-full flex gap-5 items-stretch">
+            <div className=" w-full flex flex-col lg:flex-row gap-5 items-stretch">
               {[
                 {
                   icon: <QuestionIcon className="size-6" />,
@@ -183,7 +183,7 @@ export default function Services() {
 
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Ready to transform your practice?
           </h4>
           <p className=" text-gray-200">

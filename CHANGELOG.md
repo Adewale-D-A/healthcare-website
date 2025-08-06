@@ -1,3 +1,9 @@
+##### 06.08.2024
+
+> Feature: about us Page completion
+> Feature: Support page development (in-progress)
+> Feature: Home, Services, Patient-count, about-us pages mobile responsiveness updates
+
 ##### 05.08.2024
 
 > Feature: About-us page development (in-progress)

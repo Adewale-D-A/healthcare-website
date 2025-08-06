@@ -36,11 +36,11 @@ export default function Home() {
           <div className="w-full  overflow-hidden absolute top-[80px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
+          <p className="border border-white/50 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
             <StarIcon className=" size-4" />
             Product updates - AnonymizedCare now available!
           </p>
-          <h1 className="z-10 text-white text-6xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
             Automate your Healthcare Business{" "}
           </h1>
           <RequestADemoButton className=" text-white" />
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-6">
-            <h4 className=" text-4xl leading-tight lg:leading-normal font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl text-center lg:text-left leading-tight lg:leading-normal font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
               We automate healthcare so you can focus on what matters most –
               your patients.
             </h4>
@@ -68,7 +68,7 @@ export default function Home() {
               and empower your team to deliver exceptional patient care
               efficiently and confidently.
             </p>
-            <div className=" flex items-center justify-between">
+            <div className="w-full flex items-center justify-between">
               {[
                 {
                   id: 1,

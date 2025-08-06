@@ -10,27 +10,30 @@ import Image from "next/image";
 import leadership from "@/assets/team.json";
 import Team from "@/components/cards/team";
 import OurJourneyAnimation from "@/components/animations/our-jouney";
+import SkewedInfiniteScroll from "@/components/animations/skewed-infinite-scroll";
+import GraphLine from "@/components/animations/graph-line";
 
 export default function AboutUs() {
   return (
     <div className="w-full">
       <section className="w-full bg-white flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
         <NavMenu variant={1} />
-        <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <div className=" flex items-center gap-2">
-            <h2 className="text-6xl text-transparent bg-sctn-two-text-gradient bg-clip-text lg:text-7xl font-bold">
-              We are 7thcar
-            </h2>
-            <div className="w-fit rounded-full bg-secondary p-3">
-              <Image
-                src={"/assets/about_us/logo.png"}
-                alt="7thCare"
-                height={200}
-                width={200}
-                className=" h-12 w-auto aspect-square"
-              />
-            </div>
-          </div>
+        <div className="w-full py-16 lg:py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+          <h2 className="text-6xl text-transparent bg-sctn-two-text-gradient bg-clip-text lg:text-7xl font-bold flex flex-col lg:flex-row items-center gap-4">
+            We are{" "}
+            <span className=" flex items-center gap-2">
+              7thcar
+              <div className="w-fit rounded-full bg-secondary p-3">
+                <Image
+                  src={"/assets/about_us/logo.png"}
+                  alt="7thCare"
+                  height={200}
+                  width={200}
+                  className=" h-8 lg:h-12 w-auto aspect-square"
+                />
+              </div>
+            </span>
+          </h2>
           <p className=" text-center max-w-xl text-lg">
             Our aim is to bring healthcare in Africa up to speed with
             well-connected data, improving patient care across the board.
@@ -40,12 +43,12 @@ export default function AboutUs() {
       </section>
       <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <p>
+          <p className=" text-center">
             Trusted by clinicians and healthcare staff worldwide efficiently and
             confidently.
           </p>
           <InfiniteScroll />
-          <div className=" w-full grid grid-col-1 lg:grid-cols-3 gap-5">
+          <div className=" w-full grid grid-col-1 lg:grid-cols-3 gap-5 items-center">
             {[
               {
                 id: 1,
@@ -74,8 +77,8 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white pt-24 flex flex-col gap-5 justify-center items-center">
-        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
+      <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
+        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16 px-5 lg:px-10">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Our Journey{" "}
@@ -87,7 +90,7 @@ export default function AboutUs() {
       </section>
 
       <section className="w-full bg-white pt-24 flex flex-col gap-5 justify-center items-center">
-        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-5">
+        <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-5 px-5 lg:px-10">
           <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Meet the team
           </h4>
@@ -110,7 +113,19 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
+      <section className="w-full   bg-primary flex flex-col gap-5 justify-center items-center pt-20 pb-16 lg:pb-36">
+        <div className=" w-full flex flex-col lg:flex-row items-center justify-between max-w-screen-xl text-white px-5 lg:px-10">
+          <h3 className=" text-3xl font-semibold">Implementation Flow</h3>
+          <p className=" max-w-xs text-center lg:text-left">
+            In four simple steps we able to implement our worldclass solution
+            for your business
+          </p>
+        </div>
+        <div className=" w-full max-h-[300px] lg:max-h-[1500px]">
+          <GraphLine />
+        </div>
+        <SkewedInfiniteScroll />
+      </section>
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <h4 className="text-4xl text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">

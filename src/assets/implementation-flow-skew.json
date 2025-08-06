@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "logo": "/assets/about_us/skew_1.png",
+    "name": "Pathway"
+  },
+  {
+    "id": 2,
+    "logo": "/assets/about_us/skew_2.png",
+    "name": "Waiting Room"
+  },
+  {
+    "id": 3,
+    "logo": "/assets/about_us/skew_3.png",
+    "name": "Reports"
+  },
+  {
+    "id": 4,
+    "logo": "/assets/about_us/skew_4.png",
+    "name": "Write"
+  },
+  {
+    "id": 5,
+    "logo": "/assets/about_us/skew_5.png",
+    "name": "Consultant"
+  }
+]

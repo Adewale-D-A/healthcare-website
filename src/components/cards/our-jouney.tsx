@@ -23,7 +23,7 @@ export function OurJourneyCard({
 
   return (
     <div ref={ref}>
-      {isInView && (
+      {isInView ? (
         <motion.div
           initial={{ x: Boolean(position) ? "200vw" : "-100vw" }} // start off-screen to the left
           animate={{ x: 0 }} // animate into position
@@ -43,6 +43,8 @@ export function OurJourneyCard({
             <p>{description}</p>
           </div>
         </motion.div>
+      ) : (
+        <div className=" w-full h-28"></div>
       )}
     </div>
   );
@@ -50,7 +52,7 @@ export function OurJourneyCard({
 export function OurJourneyCardOne() {
   return (
     <OurJourneyCard
-      icon={<DrugIcon className="size-14" />}
+      icon={<DrugIcon className="size-10 lg:size-14" />}
       title="Concept Research"
       description="Founders explored health automation powered by clinical AI and hands-on care experience."
       position={0}
@@ -61,7 +63,7 @@ export function OurJourneyCardOne() {
 export function OurJourneyCardTwo() {
   return (
     <OurJourneyCard
-      icon={<SetRevolveIcon className="size-14" />}
+      icon={<SetRevolveIcon className="size-10 lg:size-14" />}
       title="Pandemic Digitization"
       description="COVID-19 underscored the need for remote workflows, speeding up platform development."
       position={1}
@@ -71,7 +73,7 @@ export function OurJourneyCardTwo() {
 export function OurJourneyCardThree() {
   return (
     <OurJourneyCard
-      icon={<PaymentCardIcon className="size-14" />}
+      icon={<PaymentCardIcon className="size-10 lg:size-14" />}
       title="Proof of Concept"
       description="Pilots with clinics, labs, and diagnostic centers validated our core automation and data-capture features."
       position={0}
@@ -82,7 +84,7 @@ export function OurJourneyCardThree() {
 export function OurJourneyCardFour() {
   return (
     <OurJourneyCard
-      icon={<DNAIcon className="size-14" />}
+      icon={<DNAIcon className="size-10 lg:size-14" />}
       title="Incorporation & Partnerships"
       description="7thCare formally incorporated and forged key partnerships to refine product-market fit."
       position={1}
@@ -93,7 +95,7 @@ export function OurJourneyCardFour() {
 export function OurJourneyCardFive() {
   return (
     <OurJourneyCard
-      icon={<HeartPulse className="size-14" />}
+      icon={<HeartPulse className="size-10 lg:size-14" />}
       title="Platform Launch & Growth"
       description="Public rollout to first users, gathering feedback and expanding features and coverage across facilities."
       position={0}

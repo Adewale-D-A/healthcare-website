@@ -20,7 +20,7 @@ export default function AutomotateStats() {
         )}
       ></div>
       <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl p-5">
-        <h2 className="text-3xl lg:text-[40px] font-bold">
+        <h2 className="text-3xl text-center lg:text-[40px] font-bold">
           We automate healthcare across Africa
         </h2>
         <div className="w-full grid grid-cols-2 gap-3 lg:flex  items-center justify-between text-center">
@@ -29,7 +29,9 @@ export default function AutomotateStats() {
               key={item?.id}
               className={cn(" flex flex-col items-center gap-3")}
             >
-              <span className=" font-bold text-6xl">{item?.value}</span>
+              <span className=" font-bold text-3xl lg:text-6xl">
+                {item?.value}
+              </span>
               <p className=" uppercase text-xs">{item?.description}</p>
             </div>
           ))}
