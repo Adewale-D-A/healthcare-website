@@ -5,6 +5,7 @@ import AnalyticsWrapper from "@/components/analytics-wrapper";
 import BlurAndGradient from "@/components/animations/blur-and-gradient";
 import RequestADemoButton from "@/components/buttons/request-a-demo";
 import NavMenu from "@/components/layout/nav-menu";
+import SupportTabs from "@/components/support-tabs";
 import { cn } from "@/utils/cn";
 
 export default function SupportLayout({
@@ -27,7 +28,19 @@ export default function SupportLayout({
           <p className=" text-white px-5">Find answers and get help fast</p>
         </div>
       </section>
-      {children}
+      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
+        <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
+          <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+              Frequently Asked Questions
+            </h4>
+          </div>
+          <div className=" lg:px-10">
+            <SupportTabs />
+          </div>
+          {children}
+        </div>
+      </section>
 
       <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">

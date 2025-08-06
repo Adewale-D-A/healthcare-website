@@ -1,0 +1,62 @@
+[
+  {
+    "category": "getting_started",
+    "title": "How do I create an account?",
+    "content": "Click the 'Sign Up' button on the homepage, enter your personal details, verify your email, and you're ready to access our healthcare services."
+  },
+  {
+    "category": "getting_started",
+    "title": "Can I book an appointment without registering?",
+    "content": "No, registration is required to book appointments so we can securely store and manage your medical information."
+  },
+  {
+    "category": "getting_started",
+    "title": "How do I find a doctor that suits my needs?",
+    "content": "Use our 'Find a Doctor' tool to filter by specialty, location, availability, and patient ratings to choose the best provider for you."
+  },
+  {
+    "category": "getting_started",
+    "title": "Is there a mobile app available?",
+    "content": "Yes, our mobile app is available on both iOS and Android. You can book appointments, view records, and chat with providers on the go."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "What payment methods are accepted?",
+    "content": "We accept credit/debit cards, bank transfers, and mobile wallets like Apple Pay and Google Pay. All payments are securely processed."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Can I pay in installments?",
+    "content": "Yes, for select services we offer installment plans. You can choose this option during checkout or contact billing support for details."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "How do I access my billing history?",
+    "content": "Log into your account and navigate to the 'Billing' section to view past invoices, payment confirmations, and downloadable receipts."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "What should I do if I was charged incorrectly?",
+    "content": "Please contact our billing support team immediately with your invoice number. We'll investigate and resolve any discrepancies promptly."
+  },
+  {
+    "category": "technical_issues",
+    "title": "Why can't I log into my account?",
+    "content": "Double-check your email and password. If you're still having trouble, try resetting your password or contact support for help."
+  },
+  {
+    "category": "technical_issues",
+    "title": "The website is not loading properly. What should I do?",
+    "content": "Try refreshing the page, clearing your browser cache, or switching to a different browser. If the issue persists, reach out to tech support."
+  },
+  {
+    "category": "technical_issues",
+    "title": "I didn’t receive my appointment confirmation email.",
+    "content": "Check your spam folder first. If it's not there, log into your account to confirm the appointment or request a resend from the dashboard."
+  },
+  {
+    "category": "technical_issues",
+    "title": "How do I update my profile information?",
+    "content": "Log into your account, go to 'Settings' or 'Profile', and edit your personal details. Changes are saved automatically."
+  }
+]

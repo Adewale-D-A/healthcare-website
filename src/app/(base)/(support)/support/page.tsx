@@ -1,3 +1,6 @@
+import faqContents from "@/assets/FAQ.json";
+import FAQContent from "@/components/FAQ-content";
+
 export default function Support() {
-  return <section></section>;
+  return <FAQContent faqContents={faqContents} />;
 }

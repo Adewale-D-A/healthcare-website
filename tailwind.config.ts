@@ -51,6 +51,36 @@ const config: Config = {
         infiniteScroll: {
           to: { left: "-200px" },
         },
+        loaderMoveOne: {
+          "0%": {
+            transform: "scaleX(0)",
+            transformOrigin: "left",
+          },
+          "50%": {
+            transform: "scaleX(1)",
+            transformOrigin: "right",
+            backgroundColor: "#1e293b",
+          },
+          "100%": {
+            transform: "scaleX(0)",
+            transformOrigin: "left",
+          },
+        },
+        loaderMoveTwo: {
+          "0%": {
+            transform: "scaleX(0)",
+            transformOrigin: "right",
+          },
+          "50%": {
+            transform: "scaleX(1)",
+            transformOrigin: "left",
+            backgroundColor: "#020617",
+          },
+          "100%": {
+            transform: "scaleX(0)",
+            transformOrigin: "right",
+          },
+        },
         moveUp: {
           "0%": { marginTop: "200px" },
           "100%": { marginTop: "40px" },
@@ -69,6 +99,8 @@ const config: Config = {
         rotateClockwise: "rotateClockwise 1s ease-in-out forwards",
         rotateAntiClockwise: "rotateAntiClockwise 1s ease-in-out forwards",
         infiniteScroll: "infiniteScroll 30s linear infinite",
+        loaderMoveOne: "loaderMoveOne 3s ease-in-out 1",
+        loaderMoveTwo: "loaderMoveTwo 3s ease-in-out 1",
       },
     },
   },
