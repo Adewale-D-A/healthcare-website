@@ -1,5 +1,6 @@
 ##### 07.08.2024
 
+> Feature: SEO optimization feature updates and dymanic/lazy load of components
 > Feature: Support page server side search addition
 > Updates: UI adjustments
 

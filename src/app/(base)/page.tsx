@@ -2,15 +2,16 @@ import ChartIcon from "@/assets/icons/chart";
 import ClockIcon from "@/assets/icons/clock";
 import StarIcon from "@/assets/icons/star";
 import UserIcon from "@/assets/icons/user";
-import AutomotateStats from "@/components/animations/automate-stats";
-import BlurAndGradient from "@/components/animations/blur-and-gradient";
-import HowItWorks from "@/components/animations/how-it-works";
-import InfiniteScroll from "@/components/animations/image-infinite-scroll";
-import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import HowItWorks from "@/components/animations/how-it-works";
+// import BlurAndGradient from "@/components/animations/blur-and-gradient";
+// import InfiniteScroll from "@/components/animations/image-infinite-scroll";
+// import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import EmbedYouTube from "@/components/youtube/embed";
+// import AutomotateStats from "@/components/animations/automate-stats";
+// import DesignedFor from "@/components/animations/designed-for";
 import FacilitiesCard from "@/components/cards/facilities";
 import NavMenu from "@/components/layout/nav-menu";
 import Testimonials from "@/components/Testimonials";
-import EmbedYouTube from "@/components/youtube/embed";
 import {
   Banknote,
   Building,
@@ -24,7 +25,19 @@ import OurStats from "@/components/cards/our-stats";
 import ContactForm from "@/components/contactForm";
 import Image from "next/image";
 import { Button } from "@/components/buttons/button";
-import DesignedFor from "@/components/animations/designed-for";
+import type { Metadata } from "next";
+import metadataContent from "@/assets/seo-meta-data.json";
+import {
+  InfiniteScroll,
+  BlurAndGradient,
+  HowItWorks,
+  RequestADemoButton,
+  EmbedYouTube,
+  AutomotateStats,
+  DesignedFor,
+} from "@/components/dynamic-imports";
+
+export const metadata: Metadata = metadataContent.home;
 
 export default function Home() {
   return (

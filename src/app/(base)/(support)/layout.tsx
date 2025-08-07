@@ -1,13 +1,17 @@
 import BarGraphIcon from "@/assets/icons/bar";
 import MailIcon from "@/assets/icons/mail";
 import PhoneIcon from "@/assets/icons/phone";
-import AnalyticsWrapper from "@/components/analytics-wrapper";
-import BlurAndGradient from "@/components/animations/blur-and-gradient";
-import RequestADemoButton from "@/components/buttons/request-a-demo";
-import FAQSearch from "@/components/faq-search";
+// import BlurAndGradient from "@/components/animations/blur-and-gradient";
+// import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import FAQSearch from "@/components/faq-search";
 import NavMenu from "@/components/layout/nav-menu";
 import SupportTabs from "@/components/support-tabs";
 import { cn } from "@/utils/cn";
+import {
+  RequestADemoButton,
+  BlurAndGradient,
+  FAQSearch,
+} from "@/components/dynamic-imports";
 
 export default function SupportLayout({
   children,
@@ -16,7 +20,6 @@ export default function SupportLayout({
 }) {
   return (
     <main className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
-      <AnalyticsWrapper />
       <section className="top-flare relative space-y-24 pb-16 w-full flex flex-col items-center bg-primary ">
         <NavMenu variant={2} />
         <div className="w-full h-full max-w-screen-xl px-5 md:px-10 flex flex-col gap-6 items-center justify-center">

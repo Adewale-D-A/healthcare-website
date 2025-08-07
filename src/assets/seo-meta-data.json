@@ -1,0 +1,57 @@
+{
+  "home": {
+    "title": "7thCare | Automate Your Healthcare Business",
+    "description": "Streamline operations, enhance patient care, and maximise efficiency with 7thCare's custom healthcare automation solutions and expert guidance.",
+    "keywords": [
+      "healthcare automation",
+      "patient care solutions",
+      "medical software",
+      "healthcare efficiency",
+      "7thCare"
+    ]
+  },
+  "services": {
+    "title": "Our Services | Healthcare Automation by 7thCare",
+    "description": "Explore 7thCare's range of healthcare automation services designed to optimize workflows, improve patient outcomes, and reduce operational costs.",
+    "keywords": [
+      "healthcare services",
+      "automation tools",
+      "medical workflow optimization",
+      "7thCare services",
+      "healthcare technology"
+    ]
+  },
+  "patientCount": {
+    "title": "Patient Count Dashboard | 7thCare Analytics",
+    "description": "Monitor and manage patient volumes with 7thCare's real-time analytics dashboard. Gain insights to improve care delivery and resource allocation.",
+    "keywords": [
+      "patient analytics",
+      "healthcare dashboard",
+      "real-time patient data",
+      "7thCare analytics",
+      "medical insights"
+    ]
+  },
+  "aboutUs": {
+    "title": "About Us | Meet the Team Behind 7thCare",
+    "description": "Learn about 7thCare's mission to revolutionize healthcare through automation and meet the experts driving innovation in patient care.",
+    "keywords": [
+      "about 7thCare",
+      "healthcare innovators",
+      "medical technology team",
+      "healthcare mission",
+      "7thCare story"
+    ]
+  },
+  "support": {
+    "title": "Support | Get Help with 7thCare Solutions",
+    "description": "Need assistance? Our support team is here to help you navigate 7thCare's healthcare automation tools and ensure smooth operations.",
+    "keywords": [
+      "7thCare support",
+      "healthcare help desk",
+      "technical assistance",
+      "customer service",
+      "medical software support"
+    ]
+  }
+}

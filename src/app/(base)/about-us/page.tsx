@@ -1,18 +1,27 @@
 import EyeIcon from "@/assets/icons/eye";
 import StarIcon from "@/assets/icons/star";
 import TargetIcon from "@/assets/icons/target";
-import InfiniteScroll from "@/components/animations/image-infinite-scroll";
-import RequestADemoButton from "@/components/buttons/request-a-demo";
 import OurGoalsCard from "@/components/cards/our-goals";
 import DoctorOnMap from "@/components/doctor-on-map";
 import NavMenu from "@/components/layout/nav-menu";
 import Image from "next/image";
 import leadership from "@/assets/team.json";
 import Team from "@/components/cards/team";
-import OurJourneyAnimation from "@/components/animations/our-jouney";
-import SkewedInfiniteScroll from "@/components/animations/skewed-infinite-scroll";
+// import InfiniteScroll from "@/components/animations/image-infinite-scroll";
+// import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import OurJourneyAnimation from "@/components/animations/our-jouney";
+// import SkewedInfiniteScroll from "@/components/animations/skewed-infinite-scroll";
 import GraphLine from "@/components/animations/graph-line";
+import type { Metadata } from "next";
+import metadataContent from "@/assets/seo-meta-data.json";
+import {
+  RequestADemoButton,
+  InfiniteScroll,
+  OurJourneyAnimation,
+  SkewedInfiniteScroll,
+} from "@/components/dynamic-imports";
 
+export const metadata: Metadata = metadataContent.aboutUs;
 export default function AboutUs() {
   return (
     <div className="w-full">

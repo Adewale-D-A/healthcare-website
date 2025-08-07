@@ -4,13 +4,17 @@ import MouseIcon from "@/assets/icons/mouse";
 import QuestionIcon from "@/assets/icons/question";
 import StarIcon from "@/assets/icons/star";
 import TeachIcon from "@/assets/icons/teach";
-import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import RequestADemoButton from "@/components/buttons/request-a-demo";
 import ServicesHeroCards from "@/components/cards/services-hero";
 import ServicesPlatformCard from "@/components/cards/services-platforms";
 import NavMenu from "@/components/layout/nav-menu";
 import { cn } from "@/utils/cn";
 import { BarChart, Calendar, File, Users, Video, Wallet } from "lucide-react";
+import type { Metadata } from "next";
+import metadataContent from "@/assets/seo-meta-data.json";
+import { RequestADemoButton } from "@/components/dynamic-imports";
 
+export const metadata: Metadata = metadataContent.services;
 export default function Services() {
   return (
     <div className="w-full">

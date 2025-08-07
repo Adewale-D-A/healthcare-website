@@ -1,6 +1,10 @@
 import faqAllContents from "@/assets/FAQ.json";
 import FAQContent from "@/components/FAQ-content";
 
+import type { Metadata } from "next";
+import metadataContent from "@/assets/seo-meta-data.json";
+
+export const metadata: Metadata = metadataContent.support;
 interface FAQPageProps {
   searchParams: {
     search?: string;

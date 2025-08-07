@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Caveat } from "next/font/google";
 import "./globals.css";
 import FooterMenu from "@/components/layout/footer";
+import StructuredMetaData from "@/components/meta-data/json-led";
 
 const spaceGrostesk = Space_Grotesk({
   subsets: ["latin"],
@@ -26,7 +27,13 @@ export const metadata: Metadata = {
     "Streamline operations, enhance patient care, and maximise efficiency with our custom healthcare automation solutions and personalised guidance from expert advisors.",
   applicationName: "7thCare",
   referrer: "origin-when-cross-origin",
-  keywords: ["tekemedicine", "medical app", "health care app", "health"],
+  keywords: [
+    "healthcare automation",
+    "patient care solutions",
+    "medical software",
+    "healthcare efficiency",
+    "7thCare",
+  ],
   manifest: "https://7thcare.com/manifest.json",
   robots: {
     index: true,
@@ -53,6 +60,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrostesk.className} ${caveat.variable} font-space_grostesk text-sm leading-6 lg:leading-7 text-gray_text-800`}
       >
+        <StructuredMetaData />
         {children}
         <FooterMenu />
       </body>
