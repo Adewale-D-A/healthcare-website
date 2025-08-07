@@ -1,5 +1,6 @@
 ##### 07.08.2024
 
+> Feature: Support page server side search addition
 > Updates: UI adjustments
 
 ##### 06.08.2024

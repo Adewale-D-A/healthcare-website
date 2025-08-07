@@ -4,10 +4,10 @@ import PhoneIcon from "@/assets/icons/phone";
 import AnalyticsWrapper from "@/components/analytics-wrapper";
 import BlurAndGradient from "@/components/animations/blur-and-gradient";
 import RequestADemoButton from "@/components/buttons/request-a-demo";
+import FAQSearch from "@/components/faq-search";
 import NavMenu from "@/components/layout/nav-menu";
 import SupportTabs from "@/components/support-tabs";
 import { cn } from "@/utils/cn";
-import { Search } from "lucide-react";
 
 export default function SupportLayout({
   children,
@@ -30,13 +30,7 @@ export default function SupportLayout({
             Find answers and get help fast
           </p>
           <div className=" w-full max-w-screen-sm mt-16">
-            <label className=" flex items-center p-4 text-gray_text-400 bg-white gap-3 rounded-xl w-full">
-              <Search />
-              <input
-                placeholder="How can we help you?"
-                className=" w-full focus:border-none focus-visible:outline-none"
-              />
-            </label>
+            <FAQSearch />
           </div>
         </div>
       </section>
