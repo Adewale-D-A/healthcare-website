@@ -40,7 +40,7 @@ export default function Home() {
             <StarIcon className=" size-4" />
             Product updates - AnonymizedCare now available!
           </p>
-          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-snug font-bold text-center max-w-screen-md">
             Automate your Healthcare Business{" "}
           </h1>
           <RequestADemoButton className=" text-white" />
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-6">
-            <h4 className=" text-4xl text-center lg:text-left leading-tight lg:leading-normal font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl text-center lg:text-left leading-tight lg:leading-snug font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
               We automate healthcare so you can focus on what matters most –
               your patients.
             </h4>
@@ -110,7 +110,7 @@ export default function Home() {
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Everything your healthcare facility needs
             </h4>
             <p className=" text-gray-700">
@@ -186,7 +186,7 @@ export default function Home() {
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform for modern clinics
             </h4>
             <p>Real practitioners, real results</p>
@@ -231,7 +231,7 @@ export default function Home() {
       <section className="w-full bg-white bg-how-it-works-gradient pt-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Designed for clinicians, by clinicians.
             </h4>
             <p>

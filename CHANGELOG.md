@@ -1,3 +1,7 @@
+##### 07.08.2024
+
+> Updates: UI adjustments
+
 ##### 06.08.2024
 
 > Feature: Support page completion

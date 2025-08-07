@@ -79,7 +79,7 @@ export default function PatientCount() {
             <User2Icon className=" size-4" />
             Patient count
           </p>
-          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-snug font-bold text-center max-w-screen-md">
             Live patient count
           </h1>
           <AnimatePresence>
@@ -118,7 +118,7 @@ export default function PatientCount() {
       <section className="w-full  relative flex flex-col overflow-hidden justify-center items-center gap-16 bg-white text-secondary py-28">
         <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl p-5">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Our Reach
             </h4>
             <p className=" text-gray_text-800">
@@ -145,7 +145,7 @@ export default function PatientCount() {
 
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Partner with Us Today
           </h4>
           <p className=" text-gray-200">

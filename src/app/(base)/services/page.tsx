@@ -28,19 +28,21 @@ export default function Services() {
             Comprehensive healthcare automation solutions designed to streamline
             your practice and improve patirnt care
           </p>
-          <div className=" w-full space-y-5">
+          <div className=" w-full space-y-5 mt-10">
             <div className=" w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
               {[
                 {
                   icon: <MouseIcon className="size-6" />,
                   imgUrl: "/assets/services-hero/1.png",
                   title: "Implementation & integration",
+                  bgClassName: "bg-[url('/assets/services-hero/1.png')]",
                   description:
                     "Seamlessly deploy, customize, and unify all modules within your 7thCare software suite.",
                 },
                 {
                   icon: <Desktop className="size-6" />,
                   imgUrl: "/assets/services-hero/2.png",
+                  bgClassName: "bg-[url('/assets/services-hero/2.png')]",
                   title: "Custom development",
                   description:
                     "Build proprietary features tailored to your organization's specific needs.",
@@ -48,6 +50,7 @@ export default function Services() {
                 {
                   icon: <TeachIcon className="size-6" />,
                   imgUrl: "/assets/services-hero/3.png",
+                  bgClassName: "bg-[url('/assets/services-hero/3.png')]",
                   title: "Training & Onboarding",
                   description:
                     "Build extra features, enhancements or proprietary modules tailored to your needs.",
@@ -62,6 +65,7 @@ export default function Services() {
                   icon: <QuestionIcon className="size-6" />,
                   title: "Support & maintenance",
                   imgUrl: "/assets/services-hero/4.png",
+                  bgClassName: "bg-[url('/assets/services-hero/4.png')]",
                   description:
                     "Our team ensures continuous operational excellence with proactive monitoring, regular software updates, security upgrades, and 24/7 troubleshooting.",
                 },
@@ -69,6 +73,7 @@ export default function Services() {
                   icon: <AnonymousIcon className="size-6" />,
                   title: "Anonymized Care",
                   imgUrl: "/assets/services-hero/5.png",
+                  bgClassName: "bg-[url('/assets/services-hero/5.png')]",
                   description:
                     "AnonymizedCare solution ensures secure data anonymization, enabling your hospital or research team to utilize patient data insights for research, AI training, and health outcome analytics without compromising confidentiality.",
                 },
@@ -92,7 +97,7 @@ export default function Services() {
       <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform
             </h4>
             <p className=" text-gray-700">
@@ -183,7 +188,7 @@ export default function Services() {
 
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Ready to transform your practice?
           </h4>
           <p className=" text-gray-200">

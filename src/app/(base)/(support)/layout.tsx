@@ -7,6 +7,7 @@ import RequestADemoButton from "@/components/buttons/request-a-demo";
 import NavMenu from "@/components/layout/nav-menu";
 import SupportTabs from "@/components/support-tabs";
 import { cn } from "@/utils/cn";
+import { Search } from "lucide-react";
 
 export default function SupportLayout({
   children,
@@ -16,22 +17,33 @@ export default function SupportLayout({
   return (
     <main className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
       <AnalyticsWrapper />
-      <section className="top-flare relative space-y-24 pb-28 w-full flex flex-col items-center bg-primary ">
+      <section className="top-flare relative space-y-24 pb-16 w-full flex flex-col items-center bg-primary ">
         <NavMenu variant={2} />
-        <div className="w-full h-full max-w-screen-xl pb-28 px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
+        <div className="w-full h-full max-w-screen-xl px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
           <div className="w-full  overflow-hidden absolute bottom-[-150px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-snug font-bold text-center max-w-screen-md">
             Support center
           </h1>
-          <p className=" text-white px-5">Find answers and get help fast</p>
+          <p className=" text-white text-base">
+            Find answers and get help fast
+          </p>
+          <div className=" w-full max-w-screen-sm mt-16">
+            <label className=" flex items-center p-4 text-gray_text-400 bg-white gap-3 rounded-xl w-full">
+              <Search />
+              <input
+                placeholder="How can we help you?"
+                className=" w-full focus:border-none focus-visible:outline-none"
+              />
+            </label>
+          </div>
         </div>
       </section>
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
-        <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
+        <div className="w-full flex max-w-screen-lg px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Frequently Asked Questions
             </h4>
           </div>
@@ -132,7 +144,7 @@ export default function SupportLayout({
       </section>
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Still need help?
           </h4>
           <p className=" text-gray-200">

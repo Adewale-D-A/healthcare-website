@@ -8,6 +8,7 @@ import ClipboardIcon from "@/assets/icons/clipboard";
 import SettingIcon from "@/assets/icons/settings";
 import DeployIcon from "@/assets/icons/deploy";
 import PresentationIcon from "@/assets/icons/presentation";
+import TeachIcon from "@/assets/icons/teach";
 
 export default function HowItWorks() {
   const [ref, isInView] = useInView();
@@ -74,12 +75,12 @@ export default function HowItWorks() {
                 <SettingIcon className="size-7 lg:size-10" />
               )}
               {item?.id === "3" && <DeployIcon className="size-7 lg:size-10" />}
-              {item?.id === "4" && (
-                <PresentationIcon className="size-7 lg:size-10" />
-              )}
+              {item?.id === "4" && <TeachIcon className="size-7 lg:size-10" />}
             </button>
-            <span className=" font-bold">{item?.id}.</span>
-            <p>{item?.title}</p>
+            <div>
+              <span className=" font-bold">{item?.id}.</span>
+              <p>{item?.title}</p>
+            </div>
           </div>
         ))}
       </div>
