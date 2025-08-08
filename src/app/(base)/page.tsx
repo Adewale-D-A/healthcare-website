@@ -2,15 +2,16 @@ import ChartIcon from "@/assets/icons/chart";
 import ClockIcon from "@/assets/icons/clock";
 import StarIcon from "@/assets/icons/star";
 import UserIcon from "@/assets/icons/user";
-import AutomotateStats from "@/components/animations/automate-stats";
-import BlurAndGradient from "@/components/animations/blur-and-gradient";
-import HowItWorks from "@/components/animations/how-it-works";
-import InfiniteScroll from "@/components/animations/image-infinite-scroll";
-import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import HowItWorks from "@/components/animations/how-it-works";
+// import BlurAndGradient from "@/components/animations/blur-and-gradient";
+// import InfiniteScroll from "@/components/animations/image-infinite-scroll";
+// import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import EmbedYouTube from "@/components/youtube/embed";
+// import AutomotateStats from "@/components/animations/automate-stats";
+// import DesignedFor from "@/components/animations/designed-for";
 import FacilitiesCard from "@/components/cards/facilities";
 import NavMenu from "@/components/layout/nav-menu";
 import Testimonials from "@/components/Testimonials";
-import EmbedYouTube from "@/components/youtube/embed";
 import {
   Banknote,
   Building,
@@ -24,29 +25,41 @@ import OurStats from "@/components/cards/our-stats";
 import ContactForm from "@/components/contactForm";
 import Image from "next/image";
 import { Button } from "@/components/buttons/button";
-import DesignedFor from "@/components/animations/designed-for";
+import type { Metadata } from "next";
+import metadataContent from "@/assets/seo-meta-data.json";
+import {
+  InfiniteScroll,
+  BlurAndGradient,
+  HowItWorks,
+  RequestADemoButton,
+  EmbedYouTube,
+  AutomotateStats,
+  DesignedFor,
+  HomeHeroBanner,
+} from "@/components/dynamic-imports";
+// import HomeHeroBanner from "@/components/animations/home-hero";
+
+export const metadata: Metadata = metadataContent.home;
 
 export default function Home() {
   return (
-    <div className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
+    <div className="w-full flex bg-primary top-flare flex-col justify-center items-center">
       {/* HERO */}
-      <section className="top-flare relative min-h-screen space-y-24 w-full flex flex-col items-center bg-primary ">
-        <NavMenu variant={2} />
-        <div className="w-full h-full max-w-screen-xl pb-28 px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
-          <div className="w-full  overflow-hidden absolute top-[80px] z-[-5] left-0  flex justify-center">
+      <NavMenu variant={2} />
+      <section className="relative lg:min-h-screen space-y-24 pt-16 lg:pt-24 w-full flex flex-col items-center  ">
+        <div className="w-full h-full max-w-screen-xl px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
+          <div className="w-full  overflow-hidden absolute top-[0px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
+          <p className="border border-white/50 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
             <StarIcon className=" size-4" />
             Product updates - AnonymizedCare now available!
           </p>
-          <h1 className="z-10 text-white text-6xl lg:text-7xl leading-tight lg:leading-normal font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-snug font-bold text-center max-w-screen-md">
             Automate your Healthcare Business{" "}
           </h1>
           <RequestADemoButton className=" text-white" />
-          <div className=" w-full  h-96 p-2 bottom-flare bg-white/10 rounded-3xl">
-            <div className=" w-full h-full bg-primary rounded-3xl"></div>
-          </div>
+          <HomeHeroBanner />
           <div className="w-full my-10 flex items-center justify-center">
             <InfiniteScroll />
           </div>
@@ -57,7 +70,7 @@ export default function Home() {
         <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-6">
-            <h4 className=" text-4xl leading-tight lg:leading-normal font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl text-center lg:text-left leading-tight lg:leading-snug font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">
               We automate healthcare so you can focus on what matters most –
               your patients.
             </h4>
@@ -68,7 +81,7 @@ export default function Home() {
               and empower your team to deliver exceptional patient care
               efficiently and confidently.
             </p>
-            <div className=" flex items-center justify-between">
+            <div className="w-full flex items-center justify-between">
               {[
                 {
                   id: 1,
@@ -110,7 +123,7 @@ export default function Home() {
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Everything your healthcare facility needs
             </h4>
             <p className=" text-gray-700">
@@ -186,7 +199,7 @@ export default function Home() {
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform for modern clinics
             </h4>
             <p>Real practitioners, real results</p>
@@ -231,7 +244,7 @@ export default function Home() {
       <section className="w-full bg-white bg-how-it-works-gradient pt-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className=" text-4xl font-emibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Designed for clinicians, by clinicians.
             </h4>
             <p>

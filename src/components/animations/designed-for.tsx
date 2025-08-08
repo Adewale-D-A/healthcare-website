@@ -8,17 +8,17 @@ export default function DesignedFor() {
   return (
     <div
       ref={ref}
-      className=" w-full mt-9 flex justify-center object-center h-96"
+      className=" w-full mt-9 flex justify-center object-center h-72 lg:h-96"
     >
       <div
         className={cn(
-          " flex items-start w-full overflow-x-visible px-16 overflow-y-hidden",
+          " flex items-start justify-center w-full overflow-x-hidden px-5 lg:px-10 overflow-y-hidden",
           isInView && "animate-moveUp"
         )}
       >
         <div
           className={cn(
-            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-56 h-80  mt-[120px] mr-[-50px] z-[3]",
+            " p-1 lg:p-3 bg-white  shadow-2xl rounded-3xl w-56 h-80  mt-[120px] mr-[-50px] z-[3]",
             isInView && "animate-rotateAntiClockwise"
           )}
         >
@@ -32,7 +32,7 @@ export default function DesignedFor() {
         </div>
         <div
           className={cn(
-            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-56 h-80 mt-[50px] mr-[-80px] z-[4]",
+            " p-1 lg:p-3 bg-white  shadow-2xl rounded-3xl w-56 h-80 mt-[50px] mr-[-80px] z-[4]",
             isInView && "animate-rotateAntiClockwise"
           )}
         >
@@ -46,7 +46,7 @@ export default function DesignedFor() {
         </div>
         <div
           className={cn(
-            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-80 h-96 z-[5]"
+            " p-1 lg:p-3 bg-white  shadow-2xl rounded-3xl w-80 h-96 z-[5]"
             // isInView && "animate-moveUp"
           )}
         >
@@ -60,7 +60,7 @@ export default function DesignedFor() {
         </div>
         <div
           className={cn(
-            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-56 h-80  mt-[50px] ml-[-100px] z-[4]",
+            " p-1 lg:p-3 bg-white  shadow-2xl rounded-3xl w-56 h-80  mt-[50px] ml-[-100px] z-[4]",
             isInView && "animate-rotateClockwise"
           )}
         >
@@ -74,7 +74,7 @@ export default function DesignedFor() {
         </div>
         <div
           className={cn(
-            " p-1 lg:p-3 bg-white shadow-lg rounded-3xl w-56 h-80 mt-[120px] ml-[-80px] z-[3]",
+            " p-1 lg:p-3 bg-white  shadow-2xl rounded-3xl w-56 h-80 mt-[120px] ml-[-80px] z-[3]",
             isInView && "animate-rotateClockwise"
           )}
         >

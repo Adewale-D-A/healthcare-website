@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "rating": 3,
+    "rating": 5,
     "highlight": "60% percent faster patient processing",
     "user": {
       "image": "/logo192.png",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "rating": 4,
+    "rating": 5,
     "highlight": "Real-time lab results",
     "user": {
       "image": "/logo192.png",

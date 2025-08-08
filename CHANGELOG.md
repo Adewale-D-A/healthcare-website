@@ -1,3 +1,28 @@
+##### 08.08.2024
+
+> Updates: Teams profiles
+> Update: Home page hero banner images updates
+> Feature: Sroll Navbabr hue change (for prominent content visibility)
+> Feature: Home page hero section banner animation and UI completion
+> Updates: Mobile responsivess adjustments and UI inconsistencies fix
+
+##### 07.08.2024
+
+> Feature: SEO optimization feature updates and dymanic/lazy load of components
+> Feature: Support page server side search addition
+> Updates: UI adjustments
+
+##### 06.08.2024
+
+> Feature: Support page completion
+> Feature: about us Page completion
+> Feature: Support page development (in-progress)
+> Feature: Home, Services, Patient-count, about-us pages mobile responsiveness updates
+
+##### 05.08.2024
+
+> Feature: About-us page development (in-progress)
+
 ##### 04.08.2024
 
 > Feature: Patient counter UI developed

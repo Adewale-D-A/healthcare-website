@@ -1,0 +1,65 @@
+[
+  {
+    "id": "9",
+    "name": "Ojuko Olalekan",
+    "position": "Founder & CTO",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/ola.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Brienze Lawrence",
+    "position": "Co-Founder & Head of Growth",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/brienze.jpg"
+  },
+  {
+    "id": "1",
+    "name": "Mofoluwasho Oke",
+    "position": "Legal & Compliance",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/mofoluwasho.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Ahmed Bello-Osagie",
+    "position": "VP Retail & Business",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/ahmed.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Daniel Okodaso",
+    "position": "VP Engineer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/daniel.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Olawale Kembi",
+    "position": "Head, Public Health",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/dr_kembi.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Temitope Ahmed",
+    "position": "Head, Ops & Strategy",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/temitope.jpg"
+  }
+]

@@ -4,20 +4,24 @@ import MouseIcon from "@/assets/icons/mouse";
 import QuestionIcon from "@/assets/icons/question";
 import StarIcon from "@/assets/icons/star";
 import TeachIcon from "@/assets/icons/teach";
-import RequestADemoButton from "@/components/buttons/request-a-demo";
+// import RequestADemoButton from "@/components/buttons/request-a-demo";
 import ServicesHeroCards from "@/components/cards/services-hero";
 import ServicesPlatformCard from "@/components/cards/services-platforms";
 import NavMenu from "@/components/layout/nav-menu";
 import { cn } from "@/utils/cn";
 import { BarChart, Calendar, File, Users, Video, Wallet } from "lucide-react";
+import type { Metadata } from "next";
+import metadataContent from "@/assets/seo-meta-data.json";
+import { RequestADemoButton } from "@/components/dynamic-imports";
 
+export const metadata: Metadata = metadataContent.services;
 export default function Services() {
   return (
-    <div className="w-full">
-      <section className="w-full bg-white flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
-        <NavMenu variant={1} />
-        <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-secondary px-5">
+    <div className="w-full bg-white bg-how-it-works-gradient">
+      <NavMenu variant={1} />
+      <section className="w-full flex flex-col gap-5  justify-center items-center">
+        <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+          <p className="border text-center  flex text-sm items-center gap-2 p-2 rounded-lg text-secondary bg-[#91D9FF14] px-5">
             <StarIcon className=" size-4" />
             Our services
           </p>
@@ -28,19 +32,21 @@ export default function Services() {
             Comprehensive healthcare automation solutions designed to streamline
             your practice and improve patirnt care
           </p>
-          <div className=" w-full space-y-5">
+          <div className=" w-full space-y-5 mt-10">
             <div className=" w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
               {[
                 {
                   icon: <MouseIcon className="size-6" />,
                   imgUrl: "/assets/services-hero/1.png",
                   title: "Implementation & integration",
+                  bgClassName: "bg-[url('/assets/services-hero/1.png')]",
                   description:
                     "Seamlessly deploy, customize, and unify all modules within your 7thCare software suite.",
                 },
                 {
                   icon: <Desktop className="size-6" />,
                   imgUrl: "/assets/services-hero/2.png",
+                  bgClassName: "bg-[url('/assets/services-hero/2.png')]",
                   title: "Custom development",
                   description:
                     "Build proprietary features tailored to your organization's specific needs.",
@@ -48,6 +54,7 @@ export default function Services() {
                 {
                   icon: <TeachIcon className="size-6" />,
                   imgUrl: "/assets/services-hero/3.png",
+                  bgClassName: "bg-[url('/assets/services-hero/3.png')]",
                   title: "Training & Onboarding",
                   description:
                     "Build extra features, enhancements or proprietary modules tailored to your needs.",
@@ -56,12 +63,13 @@ export default function Services() {
                 <ServicesHeroCards key={item?.title} {...item} />
               ))}
             </div>
-            <div className=" w-full flex gap-5 items-stretch">
+            <div className=" w-full flex flex-col lg:flex-row gap-5 items-stretch">
               {[
                 {
                   icon: <QuestionIcon className="size-6" />,
                   title: "Support & maintenance",
                   imgUrl: "/assets/services-hero/4.png",
+                  bgClassName: "bg-[url('/assets/services-hero/4.png')]",
                   description:
                     "Our team ensures continuous operational excellence with proactive monitoring, regular software updates, security upgrades, and 24/7 troubleshooting.",
                 },
@@ -69,6 +77,7 @@ export default function Services() {
                   icon: <AnonymousIcon className="size-6" />,
                   title: "Anonymized Care",
                   imgUrl: "/assets/services-hero/5.png",
+                  bgClassName: "bg-[url('/assets/services-hero/5.png')]",
                   description:
                     "AnonymizedCare solution ensures secure data anonymization, enabling your hospital or research team to utilize patient data insights for research, AI training, and health outcome analytics without compromising confidentiality.",
                 },
@@ -92,7 +101,7 @@ export default function Services() {
       <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform
             </h4>
             <p className=" text-gray-700">
@@ -183,7 +192,7 @@ export default function Services() {
 
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-white font-semibold leading-tight lg:leading-normal text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Ready to transform your practice?
           </h4>
           <p className=" text-gray-200">

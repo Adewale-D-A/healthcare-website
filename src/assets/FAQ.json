@@ -1,0 +1,202 @@
+[
+  {
+    "category": "getting_started",
+    "title": "What is 7thCare?",
+    "content": "7thCare is a health technology platform that connects users to healthcare services, consultations, and vendors, while protecting your privacy."
+  },
+  {
+    "category": "getting_started",
+    "title": "Is 7thCare available in my location?",
+    "content": "We currently operate in Niegria and Canada. You can check availability by entering your location on our website."
+  },
+  {
+    "category": "getting_started",
+    "title": "Can I use 7thCare without creating an account?",
+    "content": "Yes, for some services like browsing available vendors or basic health tips. However, booking or ordering requires a secure account."
+  },
+  {
+    "category": "getting_started",
+    "title": "How do I contact customer support?",
+    "content": "You can reach us via the in-app chat, our “Contact Us” form, or email at info@7thcare.com."
+  },
+  {
+    "category": "getting_started",
+    "title": "Is my personal information safe?",
+    "content": "Absolutely. We use advanced encryption and comply with data protection laws to ensure your privacy."
+  },
+  {
+    "category": "getting_started",
+    "title": "What devices can I use to access 7thCare?",
+    "content": "7thCare works on smartphones, tablets, and desktop computers."
+  },
+  {
+    "category": "getting_started",
+    "title": "Does 7thCare store my medical history?",
+    "content": "Only if you choose to. Your health data is encrypted and never shared without your consent."
+  },
+  {
+    "category": "getting_started",
+    "title": "Can I refer friends or family?",
+    "content": "Yes! Use your referral code to invite others and enjoy rewards when they sign up."
+  },
+  {
+    "category": "getting_started",
+    "title": "Is 7thCare free to use?",
+    "content": "Some features are free, but certain services like consultations or medication deliveries may have fees."
+  },
+  {
+    "category": "getting_started",
+    "title": "How can I give feedback on the platform?",
+    "content": "Use the “Feedback” option in your account menu or email info@7thcare.com."
+  },
+  {
+    "category": "getting_started",
+    "title": "How do I create a 7thCare account?",
+    "content": "Click “Sign Up” on our homepage, fill in your details, and verify via email or SMS."
+  },
+  {
+    "category": "getting_started",
+    "title": "Do I need to provide personal details to sign up?",
+    "content": "Minimal details are required, and for anonymous services, no identifying information is needed."
+  },
+  {
+    "category": "getting_started",
+    "title": "How do I update my account details?",
+    "content": "Log in, go to “Account Settings,” and edit your profile information."
+  },
+  {
+    "category": "getting_started",
+    "title": "Can I delete my account?",
+    "content": "Yes. You can request deletion in “Account Settings” or by contacting support."
+  },
+  {
+    "category": "getting_started",
+    "title": "How do I find a healthcare provider?",
+    "content": "Use the search bar or filters to find consultants, hospitals, or vendors that fit your needs."
+  },
+  {
+    "category": "getting_started",
+    "title": "What happens after I book a consultation?",
+    "content": "You’ll receive a confirmation and instructions on how to join your session."
+  },
+  {
+    "category": "getting_started",
+    "title": "Can I use 7thCare anonymously?",
+    "content": "Yes, you can book consultations and order medications without sharing personal information."
+  },
+  {
+    "category": "getting_started",
+    "title": "How do I track my order or booking?",
+    "content": "Check the “My Orders” or “My Bookings” section in your dashboard."
+  },
+  {
+    "category": "getting_started",
+    "title": "Do I need a prescription to order medications?",
+    "content": "For certain drugs, yes. You can upload your prescription or book a consultation to get one."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "What payment methods do you accept?",
+    "content": "We accept credit/debit cards, bank transfers, and mobile money options."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Is there a service fee?",
+    "content": "A small service fee may apply depending on the service type. This will be shown before checkout."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Can I get a receipt for my payment?",
+    "content": "Yes, receipts are automatically emailed after payment."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "How do refunds work?",
+    "content": "Refunds are processed within 5–7 business days to your original payment method."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Can I pay in installments?",
+    "content": "Currently, we require full payment upfront, but installment options may be added in the future."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Is my payment information secure?",
+    "content": "Yes. We use industry-standard encryption and never store your card details."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Do prices include taxes?",
+    "content": "Taxes are included unless stated otherwise at checkout."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "How do I update my payment method?",
+    "content": "Go to “Billing” in your account settings and add or remove payment options."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "What should I do if my payment fails?",
+    "content": "Double-check your details, try again, or contact your bank. If the issue persists, reach out to our support team."
+  },
+  {
+    "category": "billing_and_payments",
+    "title": "Can I get a breakdown of charges?",
+    "content": "Yes. An itemized invoice will be available in your “Billing” section after payment."
+  },
+  {
+    "category": "technical_issues",
+    "title": "How do I change my password?",
+    "content": "Go to “Account Settings” > “Security” and select “Change Password.”"
+  },
+  {
+    "category": "technical_issues",
+    "title": "I forgot my password. What should I do?",
+    "content": "Click “Forgot Password” on the login page and follow the instructions to reset it."
+  },
+  {
+    "category": "technical_issues",
+    "title": "The app/website is not loading. How can I fix it?",
+    "content": "Try refreshing, clearing your cache, or switching networks."
+  },
+  {
+    "category": "technical_issues",
+    "title": "I’m not receiving verification emails.",
+    "content": "Check your spam folder or verify that you entered the correct email address."
+  },
+  {
+    "category": "technical_issues",
+    "title": "My video consultation is not connecting.",
+    "content": "Ensure you have a stable internet connection and allow camera/microphone access."
+  },
+  {
+    "category": "technical_issues",
+    "title": "I can’t upload my prescription.",
+    "content": "Check the file size and format. Supported formats include JPG, PNG, and PDF."
+  },
+  {
+    "category": "technical_issues",
+    "title": "The app is crashing.",
+    "content": "Update to the latest version or reinstall the app."
+  },
+  {
+    "category": "technical_issues",
+    "title": "I’m having trouble making a payment.",
+    "content": "Ensure your payment method is valid and supported. If the issue persists, contact support."
+  },
+  {
+    "category": "technical_issues",
+    "title": "Notifications aren’t showing up.",
+    "content": "Enable notifications in your device settings and in the app preferences."
+  },
+  {
+    "category": "technical_issues",
+    "title": "Why is my order status not updating?",
+    "content": "It may take a few minutes to reflect changes. If it stays the same for over 24 hours, contact support."
+  },
+  {
+    "category": "technical_issues",
+    "title": "How do I report a bug?",
+    "content": "Use the “Report a Problem” option in your account menu or email techsupport@7thcare.com."
+  }
+]

@@ -6,62 +6,27 @@
   },
   {
     "id": 3,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "My Luxury"
+    "logo": "/assets/partners/san_antonnio.png",
+    "name": "san_antonnio"
   },
   {
     "id": 4,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Premium Souvenirs"
+    "logo": "/assets/partners/sure-care.png",
+    "name": "SureCare"
   },
   {
     "id": 5,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Krent"
+    "logo": "/assets/partners/dotmed.png",
+    "name": "Dotmed"
   },
   {
     "id": 7,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Mercy Anna"
+    "logo": "/assets/partners/avicenna.png",
+    "name": "Avicenna"
   },
   {
     "id": 8,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "7th Green"
-  },
-  {
-    "id": 9,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Fiat Express"
-  },
-  {
-    "id": 10,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Jamb"
-  },
-  {
-    "id": 12,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Socialiga"
-  },
-  {
-    "id": 14,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "UBA"
-  },
-  {
-    "id": 20,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "AnonymizeCare"
-  },
-  {
-    "id": 16,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Trybz"
-  },
-  {
-    "id": 17,
-    "logo": "/assets/partners/anonymize_care.png",
-    "name": "Fireside"
+    "logo": "/assets/partners/crest.png",
+    "name": "Crest"
   }
 ]

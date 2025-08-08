@@ -58,10 +58,10 @@ const Testimonials = ({
               return (
                 <div
                   key={index}
-                  className={`w-full border border-gray-100  flex-1 flex gap-10 rounded-lg justify-center flex-col p-6 py-10`}
+                  className={`w-full border border-gray-100  flex-1 flex gap-5 rounded-lg justify-center flex-col p-6 py-10`}
                 >
                   <Ratings rating={item?.rating} />
-                  <h4 className=" text-lg text-secondary bg-secondary/5 rounded-md font-semibold p-4">
+                  <h4 className=" text-md text-secondary bg-secondary/5 rounded-md font-semibold p-4">
                     {item?.highlight}
                   </h4>
                   <p className="text-black text-sm">
