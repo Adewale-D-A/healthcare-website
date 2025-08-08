@@ -24,8 +24,8 @@ export default function Team({
         <Image
           src={image}
           alt={name}
-          height={500}
-          width={500}
+          height={1000}
+          width={1000}
           className="w-full h-full object-cover object-top"
         />
       </div>

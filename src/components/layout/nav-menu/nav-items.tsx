@@ -103,7 +103,7 @@ export default function NavItems() {
                   >
                     <div className="w-full space-y-10 max-w-72">
                       <Image
-                        src={"/assets/menu/mega-menu-ai.jpg"}
+                        src={"/7thsense-logo.jpg"}
                         alt="ai"
                         height={500}
                         width={500}
