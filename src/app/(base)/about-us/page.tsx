@@ -24,9 +24,9 @@ import {
 export const metadata: Metadata = metadataContent.aboutUs;
 export default function AboutUs() {
   return (
-    <div className="w-full">
-      <section className="w-full bg-white flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
-        <NavMenu variant={1} />
+    <div className="w-full bg-white bg-how-it-works-gradient">
+      <NavMenu variant={1} />
+      <section className="w-full flex flex-col gap-5 justify-center items-center">
         <div className="w-full pt-10 lg:pt-16 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <h2 className="text-6xl text-transparent bg-sctn-two-text-gradient bg-clip-text lg:text-7xl font-bold flex flex-col lg:flex-row items-center gap-4">
             We are{" "}

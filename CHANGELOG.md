@@ -1,5 +1,6 @@
 ##### 08.08.2024
 
+> Feature: Sroll Navbabr hue change (for prominent content visibility)
 > Feature: Home page hero section banner animation and UI completion
 > Updates: Mobile responsivess adjustments and UI inconsistencies fix
 

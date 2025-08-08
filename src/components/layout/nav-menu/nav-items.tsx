@@ -70,9 +70,7 @@ export default function NavItems() {
           <div
             key={item?.title}
             className={`w-fit flex items-center gap-2 group cursor-pointer text-nowrap ${
-              pathname.includes(item?.url)
-                ? "border-b-4 border-primary-500 "
-                : ""
+              pathname.includes(item?.url) ? "border-b-4 border-secondary " : ""
             } transition-all`}
           >
             <Link

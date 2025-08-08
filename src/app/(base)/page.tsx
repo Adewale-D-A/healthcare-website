@@ -43,12 +43,12 @@ export const metadata: Metadata = metadataContent.home;
 
 export default function Home() {
   return (
-    <div className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
+    <div className="w-full flex bg-primary top-flare flex-col justify-center items-center">
       {/* HERO */}
-      <section className="top-flare relative min-h-screen space-y-24 w-full flex flex-col items-center bg-primary ">
-        <NavMenu variant={2} />
+      <NavMenu variant={2} />
+      <section className="relative lg:min-h-screen space-y-24 pt-16 lg:pt-24 w-full flex flex-col items-center  ">
         <div className="w-full h-full max-w-screen-xl px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
-          <div className="w-full  overflow-hidden absolute top-[150px] z-[-5] left-0  flex justify-center">
+          <div className="w-full  overflow-hidden absolute top-[0px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
           <p className="border border-white/50 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">

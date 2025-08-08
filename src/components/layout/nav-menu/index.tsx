@@ -8,20 +8,24 @@ import NavItems from "./nav-items";
 import MenuIcon from "@/assets/icons/menu";
 import LinkButton from "@/components/buttons/link-button";
 import { cn } from "@/utils/cn";
+import useGetScrolled from "@/hook/use-get-scrolled";
 
 export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
+  const [scrolled] = useGetScrolled();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const variantSwitch =
+    variant === 1 ? variant : variant === 2 && scrolled ? 1 : variant;
   return (
     <>
       <nav
         className={cn(
-          "w-full backdrop-bg-filter flex flex-col items-center justify-center bg-primary-500 sticky top-0 left-0 z-50",
-          variant === 2 ? "text-white" : "text-black"
+          "w-full backdrop-bg-filter flex flex-col items-center transition-all justify-center bg-primary-500 sticky top-0 left-0 z-50",
+          variantSwitch === 2 ? "text-white" : "text-black"
         )}
       >
         {/* show on desktop, hide on mobile */}
         <div className="w-full hidden md:flex justify-between items-center gap-4 max-w-screen-xl px-5 md:px-10 py-5">
-          <Logo variant={variant} />
+          <Logo variant={variantSwitch} />
           <NavItems />
 
           <div className=" flex items-center gap-4">
@@ -47,7 +51,7 @@ export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
         </div>
         {/* show on mobile, hide on desktop */}
         <div className=" w-full md:hidden flex justify-between  px-5 md:px-10 py-5">
-          <Logo variant={variant} />
+          <Logo variant={variantSwitch} />
           <button
             title="hamburger drawer"
             type="button"

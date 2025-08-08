@@ -15,10 +15,10 @@ import {
 export const metadata: Metadata = metadataContent.patientCount;
 export default function PatientCount() {
   return (
-    <div className="w-full flex bg-[#102a56e6] flex-col justify-center items-center">
+    <div className="w-full flex bg-primary top-flare flex-col justify-center items-center">
       {/* HERO */}
-      <section className="top-flare relative space-y-24 pb-28 w-full flex flex-col items-center bg-primary ">
-        <NavMenu variant={2} />
+      <NavMenu variant={2} />
+      <section className="relative space-y-24 pt-16 lg:pt-24  pb-28 w-full flex flex-col items-center ">
         <div className="w-full h-full max-w-screen-xl pb-28 px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
           <div className="w-full  overflow-hidden absolute bottom-[-150px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
