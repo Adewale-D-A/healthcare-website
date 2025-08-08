@@ -1,74 +1,65 @@
 [
   {
-    "id": "6",
-    "name": "Folaranmi Faridat",
-    "position": "Human Resources",
-    "email": "",
-    "linkedin": "",
-    "twitter": "",
-    "image": "/assets/teams/faridat.png"
-  },
-  {
-    "id": "2",
-    "name": "Temiloluwa Onaleye",
-    "position": "Engineer",
-    "email": "",
-    "linkedin": "",
-    "twitter": "",
-    "image": "/assets/teams/temiloluwa.png"
-  },
-  {
-    "id": "3",
-    "name": "Adewale Azeez",
-    "position": "Developer",
-    "email": "",
-    "linkedin": "",
-    "twitter": "",
-    "image": "/assets/teams/adewale.png"
-  },
-  {
-    "id": "1",
-    "name": "Ola Ojuko",
+    "id": "9",
+    "name": "Ojuko Olalekan",
     "position": "Founder & CTO",
     "email": "",
     "linkedin": "",
     "twitter": "",
-    "image": "/assets/teams/ola.png"
-  },
-  {
-    "id": "4",
-    "name": "Toluwalope Jinadu",
-    "position": "Designer",
-    "email": "",
-    "linkedin": "",
-    "twitter": "",
-    "image": "/assets/teams/toluwalope.png"
+    "image": "/assets/teams/ola.jpg"
   },
   {
     "id": "5",
-    "name": "Adebayo Stephen",
-    "position": "Engineer",
+    "name": "Brienze Lawrence",
+    "position": "Co-Founder & Head of Growth",
     "email": "",
     "linkedin": "",
     "twitter": "",
-    "image": "/assets/teams/stephen.png"
+    "image": "/assets/teams/brienze.jpg"
   },
   {
-    "id": "7",
-    "name": "Tobi",
-    "position": "Engineer",
+    "id": "1",
+    "name": "Mofoluwasho Oke",
+    "position": "Legal & Compliance",
     "email": "",
     "linkedin": "",
     "twitter": "",
-    "image": "/assets/teams/tobi.png"
+    "image": "/assets/teams/mofoluwasho.jpg"
   },
   {
-    "id": "9",
-    "name": "Ivor",
-    "position": "Engineer",
+    "id": "6",
+    "name": "Ahmed Bello-Osagie",
+    "position": "VP Retail & Business",
     "email": "",
     "linkedin": "",
     "twitter": "",
-    "image": "/assets/teams/ivor.png"
+    "image": "/assets/teams/ahmed.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Daniel Okodaso",
+    "position": "VP Engineer",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/daniel.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Olawale Kembi",
+    "position": "Head, Public Health",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/dr_kembi.png"
+  },
+  {
+    "id": "4",
+    "name": "Temitope Ahmed",
+    "position": "Head, Ops & Strategy",
+    "email": "",
+    "linkedin": "",
+    "twitter": "",
+    "image": "/assets/teams/temitope.jpg"
   }
 ]

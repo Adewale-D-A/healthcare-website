@@ -20,13 +20,13 @@ export default function Team({
 }) {
   return (
     <div className={`w-full flex flex-col gap-3 pb-10`}>
-      <div className=" w-full bg-[#E6E6EF] overflow-hidden flex items-center rounded-t-lg justify-center pt-10">
+      <div className=" bg-[#E6E6EF] h-auto w-full aspect-[4/5] overflow-hidden flex items-center rounded-t-lg justify-center">
         <Image
           src={image}
           alt={name}
           height={500}
           width={500}
-          className="w-full h-full object-contain hover:scale-110 transition-all"
+          className="w-full h-full object-cover object-top"
         />
       </div>
       <div className="w-full">

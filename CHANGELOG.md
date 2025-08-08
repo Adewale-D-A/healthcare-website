@@ -1,5 +1,7 @@
 ##### 08.08.2024
 
+> Updates: Teams profiles
+> Update: Home page hero banner images updates
 > Feature: Sroll Navbabr hue change (for prominent content visibility)
 > Feature: Home page hero section banner animation and UI completion
 > Updates: Mobile responsivess adjustments and UI inconsistencies fix

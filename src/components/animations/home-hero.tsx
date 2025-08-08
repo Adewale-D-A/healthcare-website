@@ -36,7 +36,7 @@ export default function HomeHeroBanner() {
             className=" w-72 lg:w-60 h-auto rounded-2xl"
           />
         </div>
-        <div className="absolute top-5 right-5 max-h-[700px] overflow-hidden  rounded-2xl animate-oceanBounce delay-200 shadow-2xl">
+        <div className="absolute top-5 right-5 overflow-hidden  rounded-2xl animate-oceanBounce delay-200 shadow-2xl">
           <Image
             src={"/assets/home-hero/mobile-screen-1.png"}
             alt="our solution"

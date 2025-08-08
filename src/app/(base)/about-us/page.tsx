@@ -126,7 +126,7 @@ export default function AboutUs() {
         <div className=" w-full flex flex-col lg:flex-row items-center justify-between max-w-screen-xl text-white px-5 lg:px-10">
           <h3 className=" text-3xl font-semibold">Implementation Flow</h3>
           <p className=" max-w-xs text-center lg:text-left">
-            In four simple steps we able to implement our worldclass solution
+            In five simple steps we able to implement our worldclass solution
             for your business
           </p>
         </div>
