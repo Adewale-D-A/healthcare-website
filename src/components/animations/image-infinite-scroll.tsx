@@ -55,7 +55,7 @@ export default function InfiniteScroll() {
                 alt={name}
                 height={300}
                 width={300}
-                className={`w-full h-auto aspect-square object-contain grayscale`}
+                className={`w-full h-auto aspect-square object-contain rounded-2xl grayscale`}
               />
             </div>
           ))}
