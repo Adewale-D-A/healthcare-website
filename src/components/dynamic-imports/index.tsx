@@ -14,6 +14,13 @@ export const BlurAndGradient = dynamic(
     ssr: false,
   }
 );
+export const HomeHeroBanner = dynamic(
+  () => import("@/components/animations/home-hero"),
+  {
+    loading: () => <p></p>,
+    ssr: false,
+  }
+);
 export const HowItWorks = dynamic(
   () => import("@/components/animations/how-it-works"),
   {

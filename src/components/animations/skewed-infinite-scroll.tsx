@@ -11,7 +11,7 @@ export default function SkewedInfiniteScroll() {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
 
     // Set the initial value of the `isMobile` state variable
-    setWidth(mediaQuery.matches ? 200 : 500);
+    setWidth(mediaQuery.matches ? 200 : 300);
 
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event: any) => {

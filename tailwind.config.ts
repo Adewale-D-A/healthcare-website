@@ -93,6 +93,20 @@ const config: Config = {
           "0%": { rotate: "0deg", marginRight: "-80px" },
           "100%": { rotate: "-10deg", marginRight: "-50px" },
         },
+        oceanBounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-15px)" },
+        },
+        waveTilt: {
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "25%": { transform: "translateY(-5px) rotate(-0deg)" },
+          "50%": { transform: "translateY(0) rotate(1deg)" },
+          "75%": { transform: "translateY(5px) rotate(-1deg)" },
+        },
+        backwardTilt: {
+          "0%": { transform: "rotateX(10deg) scaleY(0.8)" },
+          "100%": { transform: "rotateX(0deg) scaleY(1)" },
+        },
       },
       animation: {
         moveUp: "moveUp 1s ease-in-out forwards",
@@ -101,6 +115,9 @@ const config: Config = {
         infiniteScroll: "infiniteScroll 30s linear infinite",
         loaderMoveOne: "loaderMoveOne 3s ease-in-out 1",
         loaderMoveTwo: "loaderMoveTwo 3s ease-in-out 1",
+        waveTilt: "waveTilt 8s ease-in-out infinite",
+        oceanBounce: "oceanBounce 5s ease-in-out infinite",
+        backwardTilt: "backwardTilt 2s ease-in-out 1",
       },
     },
   },

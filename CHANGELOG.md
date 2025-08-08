@@ -1,5 +1,6 @@
 ##### 08.08.2024
 
+> Feature: Home page hero section banner animation and UI completion
 > Updates: Mobile responsivess adjustments and UI inconsistencies fix
 
 ##### 07.08.2024

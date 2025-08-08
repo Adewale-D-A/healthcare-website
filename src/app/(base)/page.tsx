@@ -35,7 +35,9 @@ import {
   EmbedYouTube,
   AutomotateStats,
   DesignedFor,
+  HomeHeroBanner,
 } from "@/components/dynamic-imports";
+// import HomeHeroBanner from "@/components/animations/home-hero";
 
 export const metadata: Metadata = metadataContent.home;
 
@@ -46,7 +48,7 @@ export default function Home() {
       <section className="top-flare relative min-h-screen space-y-24 w-full flex flex-col items-center bg-primary ">
         <NavMenu variant={2} />
         <div className="w-full h-full max-w-screen-xl px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
-          <div className="w-full  overflow-hidden absolute top-[80px] z-[-5] left-0  flex justify-center">
+          <div className="w-full  overflow-hidden absolute top-[150px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
           <p className="border border-white/50 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
@@ -57,9 +59,7 @@ export default function Home() {
             Automate your Healthcare Business{" "}
           </h1>
           <RequestADemoButton className=" text-white" />
-          <div className=" w-full  h-96 p-2 bottom-flare bg-white/10 rounded-3xl">
-            <div className=" w-full h-full bg-primary rounded-3xl"></div>
-          </div>
+          <HomeHeroBanner />
           <div className="w-full my-10 flex items-center justify-center">
             <InfiniteScroll />
           </div>
