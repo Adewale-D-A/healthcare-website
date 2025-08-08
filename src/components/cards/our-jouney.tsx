@@ -33,7 +33,7 @@ export function OurJourneyCard({
             damping: 20,
             duration: 2000,
           }}
-          className=" w-full shadow-lg rounded-full flex items-center gap-4 p-4"
+          className=" w-full shadow-lg rounded-3xl lg:rounded-full flex items-center gap-4 p-4"
         >
           <div className=" rounded-full p-4 bg-secondary w-fit text-white">
             {icon}

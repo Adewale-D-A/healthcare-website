@@ -1,3 +1,7 @@
+##### 08.08.2024
+
+> Updates: Mobile responsivess adjustments and UI inconsistencies fix
+
 ##### 07.08.2024
 
 > Feature: SEO optimization feature updates and dymanic/lazy load of components

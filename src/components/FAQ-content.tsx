@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import { Disclosure } from "@headlessui/react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Search } from "lucide-react";
 
 const FAQContent = ({
   faqContents,
@@ -12,6 +12,14 @@ const FAQContent = ({
     content: string;
   }[];
 }) => {
+  if (!(faqContents.length > 0)) {
+    return (
+      <div className=" w-full flex flex-col justify-center  text-gray-400 items-center py-16">
+        <Search className=" size-16" />
+        <p>No result</p>
+      </div>
+    );
+  }
   return (
     <div className=" w-full flex flex-col gap-4">
       {faqContents.map((item, index) => {

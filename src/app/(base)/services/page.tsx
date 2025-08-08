@@ -20,7 +20,7 @@ export default function Services() {
     <div className="w-full">
       <section className="w-full bg-white flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
         <NavMenu variant={1} />
-        <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+        <div className="w-full pt-10 lg:pt-16 pb-20 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <p className="border text-center  flex text-sm items-center gap-2 p-2 rounded-lg text-secondary bg-[#91D9FF14] px-5">
             <StarIcon className=" size-4" />
             Our services

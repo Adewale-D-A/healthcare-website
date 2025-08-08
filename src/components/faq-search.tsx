@@ -27,7 +27,7 @@ export default function FAQSearch() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="How can we help you?"
-          className=" w-full focus:border-none focus-visible:outline-none text-primary"
+          className=" w-full text-base focus:border-none focus-visible:outline-none text-primary"
         />
       </label>
     </form>

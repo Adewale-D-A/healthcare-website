@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function DoctorOnMap() {
   return (
     <div className=" relative  w-full flex justify-center overflow-hidden">
-      <div className=" max-h-[450px] h-full">
+      <div className=" max-h-[450px] h-full pt-10">
         <svg
           // width="518"
           // height="556"

@@ -17,7 +17,7 @@ export default function ServicesPlatformCard({
       <div
         className={cn(
           " rounded-full w-fit p-3",
-          "bg-secondary/10",
+          "bg-secondary/5",
           "text-secondary"
         )}
       >

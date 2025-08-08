@@ -45,7 +45,7 @@ export default function Home() {
       {/* HERO */}
       <section className="top-flare relative min-h-screen space-y-24 w-full flex flex-col items-center bg-primary ">
         <NavMenu variant={2} />
-        <div className="w-full h-full max-w-screen-xl pb-28 px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
+        <div className="w-full h-full max-w-screen-xl px-5 md:px-10 flex flex-col gap-6 items-center justify-center">
           <div className="w-full  overflow-hidden absolute top-[80px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>

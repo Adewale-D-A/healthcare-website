@@ -27,7 +27,7 @@ export default function AboutUs() {
     <div className="w-full">
       <section className="w-full bg-white flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
         <NavMenu variant={1} />
-        <div className="w-full py-16 lg:py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+        <div className="w-full pt-10 lg:pt-16 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <h2 className="text-6xl text-transparent bg-sctn-two-text-gradient bg-clip-text lg:text-7xl font-bold flex flex-col lg:flex-row items-center gap-4">
             We are{" "}
             <span className=" flex items-center gap-2">
@@ -51,7 +51,7 @@ export default function AboutUs() {
         <DoctorOnMap />
       </section>
       <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
-        <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
+        <div className="w-full py-16 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <p className=" text-center">
             Trusted by clinicians and healthcare staff worldwide efficiently and
             confidently.
@@ -137,7 +137,7 @@ export default function AboutUs() {
       </section>
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Ready to transform your practice?
           </h4>
           <p className=" text-gray-200">

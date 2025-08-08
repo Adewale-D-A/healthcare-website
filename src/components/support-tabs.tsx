@@ -49,7 +49,7 @@ export default function SupportTabs() {
               : " bg-gray-100 text-gray_text-500"
           )}
         >
-          {<item.icon />}
+          {<item.icon className=" h-6 w-6" />}
           {item.label}
         </LinkButton>
       ))}
