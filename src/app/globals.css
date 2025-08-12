@@ -9,8 +9,26 @@
 }
 
 /* Nav top flare */
-
+/* MOBILE - CHROME */
 .top-flare {
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(16, 42, 86, 1),
+    rgba(16, 42, 86, 1) 0%,
+    rgba(16, 42, 86, 1) 99.76%,
+    rgba(16, 42, 86, 0.7)
+  );
+  mask-image: linear-gradient(
+    to top,
+    rgba(16, 42, 86, 1),
+    rgba(16, 42, 86, 1) 0%,
+    rgba(16, 42, 86, 1) 99.76%,
+    rgba(16, 42, 86, 0.7) /* Adjus alpha value for effective flare*/
+  );
+}
+
+/* MOBILE - FIREFOX */
+/* .top-flare {
   -webkit-mask-image: linear-gradient(
     to top,
     rgba(16, 42, 86, 0),
@@ -23,9 +41,9 @@
     rgba(16, 42, 86, 1),
     rgba(16, 42, 86, 1) 0%,
     rgba(16, 42, 86, 1) 99.7%,
-    rgba(16, 42, 86, 0.7) /* Adjus alpha value for effective flare*/
+    rgba(16, 42, 86, 0.7) 
   );
-}
+} */
 /* Hero image container bottom flare */
 .bottom-flare {
   -webkit-mask-image: linear-gradient(
@@ -146,7 +164,26 @@
 }
 
 /* V-2 */
-@media (min-width: 1024px) {.top-flare {
+@media (min-width: 1024px) {
+  /* DESKTOP - CHROME  */
+  .top-flare {
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(16, 42, 86, 1),
+    rgba(16, 42, 86, 1) 50%,
+    rgba(16, 42, 86, 1) 99.7%,
+    rgba(16, 42, 86, 0.9)
+  );
+  mask-image: linear-gradient(
+    to top,
+    rgba(16, 42, 86, 1),
+    rgba(16, 42, 86, 1) 50%,
+    rgba(16, 42, 86, 1) 99.7%,
+    rgba(16, 42, 86, 0.9)  /* Adjus alpha value for effective flare*/
+  );
+}
+  /* DESKTOP - FIREFOX */
+  /* .top-flare {
   -webkit-mask-image: linear-gradient(
     to top,
     rgba(16, 42, 86, 0),
@@ -159,7 +196,7 @@
     rgba(16, 42, 86, 1),
     rgba(16, 42, 86, 1) 50%,
     rgba(16, 42, 86, 1) 99%,
-    rgba(16, 42, 86, 0.6) /* Adjus alpha value for effective flare*/
+    rgba(16, 42, 86, 0.6) 
   );
-}
+} */
 }

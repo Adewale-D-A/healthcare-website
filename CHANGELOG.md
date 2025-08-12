@@ -1,3 +1,7 @@
+##### 12.08.2024
+
+> Bug Fix: Browser specific top flare adjustment
+
 ##### 08.08.2024
 
 > Updates: Teams profiles
