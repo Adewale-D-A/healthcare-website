@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-24 flex flex-col gap-5 bg-white justify-center items-center">
+      <section className="w-full py-24 flex flex-col gap-5 bg-white justify-center items-center ">
         <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-6">
@@ -116,11 +116,11 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS*/}
-      <section className="w-full bg-white py-24 flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center">
+      <section className="w-full bg-white py-24 flex flex-col gap-5 bg-how-it-works-gradient justify-center items-center ">
         <HowItWorks />
       </section>
       {/* EVERYTHING HEALTH */}
-      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
+      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center ">
         <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
@@ -196,7 +196,7 @@ export default function Home() {
       <AutomotateStats />
 
       {/* Testimonials */}
-      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
+      <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center ">
         <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
@@ -209,7 +209,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="w-full flex flex-col lg:flex-row items-stretch justify-center bg-white py-16 gap-10">
+      <section className="w-full flex flex-col lg:flex-row items-stretch justify-center bg-white py-16 gap-10 ">
         <div className=" w-full text-7xl font-semibold flex flex-col items-center lg:items-end px-5 py-24 lg:p-16 justify-center gap-3 text-white rounded-none bg-right bg-no-repeat bg-cover bg-secondary bg-[url('/assets/pattern.png')] rounded-r-[36px]">
           <span className=" flex items-center gap-2">
             <Image
@@ -234,14 +234,14 @@ export default function Home() {
           <span>together</span>
         </div>
         <div className=" w-full">
-          <div className="w-full p-5 lg:p-0 max-w-[580px]">
+          <div className="w-full p-5 lg:p-0  lg:max-w-[580px]">
             <ContactForm />
           </div>
         </div>
       </section>
 
       {/* Targeted Users */}
-      <section className="w-full bg-white bg-how-it-works-gradient pt-24 flex flex-col gap-5 justify-center items-center">
+      <section className="w-full bg-white bg-how-it-works-gradient pt-24 flex flex-col gap-5 justify-center items-center ">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
@@ -252,7 +252,7 @@ export default function Home() {
               Reclaim your time, your attention, and your care.
             </p>
           </div>
-          <div className="w-full flex justify-center items-center flex-col gap-2">
+          <div className="w-full flex justify-center items-center flex-col gap-2  overflow-x-hidden">
             <Button className=" w-fit">Request a Demo</Button>
             <div className="w-full text-center lg:text-start flex items-center flex-col justify-center lg:flex-row ml-0 lg:ml-96">
               <svg
@@ -272,7 +272,7 @@ export default function Home() {
                 systems.🚀
               </p>
             </div>
-            <div className=" w-full overflow-x-hidden">
+            <div className=" w-full">
               <DesignedFor />
             </div>
           </div>
