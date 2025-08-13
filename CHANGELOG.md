@@ -1,8 +1,12 @@
-##### 12.08.2024
+##### 13.08.2025
+
+> Fix: Mobile responsiveness fix
+
+##### 12.08.2025
 
 > Bug Fix: Browser specific top flare adjustment
 
-##### 08.08.2024
+##### 08.08.2025
 
 > Updates: Teams profiles
 > Update: Home page hero banner images updates
@@ -10,69 +14,69 @@
 > Feature: Home page hero section banner animation and UI completion
 > Updates: Mobile responsivess adjustments and UI inconsistencies fix
 
-##### 07.08.2024
+##### 07.08.2025
 
 > Feature: SEO optimization feature updates and dymanic/lazy load of components
 > Feature: Support page server side search addition
 > Updates: UI adjustments
 
-##### 06.08.2024
+##### 06.08.2025
 
 > Feature: Support page completion
 > Feature: about us Page completion
 > Feature: Support page development (in-progress)
 > Feature: Home, Services, Patient-count, about-us pages mobile responsiveness updates
 
-##### 05.08.2024
+##### 05.08.2025
 
 > Feature: About-us page development (in-progress)
 
-##### 04.08.2024
+##### 04.08.2025
 
 > Feature: Patient counter UI developed
 > Feature: Services page UI completion
 
-##### 31.07.2024
+##### 31.07.2025
 
 > Feature: Infinite scroll updates
 
-##### 30.07.2024
+##### 30.07.2025
 
 > Feature: Mega menu development
 > Feature: 'Designed for' UI Animation completion
 
-##### 29.07.2024
+##### 29.07.2025
 
 > Feature: 'Designed for' section UI development and animation transition setup (remain pop-out animation)
 > Feature: Footer rearrangements
 
-##### 28.07.2024
+##### 28.07.2025
 
 > Update: Automate section animation fix
 > Feature: Contact us section development
 > Feature: Testimonials UI development
 
-##### 25.07.2024
+##### 25.07.2025
 
 > Update: Home page section developments and animations additions
 
-##### 24.07.2024
+##### 24.07.2025
 
 > Feature: Home page hero section UI and animation partly setup
 
-##### 23.07.2024
+##### 23.07.2025
 
 > Feature: Buttons setup
 
-##### 16.07.2024
+##### 16.07.2025
 
 > UPGRADE: VERSION II
 
-##### 21.06.2024
+##### 21.06.2025
 
 > Update: Navbar buttons sizing issue fixed
 
-##### 19.06.2024
+##### 19.06.2025
 
 > Update: AnonymizeCare nav menu signature addition
 

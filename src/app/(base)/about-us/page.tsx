@@ -86,7 +86,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
+      <section className="w-full bg-white flex flex-col gap-5 justify-center items-center overflow-x-hidden py-10">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-16 px-5 lg:px-10">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className=" text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">

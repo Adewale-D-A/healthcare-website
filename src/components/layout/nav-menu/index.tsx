@@ -19,12 +19,12 @@ export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
     <>
       <nav
         className={cn(
-          "w-full backdrop-bg-filter flex flex-col items-center transition-all justify-center bg-primary-500 sticky top-0 left-0 z-50",
+          "w-full  backdrop-bg-filter flex flex-col items-center transition-all justify-center bg-primary-500 sticky top-0 left-0 z-50",
           variantSwitch === 2 ? "text-white" : "text-black"
         )}
       >
         {/* show on desktop, hide on mobile */}
-        <div className="w-full hidden md:flex justify-between items-center gap-4 max-w-screen-xl px-5 md:px-10 py-5">
+        <div className="w-full  overflow-x-hidden hidden lg:flex justify-between items-center gap-4 max-w-screen-xl px-5 md:px-10 py-5">
           <Logo variant={variantSwitch} />
           <NavItems />
 
@@ -50,13 +50,13 @@ export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
           </button>
         </div>
         {/* show on mobile, hide on desktop */}
-        <div className=" w-full md:hidden flex justify-between  px-5 md:px-10 py-5">
+        <div className=" w-full lg:hidden flex justify-between  px-5 md:px-10 py-5">
           <Logo variant={variantSwitch} />
           <button
             title="hamburger drawer"
             type="button"
             onClick={() => setIsMenuOpen(true)}
-            className="block md:hidden"
+            className="block lg:hidden"
           >
             <MenuIcon className=" w-8 h-8" />
           </button>
