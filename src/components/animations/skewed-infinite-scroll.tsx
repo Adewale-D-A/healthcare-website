@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 
 export default function SkewedInfiniteScroll() {
   // const width = 500;
-  const [width, setWidth] = useState(300);
+  const [width, setWidth] = useState(400);
   useEffect(() => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 768px)");
 
     // Set the initial value of the `isMobile` state variable
-    setWidth(mediaQuery.matches ? 200 : 300);
+    setWidth(mediaQuery.matches ? 200 : 400);
 
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event: any) => {
@@ -35,9 +35,7 @@ export default function SkewedInfiniteScroll() {
         >
           {Workflow.map(({ id, logo, name }, index) => (
             <div
-              className={` animate-infiniteScroll item${
-                index + 1
-              } absolute -skew-x-[20deg] rounded-tr-3xl rounded-bl-3xl rounded-tl-lg rounded-br-lg overflow-hidden`}
+              className={`animate-infiniteScroll absolute`}
               key={id}
               style={
                 {
@@ -56,7 +54,7 @@ export default function SkewedInfiniteScroll() {
                 alt={name}
                 height={1000}
                 width={1000}
-                className={`w-full h-full object-cover`}
+                className={`w-full h-auto object-cover`}
               />
             </div>
           ))}

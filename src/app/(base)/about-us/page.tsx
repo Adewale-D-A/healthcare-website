@@ -122,7 +122,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="w-full   bg-primary flex flex-col gap-5 justify-center items-center pt-20 pb-16 lg:pb-36">
+      <section className="w-full  bg-primary flex flex-col gap-5 justify-center items-center pt-20 pb-10 lg:pb-16">
         <div className=" w-full flex flex-col lg:flex-row items-center justify-between max-w-screen-xl text-white px-5 lg:px-10">
           <h3 className=" text-3xl font-semibold">Implementation Flow</h3>
           <p className=" max-w-xs text-center lg:text-left">
@@ -130,9 +130,7 @@ export default function AboutUs() {
             for your business
           </p>
         </div>
-        <div className=" w-full max-h-[300px] lg:max-h-[1500px]">
-          <GraphLine />
-        </div>
+        <GraphLine />
         <SkewedInfiniteScroll />
       </section>
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">

@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -90,7 +90,15 @@ export default function NavItems() {
               )}
             </Link>
             {item?.subMenu && openMegaMenu && hoverContent?.length > 0 && (
-              <div className=" absolute top-0 left-0 z-10 hidden group-hover:flex text-white w-screen overflow-hidden">
+              <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeIn",
+                }}
+                className=" absolute top-0 left-0 z-10 hidden group-hover:flex text-white w-screen overflow-hidden"
+              >
                 <div className="mt-24 bg-primary-light flex items-stretch rounded-b-3xl shadow-md z-10 w-full justify-center py-16">
                   {/* <div
                     style={{ minWidth: offset?.left - 60 }}
@@ -193,7 +201,7 @@ export default function NavItems() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )}
           </div>
         );

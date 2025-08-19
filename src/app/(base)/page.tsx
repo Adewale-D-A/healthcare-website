@@ -51,7 +51,7 @@ export default function Home() {
           <div className="w-full  overflow-hidden absolute top-[0px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <p className="border border-white/50 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
+          <p className="border border-white/20 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
             <StarIcon className=" size-4" />
             Product updates - AnonymizedCare now available!
           </p>
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       <section className="w-full py-24 flex flex-col gap-5 bg-white justify-center items-center ">
-        <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-start justify-center">
+        <div className="w-full max-w-screen-xl px-5 md:px-10 flex flex-col lg:flex-row gap-5 lg:gap-24 items-start justify-center">
           <EmbedYouTube start={19} end={177} />
           <div className=" space-y-6">
             <h4 className=" text-4xl text-center lg:text-left leading-tight lg:leading-snug font-semibold text-transparent bg-sctn-two-text-gradient bg-clip-text">

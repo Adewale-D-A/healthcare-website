@@ -128,41 +128,6 @@
   transform-origin: center center; /* Optional for smoother pivot */
 }
 
-/* Animation delay */
-
-@keyframes widthAnimate { 
-  from {
-    width: 100%;
-    height: 100%;
-  }
-  to {
-    max-width: 1280px;
-    height: 350px;
-    border-radius: 36px;
-  }
-}
-@keyframes fullWidthAnimate { 
-  from {
-    max-width: 1280px;
-    height: 350px;
-    border-radius: 36px;
-  }
-  to {
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
-  }
-}
-.animation-delay-3 {
-  animation: fullWidthAnimate 1s ease-in-out;
-    width: 100%;
-    height: 100%;
-}
-.animation-delay {
-  animation: widthAnimate 1s ease-in-out;
-    height: 350px;
-}
-
 /* V-2 */
 @media (min-width: 1024px) {
   /* DESKTOP - CHROME  */

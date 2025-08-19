@@ -1,22 +1,30 @@
 "use client";
-import useInView from "@/hook/use-in-view";
+import { useEffect } from "react";
 import automateStats from "@/assets/automate-stats.json";
 import { cn } from "@/utils/cn";
+import useVisibilityPercentage from "@/hook/use-visibility-percentage";
 
 export default function AutomotateStats() {
-  const [ref, isInView] = useInView();
+  const threshold = 70;
+  const [visibilityRef, percentage] = useVisibilityPercentage();
 
+  const isGreaterThanThreshoold = Boolean(percentage > threshold);
   return (
     <section
-      ref={ref}
+      ref={visibilityRef}
       className="w-full  relative flex flex-col overflow-hidden justify-center items-center gap-16 bg-white text-white h-[600px]"
     >
       <div
+        style={{
+          maxWidth: percentage < threshold ? "1280px" : `${percentage}%`,
+          height: isGreaterThanThreshoold ? "100%" : "350px",
+          borderRadius: percentage > 95 ? "0px" : "36px",
+        }}
         className={cn(
-          "bg-secondary z-0 absolute w-full flex justify-center animation-delay-2",
-          isInView
-            ? " bg-[url('/assets/pattern.png')] rounded-none bg-right bg-no-repeat bg-cover animation-delay-3"
-            : "rounded-[36px] animation-delay"
+          "bg-secondary z-0 absolute w-full flex justify-center",
+          isGreaterThanThreshoold
+            ? " bg-[url('/assets/pattern.png')] rounded-none bg-right bg-no-repeat bg-cover w-full h-full"
+            : " max-w-screen-xl w-full"
         )}
       ></div>
       <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl p-5">
