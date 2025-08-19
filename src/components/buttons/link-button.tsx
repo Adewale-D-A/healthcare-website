@@ -8,7 +8,7 @@ const linkVariants = cva(
   {
     variants: {
       variant: {
-        default: " bg-secondary",
+        default: " bg-secondary hover:bg-[#005a9b]",
         outline: "border border-[#717680]",
       },
       size: {

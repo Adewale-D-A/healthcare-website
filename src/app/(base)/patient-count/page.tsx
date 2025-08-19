@@ -23,7 +23,7 @@ export default function PatientCount() {
           <div className="w-full  overflow-hidden absolute bottom-[-150px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <p className="border border-white/50 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
+          <p className="border border-white/20 text-center  bg-white/5 flex text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
             <User2Icon className=" size-4" />
             Patient count
           </p>

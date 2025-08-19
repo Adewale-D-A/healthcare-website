@@ -1,13 +1,16 @@
 export default function GraphLine() {
   return (
     <svg
-      //   width="1441"
-      //   height="1569"
-      viewBox="0 0 1441 1569"
+      // width="1441"
+      // height="1569"
+      width="100%"
+      height="100%"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 1441 900"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
-      className=" w-1vw"
+      className=" w-full h-full md:mt-[-100px] lg:mt-[-200px]"
     >
       <g clipPath="url(#clip0_5061_9592)">
         <path

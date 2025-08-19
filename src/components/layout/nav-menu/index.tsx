@@ -20,7 +20,11 @@ export default function NavMenu({ variant = 1 }: { variant?: 1 | 2 }) {
       <nav
         className={cn(
           "w-full  backdrop-bg-filter flex flex-col items-center transition-all justify-center bg-primary-500 sticky top-0 left-0 z-50",
-          variantSwitch === 2 ? "text-white" : "text-black"
+          variantSwitch === 2
+            ? "text-white"
+            : scrolled
+            ? "bg-white text-black"
+            : "text-black"
         )}
       >
         {/* show on desktop, hide on mobile */}

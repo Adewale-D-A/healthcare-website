@@ -30,10 +30,10 @@ export default function ServicesHeroCards({
         width={1000}
       /> */}
       {/* <div className="absolute inset-0 bg-[#3b568a]/90 "></div> */}
-      <div className="absolute left-0 text-white bottom-10 z-10 p-4 lg:pr-24 space-y-3">
+      <div className="absolute left-0 text-white bottom-10 z-10 p-4 lg:px-8 lg:pr-24 space-y-3">
         <div>
           {icon}
-          <h6 className=" font-semibold text-lg">{title}</h6>
+          <h6 className=" font-semibold text-lg mt-3">{title}</h6>
         </div>
         <p className=" text-gray_text-200">{description}</p>
       </div>

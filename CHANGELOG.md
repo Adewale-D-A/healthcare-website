@@ -1,3 +1,8 @@
+##### 19.08.2025
+
+> Optimization: Image size reduction
+> CLeanup: UI cleanups
+
 ##### 13.08.2025
 
 > Fix: Mobile responsiveness fix

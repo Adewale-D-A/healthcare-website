@@ -17,7 +17,7 @@ export default function OurStats({
   return (
     <div className={cn(" flex flex-col items-center gap-3", textClassName)}>
       <div className={cn(" rounded-full p-3", bgClassName)}>{icon}</div>
-      <span className=" font-bold text-2xl">{value}</span>
+      <span className=" font-bold text-2xl mt-3">{value}</span>
       <p className=" text-gray_text-700">{label}</p>
     </div>
   );
