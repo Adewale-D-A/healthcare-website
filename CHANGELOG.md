@@ -1,3 +1,8 @@
+##### 20.08.2025
+
+> Update: Infinite logo size reduction
+> Updates: UI feedback cleanup
+
 ##### 19.08.2025
 
 > Optimization: Image size reduction

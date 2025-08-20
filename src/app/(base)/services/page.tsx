@@ -199,7 +199,7 @@ export default function Services() {
             Join thousands of healthcare providers who have modernized their
             practice with 7thCare
           </p>
-          <RequestADemoButton className=" bg-white text-secondary" />
+          <RequestADemoButton className=" bg-white text-secondary hover:bg-gray-200" />
         </div>
       </section>
     </div>

@@ -70,7 +70,7 @@ export default function PatientCount() {
             Join the fast-growing network of providers leveraging innovative
             health tech to save lives and improve care delivery.
           </p>
-          <RequestADemoButton className=" bg-white text-secondary" />
+          <RequestADemoButton className=" bg-white text-secondary hover:bg-gray-200" />
         </div>
       </section>
     </div>
