@@ -147,7 +147,7 @@ export default function SupportLayout({
           <p className=" text-gray-200">
             Our support team is standing by to help you succeed with 7thCare.
           </p>
-          <RequestADemoButton className=" bg-white text-secondary" />
+          <RequestADemoButton className=" bg-white text-secondary hover:bg-gray-200" />
         </div>
       </section>
     </main>

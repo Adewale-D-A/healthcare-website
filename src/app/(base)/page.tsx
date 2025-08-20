@@ -253,7 +253,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full flex justify-center items-center flex-col gap-2  overflow-x-hidden">
-            <Button className=" w-fit">Request a Demo</Button>
+            <RequestADemoButton />
             <div className="w-full text-center lg:text-start flex items-center flex-col justify-center lg:flex-row ml-0 lg:ml-96">
               <svg
                 width="102"

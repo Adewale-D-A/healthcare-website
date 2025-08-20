@@ -1,12 +1,13 @@
 "use client";
-import { useEffect } from "react";
 import automateStats from "@/assets/automate-stats.json";
 import { cn } from "@/utils/cn";
 import useVisibilityPercentage from "@/hook/use-visibility-percentage";
+import useIsMobileView from "@/hook/use-is-mobile";
 
 export default function AutomotateStats() {
   const threshold = 70;
   const [visibilityRef, percentage] = useVisibilityPercentage();
+  const [isMobileView] = useIsMobileView();
 
   const isGreaterThanThreshoold = Boolean(percentage > threshold);
   return (
@@ -16,15 +17,19 @@ export default function AutomotateStats() {
     >
       <div
         style={{
-          maxWidth: percentage < threshold ? "1280px" : `${percentage}%`,
-          height: isGreaterThanThreshoold ? "100%" : "350px",
-          borderRadius: percentage > 95 ? "0px" : "36px",
+          maxWidth:
+            percentage < threshold
+              ? "1280px"
+              : isMobileView
+              ? "100%"
+              : `${percentage}%`,
         }}
         className={cn(
           "bg-secondary z-0 absolute w-full flex justify-center",
           isGreaterThanThreshoold
             ? " bg-[url('/assets/pattern.png')] rounded-none bg-right bg-no-repeat bg-cover w-full h-full"
-            : " max-w-screen-xl w-full"
+            : " max-w-screen-xl h-full lg:h-[350px]",
+          percentage > 95 ? " rounded-0" : "rounded-0 lg:rounded-[36px]"
         )}
       ></div>
       <div className="w-full z-10 flex max-w-screen-md flex-col gap-16 justify-center items-center rounded-3xl p-5">
