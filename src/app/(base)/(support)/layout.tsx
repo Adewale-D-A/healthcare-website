@@ -26,7 +26,7 @@ export default function SupportLayout({
           <div className="w-full  overflow-hidden absolute bottom-[-150px] z-[-5] left-0  flex justify-center">
             <BlurAndGradient />
           </div>
-          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-tight lg:leading-snug font-bold text-center max-w-screen-md">
+          <h1 className="z-10 text-white text-5xl lg:text-7xl leading-none lg:leading-tight font-bold text-center max-w-screen-md">
             Support center
           </h1>
           <p className=" text-white text-base">
@@ -40,7 +40,7 @@ export default function SupportLayout({
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-lg px-5 lg:px-0 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-none lg:leading-tight text-transparent bg-sctn-two-text-gradient bg-clip-text">
               Frequently Asked Questions
             </h4>
           </div>
@@ -73,6 +73,9 @@ export default function SupportLayout({
               <div className=" text-center">
                 <h4 className=" font-bold text-2xl text-secondary">
                   +143 735 034 53
+                </h4>
+                <h4 className=" font-bold text-2xl text-secondary">
+                  +234 911 688 9215
                 </h4>
                 <p className=" text-gray_text-400">Mon-Fri , 8AM -6PM PST</p>
               </div>
@@ -141,7 +144,7 @@ export default function SupportLayout({
       </section>
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-none lg:leading-tight text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Still need help?
           </h4>
           <p className=" text-gray-200">

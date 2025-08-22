@@ -1,3 +1,8 @@
+##### 22.08.2025
+
+> Updates: Line height adjustments
+> Feature: Hero banner image repalcement and home footer images replacement
+
 ##### 20.08.2025
 
 > Update: Infinite logo size reduction

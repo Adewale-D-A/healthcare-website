@@ -101,7 +101,7 @@ export default function Services() {
       <section className="w-full bg-white flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
-            <h4 className="text-4xl font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
+            <h4 className="text-4xl font-semibold leading-none lg:leading-tight text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform
             </h4>
             <p className=" text-gray-700">
@@ -192,7 +192,7 @@ export default function Services() {
 
       <section className="w-full  bg-[url('/assets/pattern.png')] bg-secondary rounded-none bg-right bg-no-repeat bg-cover flex flex-col gap-5 justify-center items-center">
         <div className="w-full py-24 flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-8">
-          <h4 className="text-4xl text-center text-white font-semibold leading-tight lg:leading-snug text-transparent bg-sctn-two-text-gradient bg-clip-text">
+          <h4 className="text-4xl text-center text-white font-semibold leading-none lg:leading-tight text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Ready to transform your practice?
           </h4>
           <p className=" text-gray-200">
