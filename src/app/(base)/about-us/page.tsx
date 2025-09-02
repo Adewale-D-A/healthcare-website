@@ -98,7 +98,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="w-full bg-white pt-24 flex flex-col gap-5 justify-center items-center">
+      {/* <section className="w-full bg-white pt-24 flex flex-col gap-5 justify-center items-center">
         <div className="w-full flex max-w-screen-xl flex-col justify-center items-center gap-5 px-5 lg:px-10">
           <h4 className=" text-4xl font-semibold leading-none lg:leading-tight text-transparent bg-sctn-two-text-gradient bg-clip-text">
             Meet the team
@@ -121,7 +121,7 @@ export default function AboutUs() {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="w-full  bg-primary flex flex-col gap-5 justify-center items-center pt-20 pb-10 lg:pb-16">
         <div className=" w-full flex flex-col lg:flex-row items-center justify-between max-w-screen-xl text-white px-5 lg:px-10">
           <h3 className=" text-3xl font-semibold">Implementation Flow</h3>

@@ -1,3 +1,7 @@
+##### 22.09.2025
+
+> Update: Teams profile removal
+
 ##### 22.08.2025
 
 > Updates: Line height adjustments
