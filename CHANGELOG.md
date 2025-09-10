@@ -1,8 +1,10 @@
-##### 22.09.2025
+##### 10.09.2025
 
-> Update: Teams profile removal
+Update: AnonymizeCare name correction
 
 ##### 22.08.2025
+
+> Update: Teams profile removal
 
 > Updates: Line height adjustments
 > Feature: Hero banner image repalcement and home footer images replacement

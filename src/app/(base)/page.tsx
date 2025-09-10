@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <p className="border border-white/20 text-center  bg-white/5 flex flex-col lg:flex-row text-sm items-center gap-2 p-2 rounded-lg text-white px-5">
             <StarIcon className=" size-4" />
-            Product updates - AnonymizedCare now available!
+            Product updates - AnonymizeCare now available!
           </p>
           <h1 className="z-10 text-white text-5xl lg:text-7xl leading-none lg:leading-tight font-bold text-center max-w-screen-md">
             Automate your Healthcare Business{" "}
