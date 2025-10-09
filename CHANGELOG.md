@@ -1,3 +1,7 @@
+##### 09.10.2025
+
+> Fix: Home page animations and scroll bug fixes ('How it works' section scroll fix, testimonials alignment fix, Kwara State government partner logo addition)
+
 ##### 10.09.2025
 
 Update: AnonymizeCare name correction

@@ -28,5 +28,10 @@
     "id": 8,
     "logo": "/assets/partners/crest.png",
     "name": "Crest"
+  },
+  {
+    "id": 9,
+    "logo": "/assets/partners/kwara-state-govenment.png",
+    "name": "Kwara State Government"
   }
 ]

@@ -7,17 +7,16 @@ import { cn } from "@/utils/cn";
 import ClipboardIcon from "@/assets/icons/clipboard";
 import SettingIcon from "@/assets/icons/settings";
 import DeployIcon from "@/assets/icons/deploy";
-import PresentationIcon from "@/assets/icons/presentation";
 import TeachIcon from "@/assets/icons/teach";
+import useIsMobileView from "@/hook/use-is-mobile";
 
 export default function HowItWorks() {
+  const [isMobile] = useIsMobileView();
   const [ref, isInView] = useInView();
   const boxRef = useRef(null) as any;
   const [currentSelection, setCurrentSelection] = useState(whyUs[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [inisitalMargin, setInitialMargin] = useState(0);
-  // const [in]
-  // const initialMargin = window ? window?.innerWidth / 2 : 500;
+  const [initialMargin, setInitialMargin] = useState(0);
 
   const handleSelection = useCallback(
     (index: number) => {
@@ -88,7 +87,7 @@ export default function HowItWorks() {
         <div
           ref={boxRef}
           style={{
-            marginLeft: inisitalMargin,
+            paddingLeft: isMobile ? 0 : initialMargin,
           }}
           className="w-full flex flex-row items-stretch gap-5 lg:gap-10 transition-all overflow-x-auto hide-scroll "
         >

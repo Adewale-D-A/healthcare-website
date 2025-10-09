@@ -24,7 +24,6 @@ import TestimonialsDataset from "@/assets/testimonials.json";
 import OurStats from "@/components/cards/our-stats";
 import ContactForm from "@/components/contactForm";
 import Image from "next/image";
-import { Button } from "@/components/buttons/button";
 import type { Metadata } from "next";
 import metadataContent from "@/assets/seo-meta-data.json";
 import {
@@ -197,7 +196,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="w-full bg-white py-24 flex flex-col gap-5 justify-center items-center ">
-        <div className="w-full flex max-w-screen-xl px-5 lg:px-0 flex-col justify-center items-center gap-16">
+        <div className="w-full flex max-w-screen-xl px-5 flex-col justify-center items-center gap-16">
           <div className="w-full flex flex-col gap-4 max-w-[500px] text-center items-center">
             <h4 className=" text-4xl font-semibold leading-none lg:leading-tight text-transparent bg-sctn-two-text-gradient bg-clip-text">
               The all-in-one platform for modern clinics

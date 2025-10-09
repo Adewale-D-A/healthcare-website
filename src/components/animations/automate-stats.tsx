@@ -25,7 +25,7 @@ export default function AutomotateStats() {
               : `${percentage}%`,
         }}
         className={cn(
-          "bg-secondary z-0 absolute w-full flex justify-center",
+          "bg-secondary z-0 absolute w-full flex justify-center transition-all",
           isGreaterThanThreshoold
             ? " bg-[url('/assets/pattern.png')] rounded-none bg-right bg-no-repeat bg-cover w-full h-full"
             : " max-w-screen-xl h-full lg:h-[350px]",
