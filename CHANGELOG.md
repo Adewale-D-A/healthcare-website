@@ -1,3 +1,8 @@
+##### 07.12.2025
+
+> Fix: Footer duplication
+> Check: Next version CVE-2025-66478 vulnerabiity checked to be non-vulnerable
+
 ##### 09.10.2025
 
 > Fix: Home page animations and scroll bug fixes ('How it works' section scroll fix, testimonials alignment fix, Kwara State government partner logo addition)

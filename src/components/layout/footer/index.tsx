@@ -83,25 +83,25 @@ export default function FooterMenu() {
                       },
                     ],
                   },
-                  {
-                    sectionLabel: "2",
-                    sectionUrl: "#",
-                    sectionItems: [
-                      {
-                        section_header: "For Patients",
-                        desction_data: [
-                          {
-                            label: "Telemedicine",
-                            url: "#",
-                          },
-                          {
-                            label: "Patient Portal",
-                            url: "#",
-                          },
-                        ],
-                      },
-                    ],
-                  },
+                  // {
+                  //   sectionLabel: "2",
+                  //   sectionUrl: "#",
+                  //   sectionItems: [
+                  //     {
+                  //       section_header: "For Patients",
+                  //       desction_data: [
+                  //         {
+                  //           label: "Telemedicine",
+                  //           url: "#",
+                  //         },
+                  //         {
+                  //           label: "Patient Portal",
+                  //           url: "#",
+                  //         },
+                  //       ],
+                  //     },
+                  //   ],
+                  // },
                 ].map((section) => (
                   <FooterSectionIten key={section?.sectionLabel} {...section} />
                 ))}
